@@ -17,7 +17,7 @@ In addition, this project will include:
 - An instruction about the game
 - A production README
 ## Wireframes
-
+<img src="wireframe.png" width="800">
 On the left side:
 - RESET: change the hairstyle to the initial style
 - FINISH: submit the design and get a score back.
