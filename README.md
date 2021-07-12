@@ -30,9 +30,9 @@ On the right side:
 
 ## Technologies, Libraries, APIs
 This project will be implemented with the following technologies:
-- Canvas API to color the hair
-- Iro.js color picker API to color the hair
-- Webpack to transpile the JS code
+- `Canvas API` to color the hair
+- `Iro.js` color picker API to color the hair
+- `Webpack` to transpile the JS code
 
 ## Implementation Timeline
 **Weekend:** Setup project. Prepare imagines for different hair styles. Create a `character` class and start to work on the `scissors` button.
