@@ -1,0 +1,22 @@
+img.hair-style {
+    position: absolute;
+    
+}
+
+img.bang-style{
+    position: absolute;
+}
+
+.hair-style {
+    width: 370px;
+    height: auto;
+    margin-left: -380px;
+    margin-top: 48px;  
+}
+
+.bang-style{
+    width: 315px;
+    height: auto;
+    margin-left: -350px;
+    margin-top: 60px;  
+}
