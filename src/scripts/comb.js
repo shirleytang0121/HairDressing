@@ -1,10 +1,9 @@
 
 export default class Comb{
    constructor(){
-       this.comb_btn=document.querySelector(".comb");
-       this.hair_obj = document.querySelector(".hair-style")
+       this.comb_btn = document.querySelector(".comb");
+       this.hair_obj = document.querySelector(".hair-style");
        this.comb_btn.addEventListener('click',this.handleComb.bind(this))
-
    }
 
    handleComb(e){

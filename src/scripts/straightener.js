@@ -8,7 +8,7 @@ export default class Straightener{
     handleCurlingIron=function(e){
         e.preventDefault();
         
-        if(this.hair_obj.id === 'initial-hair' || this.hair_obj.id==='long' ||this.hair_obj.id === 'curling-long'){
+        if(this.hair_obj.id === 'initial' || this.hair_obj.id==='long' ||this.hair_obj.id === 'curling-long'){
            this.hair_obj.src="/src/image/hairstyle/straight/straight-long.png";
            this.hair_obj.id ="straight-long";
         }

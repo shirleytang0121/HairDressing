@@ -8,7 +8,7 @@ export default class Scissors{
     handleScissors(e){
         e.preventDefault();
         switch(this.hair_obj.id){
-            case 'initial-hair':
+            case 'initial':
                 this.hair_obj.src = "/src/image/hairstyle/initial/initial-cut.png";
                 this.hair_obj.id ='initial-cut';
                 break;

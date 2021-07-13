@@ -10,7 +10,7 @@ export default class Character{
         const initialStyle= document.createElement('img')
         initialStyle.setAttribute("src","/src/image/hairstyle/initial/initial.png");
         initialStyle.classList.add('hair-style');
-        initialStyle.setAttribute("id","initial-hair")
+        initialStyle.setAttribute("id","initial")
         mainCharacter.appendChild(initialStyle);
 
         const initialBangs= document.createElement('img')

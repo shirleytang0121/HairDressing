@@ -3,6 +3,7 @@ import Scissors from './scripts/scissors.js'
 import CurlingIron from './scripts/curlingIron.js'
 import HairDryer from './scripts/hairDryer.js'
 import Straightener from './scripts/straightener.js'
+import Comb from './scripts/comb.js'
 
 document.addEventListener("DOMContentLoaded",()=>{
     const character =new Character();
@@ -10,4 +11,5 @@ document.addEventListener("DOMContentLoaded",()=>{
     const curlingIron = new CurlingIron();
     const hairdryer = new HairDryer();
     const straightener = new Straightener();
+    const comb =new Comb();
 })

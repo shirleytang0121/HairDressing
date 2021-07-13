@@ -9,7 +9,7 @@ export default class CurlingIron{
     handleCurlingIron=function(e){
         e.preventDefault();
         
-        if(this.hair_obj.id === 'initial-hair' || this.hair_obj.id==='long' ||this.hair_obj.id ==='straight-long'){
+        if(this.hair_obj.id === 'initial' || this.hair_obj.id==='long' ||this.hair_obj.id ==='straight-long'){
            this.hair_obj.src="/src/image/hairstyle/curling/curling-long.png";
            this.hair_obj.id ="curling-long";
         }
