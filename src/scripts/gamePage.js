@@ -7,22 +7,6 @@ import Comb from './comb.js'
 
 
 
-// <!-- <div class="left-buttons">
-
-// </div>
-// <div>
-//   <img src="src/image/tools/mirror.png" class="mirror">
-//   <div class="main-character"></div>
-// </div>
-
-// <div class="right-buttons">
-//   <button class="scissors"><img src="src/image/tools/scissors.png" class="tools" ></button>
-//   <button class="curling-iron"><img src="src/image/tools/curling-iron.png" class="tools" ></button>
-//   <button class="straightener"><img src="src/image/tools/straightener.png" class="tools" ></button>
-//   <button class="hair-dryer"><img src="src/image/tools/hair-dryer.png" class="tools" ></button>
-//   <button class="comb"><img src="src/image/tools/comb.png" class="tools" ></button>
-// </div> -->
-
 export default function renderGamePage(gender){
     //delete all element
     const salon = document.querySelector('.salon');
@@ -65,35 +49,54 @@ export default function renderGamePage(gender){
     
     const character =new Character();
 
-    const scissorsbtn = document.createElement('img');
-    scissorsbtn.setAttribute('src','./src/image/tools/scissors.png');
-    scissorsbtn.classList.add('tools');
+    const scissorsbtn = document.createElement('button');
+    scissorsbtn.classList.add('scissors');
+    const scissorsimg = document.createElement('img');
+    scissorsimg.setAttribute('src','./src/image/tools/scissors.png');
+    scissorsimg.classList.add('tools');
+    scissorsbtn.appendChild(scissorsimg);
 
-    const curlingIronbtn = document.createElement('img');
-    curlingIronbtn.setAttribute('src','./src/image/tools/curling-iron.png');
-    curlingIronbtn.classList.add('tools');
+    const curlingIronbtn = document.createElement('button');
+    curlingIronbtn.classList.add('curling-iron');
+    const curlingIronimg = document.createElement('img');
+    curlingIronimg.setAttribute('src','./src/image/tools/curling-iron.png');
+    curlingIronimg.classList.add('tools');
+    curlingIronbtn.appendChild(curlingIronimg);
 
-    const hairdryerbtn =document.createElement('img');
-    hairdryerbtn.setAttribute('src','./src/image/tools/hair-dryer.png')
-    hairdryerbtn.classList.add('tools');
+    const hairdryerbtn =document.createElement('button');
+    hairdryerbtn.classList.add('hair-dryer');
+    const hairdryerimg =document.createElement('img');
+    hairdryerimg.setAttribute('src','./src/image/tools/hair-dryer.png')
+    hairdryerimg.classList.add('tools');
+    hairdryerbtn.appendChild(hairdryerimg);
 
-    const straightenerbtn = document.createElement('img');
-    straightenerbtn.setAttribute('src','./src/image/tools/straightener.png')
-    straightenerbtn.classList.add('tools');
+    const straightenerbtn = document.createElement('button');
+    straightenerbtn.classList.add('straightener');
+    const straightenerimg = document.createElement('img');
+    straightenerimg.setAttribute('src','./src/image/tools/straightener.png')
+    straightenerimg.classList.add('tools');
+    straightenerbtn.appendChild(straightenerimg);
 
-    const combbtn = document.createElement('img');
-    combbtn.setAttribute('src','./src/image/tools/comb.png')
-    combbtn.classList.add('tools');
+    const combbtn = document.createElement('button');
+    combbtn.classList.add('comb');
+    const combimg = document.createElement('img')
+    combimg.setAttribute('src','./src/image/tools/comb.png')
+    combimg.classList.add('tools');
+    combbtn.appendChild(combimg);
 
 
-    // rightbtns.appendChild(scissorsbtn);
+    rightbtns.appendChild(scissorsbtn);
+    rightbtns.appendChild(curlingIronbtn);
+    rightbtns.appendChild(straightenerbtn);
+    rightbtns.appendChild(hairdryerbtn);
+    rightbtns.appendChild(combbtn);
 
 
-    // const scissors = new Scissors();
-    // const curlingIron = new CurlingIron();
-    // const hairdryer = new HairDryer();
-    // const straightener = new Straightener();
-    // const comb =new Comb();
+    const scissors = new Scissors();
+    const curlingIron = new CurlingIron();
+    const hairdryer = new HairDryer();
+    const straightener = new Straightener();
+    const comb =new Comb();
 
     console.log("this is game page")
 
