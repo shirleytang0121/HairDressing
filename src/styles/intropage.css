@@ -1,0 +1,11 @@
+.salon{
+    width: 600px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+body{
+    background-color: rgb(145, 175, 231);
+}

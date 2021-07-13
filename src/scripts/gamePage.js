@@ -1,9 +1,9 @@
-import Character from './scripts/character.js'
-import Scissors from './scripts/scissors.js'
-import CurlingIron from './scripts/curlingIron.js'
-import HairDryer from './scripts/hairDryer.js'
-import Straightener from './scripts/straightener.js'
-import Comb from './scripts/comb.js'
+import Character from './character.js'
+import Scissors from './scissors'
+import CurlingIron from './curlingIron.js'
+import HairDryer from './hairDryer.js'
+import Straightener from './straightener.js'
+import Comb from './comb.js'
 
 
 // <!-- <div class="left-buttons">
@@ -23,12 +23,14 @@ import Comb from './scripts/comb.js'
 // </div> -->
 
 export default function renderGamePage(){
-    const character =new Character();
-    const scissors = new Scissors();
-    const curlingIron = new CurlingIron();
-    const hairdryer = new HairDryer();
-    const straightener = new Straightener();
-    const comb =new Comb();
+    // const character =new Character();
+    // const scissors = new Scissors();
+    // const curlingIron = new CurlingIron();
+    // const hairdryer = new HairDryer();
+    // const straightener = new Straightener();
+    // const comb =new Comb();
 
-    
+    console.log("this is game page")
+
+
 }
