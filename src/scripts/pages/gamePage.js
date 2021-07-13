@@ -5,6 +5,7 @@ import HairDryer from '../tools/hairDryer.js'
 import Straightener from '../tools/straightener.js'
 import Comb from '../tools/comb.js'
 import Bangs from '../tools/bangs.js'
+import HairDye from '../tools/hairDye.js'
 
 
 
@@ -115,6 +116,7 @@ export default function renderGamePage(gender){
     const straightener = new Straightener();
     const comb =new Comb();
     const bangs=new Bangs();
+    const hairdye= new HairDye();
 
     console.log("this is game page")
 

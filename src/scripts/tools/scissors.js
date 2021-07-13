@@ -48,6 +48,10 @@ export default class Scissors{
                 this.hair_obj.src = "/src/image/hairstyle/straight/straight-long-cut-end.png";
                 this.hair_obj.id ="straight-long-cut-end"
                 break;
+                case 'blow':
+                    this.hair_obj.src = "/src/image/hairstyle/straight/straight-long-cut-end.png";
+                    this.hair_obj.id ="straight-long-cut-end"
+                    break;
             default:
                 alert('can not cut');
 
