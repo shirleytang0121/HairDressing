@@ -63,9 +63,32 @@ export default function renderGamePage(gender){
     middiv.appendChild(mirror);
     middiv.appendChild(chardiv);
     
-
-
     const character =new Character();
+
+    const scissorsbtn = document.createElement('img');
+    scissorsbtn.setAttribute('src','./src/image/tools/scissors.png');
+    scissorsbtn.classList.add('tools');
+
+    const curlingIronbtn = document.createElement('img');
+    curlingIronbtn.setAttribute('src','./src/image/tools/curling-iron.png');
+    curlingIronbtn.classList.add('tools');
+
+    const hairdryerbtn =document.createElement('img');
+    hairdryerbtn.setAttribute('src','./src/image/tools/hair-dryer.png')
+    hairdryerbtn.classList.add('tools');
+
+    const straightenerbtn = document.createElement('img');
+    straightenerbtn.setAttribute('src','./src/image/tools/straightener.png')
+    straightenerbtn.classList.add('tools');
+
+    const combbtn = document.createElement('img');
+    combbtn.setAttribute('src','./src/image/tools/comb.png')
+    combbtn.classList.add('tools');
+
+
+    // rightbtns.appendChild(scissorsbtn);
+
+
     // const scissors = new Scissors();
     // const curlingIron = new CurlingIron();
     // const hairdryer = new HairDryer();
