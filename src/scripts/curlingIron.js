@@ -18,6 +18,10 @@ export default class CurlingIron{
         }else if(this.hair_obj.id === 'short' || this.hair_obj.id === 'straight-short'){
             this.hair_obj.src="/src/image/hairstyle/curling/curling-short.png";
            this.hair_obj.id ="curling-short";
+        }else if (this.hair_obj.id === 'long-cut'||this.hair_obj.id === 'long-cut-end' ||this.hair_obj.id ==='curling-long-cut'||this.hair_obj.id ==='curling-long-cut-end'||this.hair_obj.id ==='straight-long-cut'||this.hair_obj.id ==='straight-long-cut-end'){
+            alert('Please comb your hair first')
+        }else{
+            alert('it is perfect')
         }
     }
 }

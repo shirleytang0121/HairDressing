@@ -17,6 +17,10 @@ export default class Straightener{
         }else if(this.hair_obj.id === 'curling-short' || this.hair_obj.id === 'short'){
             this.hair_obj.src="/src/image/hairstyle/straight/straight-short.png";
             this.hair_obj.id ="straight-short";
+        }else if (this.hair_obj.id === 'long-cut'||this.hair_obj.id === 'long-cut-end' ||this.hair_obj.id ==='curling-long-cut'||this.hair_obj.id ==='curling-long-cut-end'||this.hair_obj.id ==='straight-long-cut'||this.hair_obj.id ==='straight-long-cut-end'){
+            alert('Please comb your hair first')
+        }else{
+            alert('it is perfect');
         }
     }
 }

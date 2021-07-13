@@ -23,7 +23,11 @@ export default class HairDryer{
          }else if(this.hair_obj.id === 'curling-short'){
             this.hair_obj.src="/src/image/hairstyle/long/long-short.png";
             this.hair_obj.id ="short";
-         }
+         }else if (this.hair_obj.id === 'long-cut'||this.hair_obj.id === 'long-cut-end' ||this.hair_obj.id ==='curling-long-cut'||this.hair_obj.id ==='curling-long-cut-end'||this.hair_obj.id ==='straight-long-cut'||this.hair_obj.id ==='straight-long-cut-end'){
+            alert('Please comb your hair first')
+        }else{
+           alert('it is perfect');
+        }
         
         
       
