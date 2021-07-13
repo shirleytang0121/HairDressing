@@ -25,6 +25,10 @@ export default class Comb{
             this.hair_obj.src="/src/image/hairstyle/straight/straight-median.png";
             this.hair_obj.id ="straight-median";
             break;
+        case 'straight-long-cut-end':
+            this.hair_obj.src="/src/image/hairstyle/straight/straight-short.png";
+            this.hair_obj.id ="straight-short";
+            break;
         default:
             alert("it's perfect");
         

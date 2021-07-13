@@ -3,7 +3,7 @@ export default class Character{
         const mainCharacter = document.querySelector(".main-character");
         
         const characterImg= document.createElement('img');
-        characterImg.setAttribute("src","/src/image/bald.png");
+        characterImg.setAttribute("src","/src/image/bald-w.png");
         characterImg.classList.add('bald')
         mainCharacter.appendChild(characterImg);
 

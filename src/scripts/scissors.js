@@ -9,27 +9,26 @@ export default class Scissors{
         e.preventDefault();
         switch(this.hair_obj.id){
             case 'initial':
-                this.hair_obj.src = "/src/image/hairstyle/initial/initial-cut.png";
-                this.hair_obj.id ='initial-cut';
-                break;
-            case 'initial-cut':
-                this.hair_obj.src = "/src/image/hairstyle/initial/initial-cut-end.png";
-                console.log(this.hair_obj.src);
-                this.hair_obj.id = 'initial-cut-2'
+                this.hair_obj.src = "/src/image/hairstyle/straight/straight-long-cut.png";
+                this.hair_obj.id ="straight-long-cut";
                 break;
             case 'long':
                 this.hair_obj.src = "/src/image/hairstyle/long/long-cut.png";
                 this.hair_obj.id ="long-cut"
                 break;
             case 'long-cut':
+                this.hair_obj.src = "/src/image/hairstyle/long/long-cut-end.png";
+                this.hair_obj.id ="long-cut-end"
+                break;
+            case 'median':
                 break;
             case 'curling-long':
                 this.hair_obj.src = "/src/image/hairstyle/curling/curling-long-cut.png";
                 this.hair_obj.id ="curling-long-cut"
                 break;
             case 'curling-long-cut':
-                break;
-            case 'median':
+                this.hair_obj.src = "/src/image/hairstyle/curling/curling-long-cut-end.png";
+                this.hair_obj.id ="curling-long-cut-end"
                 break;
             case 'straight-long':
                 this.hair_obj.src = "/src/image/hairstyle/straight/straight-long-cut.png";
