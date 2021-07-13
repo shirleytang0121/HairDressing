@@ -16,6 +16,14 @@ export default class HairDryer{
             this.hair_obj.src="/src/image/hairstyle/initial/initial.png";
             this.hair_obj.id ="initial";
             break;
+        case 'straight-median':
+            this.hair_obj.src="/src/image/hairstyle/straight/straight-median-blow.png";
+            this.hair_obj.id ="blow";
+            break;
+        case 'blow':
+            this.hair_obj.src="/src/image/hairstyle/straight/straight-median.png";
+            this.hair_obj.id ="straight-median";
+            break;
         default:
             alert("it's perfect");
         
