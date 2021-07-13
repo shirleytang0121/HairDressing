@@ -6,6 +6,7 @@ import Straightener from './straightener.js'
 import Comb from './comb.js'
 
 
+
 // <!-- <div class="left-buttons">
 
 // </div>
@@ -23,9 +24,48 @@ import Comb from './comb.js'
 // </div> -->
 
 export default function renderGamePage(gender){
+    //delete all element
+    const salon = document.querySelector('.salon');
+    salon.remove();
+
+    const startbtnM = document.querySelector('.genderbtn')
+    startbtnM.remove();
+
+    const startbtnF = document.querySelector('.genderbtn')
+    startbtnF.remove();
+
+    const leftdiv = document.querySelector('.leftdiv')
+    leftdiv.remove();
+    
+    const rightdiv = document.querySelector('.rightdiv')
+    rightdiv.remove();
+
+
     const mygender = gender;
     const mainPage = document.querySelector(".main-page");
-    // const character =new Character();
+
+    const leftbtns = document.createElement('div');
+    leftbtns.classList.add('left-buttons')
+    const middiv = document.createElement('div');
+    const rightbtns = document.createElement('div');
+    rightbtns.classList.add('right-buttons')
+    
+    mainPage.appendChild(leftbtns);
+    mainPage.appendChild(middiv);
+    mainPage.appendChild(rightbtns);
+
+    const mirror = document.createElement('img');
+    mirror.setAttribute('src','./src/image/tools/mirror.png')
+    mirror.classList.add('mirror');
+    const chardiv = document.createElement('div')
+    chardiv.classList.add('main-character');
+
+    middiv.appendChild(mirror);
+    middiv.appendChild(chardiv);
+    
+
+
+    const character =new Character();
     // const scissors = new Scissors();
     // const curlingIron = new CurlingIron();
     // const hairdryer = new HairDryer();

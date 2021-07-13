@@ -12,15 +12,17 @@ export default function renderIntroPage(){
     const startbtnF = document.createElement('button');
     startbtnF.innerHTML='SHE'
     startbtnF.classList.add('genderbtn')
-    startbtnF.addEventListener('click',renderGamePage('F'));
+    startbtnF.addEventListener('click',renderGamePage);
 
     const startbtnM = document.createElement('button');
     startbtnM.innerHTML='HE'
     startbtnM.classList.add('genderbtn')
-    startbtnM.addEventListener('click',renderGamePage('M'));
+    startbtnM.addEventListener('click',renderGamePage);
 
-    const leftdiv = document.createElement('div')
-    const rightdiv = document.createElement('div')
+    const leftdiv = document.createElement('div');
+    leftdiv.classList.add('leftdiv');
+    const rightdiv = document.createElement('div');
+    rightdiv.classList.add('rightdiv');
     mainPage.appendChild(leftdiv);
     mainPage.appendChild(salon);
     mainPage.appendChild(rightdiv);
