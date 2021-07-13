@@ -34,3 +34,11 @@ img.bang-style{
     margin-left: -392px;
     margin-top: 30px;  
 }
+
+.man-style{
+    position: absolute;
+    width: 230px;
+    height:auto;
+    margin-left: -305px;
+    margin-top: 90px;  
+}

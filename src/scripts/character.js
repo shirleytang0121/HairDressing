@@ -14,8 +14,11 @@ export default class Character{
         const initialStyle= document.createElement('img')
         if(gender==='F'){
             initialStyle.setAttribute("src","/src/image/hairstyle/initial/initial.png");
+            initialStyle.classList.add('hair-style');
+        }else{
+            initialStyle.setAttribute("src","/src/image/manstyle/initial.png");
+            initialStyle.classList.add('man-style');
         }
-        initialStyle.classList.add('hair-style');
         initialStyle.setAttribute("id","initial")
         mainCharacter.appendChild(initialStyle);
 

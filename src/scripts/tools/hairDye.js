@@ -16,9 +16,10 @@ export default class HairDye{
               options: {
                 wheelLightness: true,
                 wheelAngle: 0,
-                wheelDirection: "anticlockwise"
+                wheelDirection: "anticlockwise",
+
               } 
-            },
+            }
            
             ]    
         });  
