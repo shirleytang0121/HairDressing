@@ -84,6 +84,9 @@ export default function renderGamePage(){
     hairdyeimg.setAttribute('src','./src/image/tools/hair-dye.png')
     hairdyeimg.classList.add('tools');
     hairdyebtn.appendChild(hairdyeimg);
+    // const dyediv = document.createElement('div');
+    // dyediv.classList.add('dyediv');
+    // dyediv.appendChild(hairdyebtn);
 
     const combbtn = document.createElement('button');
     combbtn.classList.add('comb');
@@ -104,9 +107,9 @@ export default function renderGamePage(){
     rightbtns.appendChild(curlingIronbtn);
     rightbtns.appendChild(straightenerbtn);
     rightbtns.appendChild(hairdryerbtn);
-    rightbtns.appendChild(hairdyebtn);
     rightbtns.appendChild(combbtn);
     rightbtns.appendChild(bangsbtn);
+    rightbtns.appendChild(hairdyebtn);
 
 
     const scissors = new Scissors();
