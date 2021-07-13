@@ -9,7 +9,7 @@ import HairDye from '../tools/hairDye.js'
 
 
 
-export default function renderGamePage(gender){
+export default function renderGamePage(){
     //delete all element
     const salon = document.querySelector('.salon');
     salon.remove();
@@ -27,7 +27,6 @@ export default function renderGamePage(gender){
     rightdiv.remove();
 
 
-    const mygender = gender;
     const mainPage = document.querySelector(".main-page");
 
     const leftbtns = document.createElement('div');
@@ -49,7 +48,7 @@ export default function renderGamePage(gender){
     middiv.appendChild(mirror);
     middiv.appendChild(chardiv);
     
-    const character =new Character();
+    const character =new Character('F');
 
     const scissorsbtn = document.createElement('button');
     scissorsbtn.classList.add('scissors');

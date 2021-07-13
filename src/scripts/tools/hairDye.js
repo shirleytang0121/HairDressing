@@ -16,34 +16,25 @@ export default class HairDye{
         colors.setAttribute('id','colorWheel');
         this.dye_btn.appendChild(colors);
         console.log(colors);
-    var colorWheel = new iro.ColorPicker("#colorWheel", {
+        var colorWheel = new iro.ColorPicker("#colorWheel", {
 
-        layout: [
-        { 
-        component: iro.ui.Wheel,
-        options: {
-            wheelLightness: true,
-            wheelAngle: 0,
-            wheelDirection: "anticlockwise"
-        } 
-        },
-        // {
-        // component: iro.ui.Box,
-        // options: {
-        //     // see below
-        // }
-        // },
-        // {
-        // component: iro.ui.Slider,
-        // options: {
-        //     sliderType: 'hue' ,
-        //     sliderShape: 'circle',
-        //     activeIndex: 2
-        // }
-        // }
+            layout: [
+            { 
+            component: iro.ui.Wheel,
+            options: {
+                wheelLightness: true,
+                wheelAngle: 0,
+                wheelDirection: "anticlockwise"
+            } 
+            },
+        
         ]
     
     });
+
+    const color = document.createElement('input')
+    color.setAttribute('type','text')
+    
 
         }
 

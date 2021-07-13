@@ -1,4 +1,5 @@
 import renderGamePage from "./gamePage.js"
+import renderNewGamePage from './secondPage'
 
 export default function renderIntroPage(){
     const gender = '';
@@ -17,7 +18,7 @@ export default function renderIntroPage(){
     const startbtnM = document.createElement('button');
     startbtnM.innerHTML='HE'
     startbtnM.classList.add('genderbtn')
-    startbtnM.addEventListener('click',renderGamePage);
+    startbtnM.addEventListener('click',renderNewGamePage);
 
     const leftdiv = document.createElement('div');
     leftdiv.classList.add('leftdiv');
