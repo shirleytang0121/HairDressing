@@ -6,6 +6,7 @@ import Straightener from '../tools/straightener.js'
 import Comb from '../tools/comb.js'
 import Bangs from '../tools/bangs.js'
 import HairDye from '../tools/hairDye.js'
+import iro from "@jaames/iro";
 
 
 
@@ -102,6 +103,12 @@ export default function renderGamePage(){
     bangsimg.classList.add('tools');
     bangsbtn.appendChild(bangsimg);
 
+    const colordiv = document.createElement('div');
+    colordiv.classList.add('wheel');
+    colordiv.style.display = 'none';
+    colordiv.setAttribute('id','colorWheel');
+
+
 
     rightbtns.appendChild(scissorsbtn);
     rightbtns.appendChild(curlingIronbtn);
@@ -110,6 +117,7 @@ export default function renderGamePage(){
     rightbtns.appendChild(combbtn);
     rightbtns.appendChild(bangsbtn);
     rightbtns.appendChild(hairdyebtn);
+    rightbtns.appendChild(colordiv)
 
 
     const scissors = new Scissors();
