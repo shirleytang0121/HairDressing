@@ -21,12 +21,18 @@ export default class Scissors{
                 this.hair_obj.id ="long-cut-end"
                 break;
             case 'median':
+                this.hair_obj.src = "/src/image/hairstyle/long/long-cut-end.png";
+                this.hair_obj.id ="long-cut-end"
                 break;
             case 'curling-long':
                 this.hair_obj.src = "/src/image/hairstyle/curling/curling-long-cut.png";
                 this.hair_obj.id ="curling-long-cut"
                 break;
             case 'curling-long-cut':
+                this.hair_obj.src = "/src/image/hairstyle/curling/curling-long-cut-end.png";
+                this.hair_obj.id ="curling-long-cut-end"
+                break;
+            case 'curling-median':
                 this.hair_obj.src = "/src/image/hairstyle/curling/curling-long-cut-end.png";
                 this.hair_obj.id ="curling-long-cut-end"
                 break;
