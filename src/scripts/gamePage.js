@@ -22,7 +22,9 @@ import Comb from './comb.js'
 //   <button class="comb"><img src="src/image/tools/comb.png" class="tools" ></button>
 // </div> -->
 
-export default function renderGamePage(){
+export default function renderGamePage(gender){
+    const mygender = gender;
+    const mainPage = document.querySelector(".main-page");
     // const character =new Character();
     // const scissors = new Scissors();
     // const curlingIron = new CurlingIron();

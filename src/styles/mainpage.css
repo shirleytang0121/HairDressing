@@ -1,26 +1,8 @@
 .main-page{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.right-buttons{
-    display: flex;
-    flex-direction: column;
+body{
+    background-color: rgb(145, 175, 231);
 }
-
-img.bald {
-    position: relative;
-    margin-left:auto;
-    margin-right: auto;
-    margin-top: 100px;
-    width: 360px;
-    height: auto;
-}
-
-.mirror{
-    position: absolute;
-    width: 390px;
-    height: auto;
-    margin-left: -28px;
-}
-
