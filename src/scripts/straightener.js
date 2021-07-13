@@ -2,10 +2,10 @@ export default class Straightener{
     constructor(){
         this.straightener_btn = document.querySelector('.straightener')
         this.hair_obj = document.querySelector(".hair-style");
-        this.straightener_btn.addEventListener('click',this.handleCurlingIron.bind(this))
+        this.straightener_btn.addEventListener('click',this.handleStraigtener.bind(this))
     }
     
-    handleCurlingIron=function(e){
+    handleStraigtener=function(e){
         e.preventDefault();
         
         if(this.hair_obj.id === 'initial' || this.hair_obj.id==='long' ||this.hair_obj.id === 'curling-long'){
