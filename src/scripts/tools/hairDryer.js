@@ -1,8 +1,13 @@
 export default class HairDryer{
     constructor(){
         this.dryer_btn = document.querySelector(".hair-dryer");
-        this.hair_obj = document.querySelector(".hair-style");
+        if (document.querySelector(".hair-style")=== null){
+           this.hair_obj= document.querySelector(".man-style");
+         }else{
+            this.hair_obj= document.querySelector(".hair-style");
+         }
         this.dryer_btn.addEventListener('click',this.handleDryer.bind(this))
+        console.log(this.hair_obj);
     }
 
     handleDryer(e){
