@@ -14,7 +14,7 @@ export default class Character{
         mainCharacter.appendChild(initialStyle);
 
         const initialBangs= document.createElement('img')
-        initialBangs.setAttribute("src","/src/image/bangs-1.png");
+        initialBangs.setAttribute("src","/src/image/bangs/bangs-1.png");
         initialBangs.classList.add('bang-style');
         initialBangs.setAttribute("id","initial-bangs");
         mainCharacter.appendChild(initialBangs);

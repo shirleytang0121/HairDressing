@@ -1,4 +1,4 @@
-import renderIntroPage from './scripts/introPage.js'
+import renderIntroPage from './scripts/pages/introPage.js'
 
 
 document.addEventListener("DOMContentLoaded",()=>{

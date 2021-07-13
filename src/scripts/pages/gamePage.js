@@ -1,9 +1,10 @@
-import Character from './character.js'
-import Scissors from './scissors'
-import CurlingIron from './curlingIron.js'
-import HairDryer from './hairDryer.js'
-import Straightener from './straightener.js'
-import Comb from './comb.js'
+import Character from '../character.js'
+import Scissors from '../tools/scissors'
+import CurlingIron from '../tools/curlingIron.js'
+import HairDryer from '../tools/hairDryer.js'
+import Straightener from '../tools/straightener.js'
+import Comb from '../tools/comb.js'
+import Bangs from '../tools/bangs.js'
 
 
 
@@ -73,23 +74,39 @@ export default function renderGamePage(gender){
     const straightenerbtn = document.createElement('button');
     straightenerbtn.classList.add('straightener');
     const straightenerimg = document.createElement('img');
-    straightenerimg.setAttribute('src','./src/image/tools/straightener.png')
+    straightenerimg.setAttribute('src','./src/image/tools/straightener.png');
     straightenerimg.classList.add('tools');
     straightenerbtn.appendChild(straightenerimg);
+
+    const hairdyebtn =document.createElement('button');
+    hairdyebtn.classList.add('hair-dye');
+    const hairdyeimg =document.createElement('img');
+    hairdyeimg.setAttribute('src','./src/image/tools/hair-dye.png')
+    hairdyeimg.classList.add('tools');
+    hairdyebtn.appendChild(hairdyeimg);
 
     const combbtn = document.createElement('button');
     combbtn.classList.add('comb');
     const combimg = document.createElement('img')
-    combimg.setAttribute('src','./src/image/tools/comb.png')
+    combimg.setAttribute('src','./src/image/tools/comb.png');
     combimg.classList.add('tools');
     combbtn.appendChild(combimg);
+
+    const bangsbtn = document.createElement('button');
+    bangsbtn.classList.add('bangs');
+    const bangsimg = document.createElement('img')
+    bangsimg.setAttribute('src','./src/image/tools/spray.png');
+    bangsimg.classList.add('tools');
+    bangsbtn.appendChild(bangsimg);
 
 
     rightbtns.appendChild(scissorsbtn);
     rightbtns.appendChild(curlingIronbtn);
     rightbtns.appendChild(straightenerbtn);
     rightbtns.appendChild(hairdryerbtn);
+    rightbtns.appendChild(hairdyebtn);
     rightbtns.appendChild(combbtn);
+    rightbtns.appendChild(bangsbtn);
 
 
     const scissors = new Scissors();
@@ -97,6 +114,7 @@ export default function renderGamePage(gender){
     const hairdryer = new HairDryer();
     const straightener = new Straightener();
     const comb =new Comb();
+    const bangs=new Bangs();
 
     console.log("this is game page")
 

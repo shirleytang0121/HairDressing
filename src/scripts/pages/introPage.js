@@ -1,4 +1,4 @@
-import renderGamePage from "./gamePage"
+import renderGamePage from "./gamePage.js"
 
 export default function renderIntroPage(){
     const gender = '';
