@@ -7,26 +7,25 @@ export default class HairDryer{
 
     handleDryer(e){
         e.preventDefault();
-        switch(this.hair_obj.id ){
-        case 'curling-long':
+      
+        if( this.hair_obj.id === 'curling-long'){
             this.hair_obj.src="/src/image/hairstyle/long/long.png";
             this.hair_obj.id ="long";
-            break;
-        case 'straight-long':
+         }else if(this.hair_obj.id==='straight-long'){
             this.hair_obj.src="/src/image/hairstyle/initial/initial.png";
             this.hair_obj.id ="initial";
-            break;
-        case 'straight-median':
+         }else if( this.hair_obj.id === 'straight-median'){
             this.hair_obj.src="/src/image/hairstyle/straight/straight-median-blow.png";
             this.hair_obj.id ="blow";
-            break;
-        case 'blow':
-            this.hair_obj.src="/src/image/hairstyle/straight/straight-median.png";
-            this.hair_obj.id ="straight-median";
-            break;
-        default:
-            alert("it's perfect");
+         }else if(this.hair_obj.id === 'curling-median'){
+            this.hair_obj.src="/src/image/hairstyle/long/median.png";
+            this.hair_obj.id ="median";
+         }else if(this.hair_obj.id === 'curling-short'){
+            this.hair_obj.src="/src/image/hairstyle/long/long-short.png";
+            this.hair_obj.id ="short";
+         }
         
-        }
+        
+      
     }
 }
