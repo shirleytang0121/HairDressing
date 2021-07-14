@@ -7,6 +7,7 @@ import Comb from '../tools/comb.js'
 import Bangs from '../tools/bangs.js'
 import HairDye from '../tools/hairDye.js'
 import resetPage from '../controller/reset.js'
+import finishPage from '../controller/finish.js'
 
 
 
@@ -143,7 +144,7 @@ export default function renderGamePage(){
     leftbtns.appendChild(finishbtn);
 
     resetbtn.addEventListener('click',resetPage);
-    // finishbtn.addEventListener();
+    finishbtn.addEventListener('click',finishPage);
 
 
 }
