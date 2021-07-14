@@ -4,12 +4,15 @@
 .right-buttons{
     display: flex;
     flex-direction: column;
+    
 }
 
 .left-buttons{
     display: flex;
     flex-direction: column;
     margin-top: 200px;
+    margin-left: -20px;
+    width: 70px;
 }
 
 .finish{
@@ -47,6 +50,9 @@ img.bald {
     margin-top: 270px;
     margin-left: -50px;
 }
+
+
+
 /*!********************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/hairstyle.css ***!
   \********************************************************************************************************/
