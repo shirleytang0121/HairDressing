@@ -26,6 +26,8 @@ export default function renderNewGamePage(){
 
     const mainPage = document.querySelector(".main-page");
 
+    const leftside = document.createElement('div');
+    leftside.classList.add('leftside');
     const leftbtns = document.createElement('div');
     leftbtns.classList.add('left-buttons')
     const middiv = document.createElement('div');
@@ -33,7 +35,8 @@ export default function renderNewGamePage(){
     const rightbtns = document.createElement('div');
     rightbtns.classList.add('right-buttons')
     
-    mainPage.appendChild(leftbtns);
+    mainPage.appendChild(leftside);
+    leftside.appendChild(leftbtns);
     mainPage.appendChild(middiv);
     mainPage.appendChild(rightbtns);
 

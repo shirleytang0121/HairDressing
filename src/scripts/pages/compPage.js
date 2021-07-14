@@ -8,10 +8,17 @@ export default function renderCompetitionPage(){
     const leftside = document.querySelector('.leftside');
     const leftdiv = document.querySelector('.left-buttons');
     leftdiv.remove();
+    
+    const messagediv = document.createElement('div');
+    messagediv.classList.add('message');
+    const startbtn = document.createElement('btn');
+    startbtn.classList.add('start');
+    
+
     const imgdiv = document.createElement('div')
     imgdiv.classList.add('imgdiv');
     leftside.appendChild(imgdiv);
-
+    
     const rightdiv = document.querySelector('.right-buttons');
     const hairdye = document.querySelector('.wheel');
     hairdye.remove();
