@@ -15,7 +15,7 @@ export default class Character{
         if(gender==='F'){
             initialStyle.setAttribute("src","./src/image/hairstyle/initial/initial.png");
             initialStyle.classList.add('hair-style');
-            initialStyle.setAttribute("id","initial")
+            initialStyle.setAttribute("id","initial");
         }else{
             initialStyle.setAttribute("src","./src/image/manstyle/initial.png");
             initialStyle.classList.add('man-style');

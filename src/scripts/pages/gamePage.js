@@ -6,7 +6,7 @@ import Straightener from '../tools/straightener.js'
 import Comb from '../tools/comb.js'
 import Bangs from '../tools/bangs.js'
 import HairDye from '../tools/hairDye.js'
-import iro from "@jaames/iro";
+import resetPage from '../controller/reset.js'
 
 
 
@@ -129,6 +129,21 @@ export default function renderGamePage(){
     const hairdye= new HairDye();
 
     console.log("this is game page")
+
+
+    const resetbtn = document.createElement('button');
+    resetbtn.classList.add('reset');
+    resetbtn.innerHTML = 'RESET';
+
+    const finishbtn = document.createElement('button');
+    finishbtn.classList.add('finish');
+    finishbtn.innerHTML= 'FINISH';
+
+    leftbtns.appendChild(resetbtn);
+    leftbtns.appendChild(finishbtn);
+
+    resetbtn.addEventListener('click',resetPage);
+    // finishbtn.addEventListener();
 
 
 }

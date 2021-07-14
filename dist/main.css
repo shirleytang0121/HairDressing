@@ -6,6 +6,16 @@
     flex-direction: column;
 }
 
+.left-buttons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+.finish{
+    margin-top: 50px;
+}
+
 img.bald {
     position: relative;
     margin-left:auto;
