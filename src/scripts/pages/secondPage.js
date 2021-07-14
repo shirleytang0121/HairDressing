@@ -80,15 +80,24 @@ export default function renderNewGamePage(){
     colordiv.style.display = 'none';
     colordiv.setAttribute('id','colorWheel');
 
+    const bangsbtn = document.createElement('button');
+    bangsbtn.classList.add('bangs');
+    const bangsimg = document.createElement('img')
+    bangsimg.setAttribute('src','./src/image/tools/spray.png');
+    bangsimg.classList.add('tools');
+    bangsbtn.appendChild(bangsimg);
+
 
     rightbtns.appendChild(scissorsbtn);
     rightbtns.appendChild(clipperbtn);
     rightbtns.appendChild(hairdryerbtn);
+    rightbtns.appendChild(bangsbtn);
     rightbtns.appendChild(hairdyebtn);
     rightbtns.appendChild(colordiv)
 
     const scissors = new Scissors();
     const hairdryer = new HairDryer();
     const hairClipper = new HairClipper();
+    
     
 }

@@ -16,6 +16,10 @@ export default class HairClipper{
                 this.hair_obj.src = "./src/image/manstyle/short/short-last.png";
                 this.hair_obj.id = "man-short-last";
                 break;
+            case 'man-short-3':
+                this.hair_obj.src = "./src/image/manstyle/short/short-last.png";
+                this.hair_obj.id = "man-short-last";
+                break;
             default:
                 alert('No more hair');
         }
