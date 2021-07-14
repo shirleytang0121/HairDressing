@@ -4,6 +4,9 @@ import HairDryer from '../tools/hairDryer.js'
 import HairDye from '../tools/hairDye.js'
 import Bangs from '../tools/bangs.js'
 import HairClipper from '../tools/hairClipper.js'
+import resetSecondPage from '../controller/secondReset.js'
+import finishPage from '../controller/finish.js'
+
 
 export default function renderNewGamePage(){
     const salon = document.querySelector('.salon');
@@ -26,6 +29,7 @@ export default function renderNewGamePage(){
     const leftbtns = document.createElement('div');
     leftbtns.classList.add('left-buttons')
     const middiv = document.createElement('div');
+    middiv.classList.add('middiv');
     const rightbtns = document.createElement('div');
     rightbtns.classList.add('right-buttons')
     
@@ -101,6 +105,20 @@ export default function renderNewGamePage(){
     const hairClipper = new HairClipper();
     const bangs= new Bangs();
     const hairdye = new  HairDye();
+
+    const resetbtn = document.createElement('button');
+    resetbtn.classList.add('reset');
+    resetbtn.innerHTML = 'RESET';
+
+    const finishbtn = document.createElement('button');
+    finishbtn.classList.add('finish');
+    finishbtn.innerHTML= 'FINISH';
+
+    leftbtns.appendChild(resetbtn);
+    leftbtns.appendChild(finishbtn);
+
+    resetbtn.addEventListener('click',resetSecondPage);
+    finishbtn.addEventListener('click',finishPage);
     
     
 }

@@ -1,4 +1,3 @@
-import Character from "../character";
 
 export default function resetPage(){
     const hair = document.querySelector('.hair-style');
