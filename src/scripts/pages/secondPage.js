@@ -2,6 +2,7 @@ import Character from '../character.js'
 import Scissors from '../tools/scissors'
 import HairDryer from '../tools/hairDryer.js'
 import HairDye from '../tools/hairDye.js'
+import Bangs from '../tools/bangs.js'
 import HairClipper from '../tools/hairClipper.js'
 
 export default function renderNewGamePage(){
@@ -98,6 +99,7 @@ export default function renderNewGamePage(){
     const scissors = new Scissors();
     const hairdryer = new HairDryer();
     const hairClipper = new HairClipper();
+    const bangs= new Bangs();
     
     
 }

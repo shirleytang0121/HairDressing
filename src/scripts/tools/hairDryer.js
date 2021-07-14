@@ -36,9 +36,12 @@ export default class HairDryer{
          }else if(this.hair_obj.id === 'man-long-2'){
             this.hair_obj.src="./src/image/manstyle/long/long-1.png";
             this.hair_obj.id ="man-long-1";
-         }else if(this.hair_obj.id === 'man-short-1'){
+         }else if(this.hair_obj.id === 'man-short-1'||this.hair_obj.id === 'man-short-2'||this.hair_obj.id === 'man-short-3'){
             this.hair_obj.src="./src/image/manstyle/short/short-4.png";
             this.hair_obj.id ="man-short-4";
+         }else if(this.hair_obj.id === 'man-short-4'){
+            this.hair_obj.src="./src/image/manstyle/short/short-1.png";
+            this.hair_obj.id ="man-short-1";
          }
         else{
            alert('it is perfect');
