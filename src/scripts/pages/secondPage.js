@@ -100,6 +100,7 @@ export default function renderNewGamePage(){
     const hairdryer = new HairDryer();
     const hairClipper = new HairClipper();
     const bangs= new Bangs();
+    const hairdye = new  HairDye();
     
     
 }

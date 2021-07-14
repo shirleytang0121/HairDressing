@@ -5,8 +5,13 @@ import { hexToCSSFilter } from 'hex-to-css-filter';
 export default class HairDye{
     constructor(){
         this.dye_btn = document.querySelector(".hair-dye");
-        this.hair_obj = document.querySelector(".hair-style");
-        this.bangs_obj = document.querySelector(".bang-style")
+        if (document.querySelector(".hair-style")=== null){
+          this.hair_obj= document.querySelector(".man-style");
+          this.bangs_obj = this.hair_obj;
+        }else{
+           this.hair_obj= document.querySelector(".hair-style");
+           this.bangs_obj = document.querySelector(".bang-style");
+        }
         this.colordiv = document.querySelector(".wheel");
 
         this.colorWheel = new iro.ColorPicker("#colorWheel", {
