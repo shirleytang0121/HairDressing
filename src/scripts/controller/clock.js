@@ -1,7 +1,7 @@
 import timeoutPage from "./timeout";
 export default class Clock{
     constructor(){
-        this.counter = 5;
+        this.counter = 100;
         this.gameImg = document.querySelector('.gameImg');
         this.timediv = document.querySelector('.timediv');
         this.startbtn = document.querySelector('.start');

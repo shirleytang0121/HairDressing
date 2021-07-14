@@ -1,4 +1,6 @@
 import resetPage from "./reset";
+import checkIfSame from "./check";
+
 export default class GenerateImg{
     
     constructor(){
@@ -43,12 +45,20 @@ export default class GenerateImg{
 
     handleSubmit(e){
         e.preventDefault();
-        this.randIndex = Math.floor(Math.random()*20);
+        // this.randIndex = Math.floor(Math.random()*20);
+        this.randIndex = 1;
         this.imgShow.src = this.imgSrcArr[this.randIndex];
-        this.hair_obi = document.querySelector('.hair-style');
+        this.hair_obj = document.querySelector('.hair-style');
         this.bangs_obj = document.querySelector('.bang-style');
-        console.log(this.hair_obi);
-        console.log(this.bangs_obj);
+        // console.log(this.hair_obj);
+        // console.log(this.bangs_obj);
+        // console.log(this.hair_obj.style.filter);
+        this.userDesign = {
+            hair_style: this.hair_obj.id,
+            bangs_style: this.bangs_obj.id,
+            color: this.hair_obj.style.filter
+        }
+        checkIfSame(this.userDesign,this.randIndex);
         resetPage();
     }
 }
