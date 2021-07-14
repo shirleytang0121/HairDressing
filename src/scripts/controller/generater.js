@@ -26,17 +26,16 @@ export default class GenerateImg{
             "./src/image/competition-w/straight-2-purple.png"
             ];
 
-            this.leftdiv = document.querySelector('.leftside');
+            this.leftside = document.querySelector('.leftside');
             this.imgdiv = document.querySelector('.imgdiv');
             this.imgShow = document.createElement('img');
             this.imgShow.classList.add('gameImg');
+            this.imgShow.style.display = 'none';
             this.imgShow.src = this.imgSrcArr[this.randIndex];
             this.imgdiv.appendChild(this.imgShow);
 
-            this.submitbtn = document.createElement('button');
-            this.submitbtn.classList.add('submit');
-            this.submitbtn.innerHTML = 'SUBMIT'
-            this.leftdiv.appendChild(this.submitbtn);
+            this.submitbtn = document.querySelector('.submit');
+            
             
             this.submitbtn.addEventListener('click', this.handleSubmit.bind(this));
     }

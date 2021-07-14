@@ -2,6 +2,7 @@ import renderGamePage from "./gamePage";
 import GenerateImg from "../controller/generater";
 import LimitDye from "../tools/limitDye";
 import Clock from "../controller/clock";
+import resetPage from "../controller/reset";
 
 export default function renderCompetitionPage(){
     renderGamePage();
@@ -26,6 +27,19 @@ export default function renderCompetitionPage(){
     const imgdiv = document.createElement('div')
     imgdiv.classList.add('imgdiv');
     leftside.appendChild(imgdiv);
+
+    const submitbtn = document.createElement('button');
+    submitbtn.classList.add('submit');
+    submitbtn.innerHTML = 'SUBMIT';
+    leftside.appendChild(submitbtn);
+
+    const resetbtn = document.createElement('button');
+    resetbtn.classList.add('reset');
+    resetbtn.style.marginTop = '10px';
+    resetbtn.innerHTML = 'RESET';
+    leftside.appendChild(resetbtn);
+
+    resetbtn.addEventListener('click',resetPage);
     
     const rightdiv = document.querySelector('.right-buttons');
     const hairdye = document.querySelector('.wheel');

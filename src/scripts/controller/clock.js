@@ -1,13 +1,11 @@
 export default class Clock{
     constructor(){
         this.counter = 30;
+        this.gameImg = document.querySelector('.gameImg');
         this.timediv = document.querySelector('.timediv');
-        this.startbtn = document.querySelector('.start')
+        this.startbtn = document.querySelector('.start');
         this.printTime()
-        this.startbtn.addEventListener('click', () =>{
-            this.startbtn.style.display = 'none';
-            setInterval(this._tick.bind(this),1000)}
-            )
+        this.startbtn.addEventListener('click', this.handleStart.bind(this));
     }
 
     printTime(){
@@ -26,8 +24,15 @@ export default class Clock{
             this.printTime();
          }
          if (this.counter === 0) {
+             
             clearInterval(counter);
-            alert('sorry, out of time');
          }   
+    }
+
+
+    handleStart(){
+        this.gameImg.style.display = 'block';
+        this.startbtn.style.display = 'none';
+        setInterval(this._tick.bind(this),1000);
     }
 }
