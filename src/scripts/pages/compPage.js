@@ -5,14 +5,18 @@ import LimitDye from "../tools/limitDye";
 export default function renderCompetitionPage(){
     renderGamePage();
 
+    const maindiv = document.querySelector('.main-page')
     const leftside = document.querySelector('.leftside');
     const leftdiv = document.querySelector('.left-buttons');
     leftdiv.remove();
     
     const messagediv = document.createElement('div');
     messagediv.classList.add('message');
-    const startbtn = document.createElement('btn');
+    const startbtn = document.createElement('button');
     startbtn.classList.add('start');
+    startbtn.innerHTML = 'START'
+    maindiv.appendChild(messagediv);
+    messagediv.appendChild(startbtn);
     
 
     const imgdiv = document.createElement('div')

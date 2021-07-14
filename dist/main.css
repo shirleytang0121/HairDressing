@@ -68,6 +68,22 @@ img.bald {
 }
 
 
+.message{
+    position: absolute;
+    margin-top: 280px;
+   
+}
+
+.start{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    font-size: 40px;
+    background-color: darkorange;
+    color: white;
+}
+
+
 
 /*!********************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/hairstyle.css ***!

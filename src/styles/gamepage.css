@@ -65,3 +65,19 @@ img.bald {
 }
 
 
+.message{
+    position: absolute;
+    margin-top: 280px;
+   
+}
+
+.start{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    font-size: 40px;
+    background-color: darkorange;
+    color: white;
+}
+
+
