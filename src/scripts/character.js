@@ -26,7 +26,7 @@ export default class Character{
 
         const initialBangs= document.createElement('img')
         if(gender==='F'){
-            initialBangs.setAttribute("src","/src/image/bangs/bangs-1.png");
+            initialBangs.setAttribute("src","./src/image/bangs/bangs-1.png");
         }
         initialBangs.classList.add('bang-style');
         initialBangs.setAttribute("id","initial-bangs");

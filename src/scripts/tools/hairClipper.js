@@ -9,11 +9,11 @@ export default class HairClipper{
         e.preventDefault();
         switch(this.hair_obj.id){
             case 'man-short-1':
-                this.hair_obj.src = "/src/image/manstyle/short/short-last.png";
+                this.hair_obj.src = "./src/image/manstyle/short/short-last.png";
                 this.hair_obj.id = "man-short-last";
                 break;
             case 'man-short-2':
-                this.hair_obj.src = "/src/image/manstyle/short/short-last.png";
+                this.hair_obj.src = "./src/image/manstyle/short/short-last.png";
                 this.hair_obj.id = "man-short-last";
                 break;
             default:
@@ -22,3 +22,4 @@ export default class HairClipper{
     }
 
 }
+
