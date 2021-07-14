@@ -1,6 +1,7 @@
+import timeoutPage from "./timeout";
 export default class Clock{
     constructor(){
-        this.counter = 30;
+        this.counter = 5;
         this.gameImg = document.querySelector('.gameImg');
         this.timediv = document.querySelector('.timediv');
         this.startbtn = document.querySelector('.start');
@@ -24,8 +25,8 @@ export default class Clock{
             this.printTime();
          }
          if (this.counter === 0) {
-             
-            clearInterval(counter);
+            clearInterval(this.counter);
+            timeoutPage();
          }   
     }
 
