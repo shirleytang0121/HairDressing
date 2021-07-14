@@ -9,3 +9,13 @@
 #hair-clipper{
     width: 20px;
 }
+
+.colorSelector{
+    display: flex;
+    flex-direction: column;
+}
+.colorbtn{
+    width: 100px;
+    height: 30px;
+    
+}

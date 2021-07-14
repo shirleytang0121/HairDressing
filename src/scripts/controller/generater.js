@@ -26,7 +26,7 @@ export default class GenerateImg{
             "./src/image/competition-w/straight-2-purple.png"
             ];
 
-            this.leftdiv = document.querySelector('.left-buttons');
+            this.leftdiv = document.querySelector('.leftside');
             this.imgdiv = document.querySelector('.imgdiv');
             this.imgShow = document.createElement('img');
             this.imgShow.classList.add('gameImg');
@@ -46,6 +46,10 @@ export default class GenerateImg{
         e.preventDefault();
         this.randIndex = Math.floor(Math.random()*20);
         this.imgShow.src = this.imgSrcArr[this.randIndex];
+        this.hair_obi = document.querySelector('.hair-style');
+        this.bangs_obj = document.querySelector('.bang-style');
+        console.log(this.hair_obi);
+        console.log(this.bangs_obj);
         resetPage();
     }
 }

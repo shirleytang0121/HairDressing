@@ -12,7 +12,6 @@
     flex-direction: column;
     margin-top: 200px;
     margin-left: -20px;
-    width: 70px;
 }
 
 .finish{
@@ -49,6 +48,23 @@ img.bald {
     font-size: 40px;
     margin-top: 270px;
     margin-left: -50px;
+}
+
+
+.leftside{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.gameImg{
+    margin-top: 150px;
+    position: absolute;
+}
+
+.submit{
+  margin-top: 400px;
+  width: 100px;
 }
 
 
@@ -247,6 +263,16 @@ table {
 
 #hair-clipper{
     width: 20px;
+}
+
+.colorSelector{
+    display: flex;
+    flex-direction: column;
+}
+.colorbtn{
+    width: 100px;
+    height: 30px;
+    
 }
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!

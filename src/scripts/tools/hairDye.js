@@ -43,7 +43,7 @@ export default class HairDye{
 
     handleShow(e){
         e.preventDefault();
-        this.colordiv.style.display = 'block';
+        this.colordiv.style.display = 'flex';
        
     }
 

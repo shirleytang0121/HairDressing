@@ -9,7 +9,6 @@
     flex-direction: column;
     margin-top: 200px;
     margin-left: -20px;
-    width: 70px;
 }
 
 .finish{
@@ -46,6 +45,23 @@ img.bald {
     font-size: 40px;
     margin-top: 270px;
     margin-left: -50px;
+}
+
+
+.leftside{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.gameImg{
+    margin-top: 150px;
+    position: absolute;
+}
+
+.submit{
+  margin-top: 400px;
+  width: 100px;
 }
 
 
