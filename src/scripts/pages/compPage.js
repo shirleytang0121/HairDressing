@@ -1,6 +1,7 @@
 import renderGamePage from "./gamePage";
 import GenerateImg from "../controller/generater";
 import LimitDye from "../tools/limitDye";
+import Clock from "../controller/clock";
 
 export default function renderCompetitionPage(){
     renderGamePage();
@@ -17,7 +18,10 @@ export default function renderCompetitionPage(){
     startbtn.innerHTML = 'START'
     maindiv.appendChild(messagediv);
     messagediv.appendChild(startbtn);
-    
+
+    const timediv = document.createElement('div');
+    timediv.classList.add('timediv');
+    maindiv.appendChild(timediv);
 
     const imgdiv = document.createElement('div')
     imgdiv.classList.add('imgdiv');
@@ -34,4 +38,5 @@ export default function renderCompetitionPage(){
 
     const genImg = new GenerateImg();
     const limitDye = new LimitDye();
+    const clock = new Clock();
 }

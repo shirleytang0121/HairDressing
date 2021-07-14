@@ -83,6 +83,20 @@ img.bald {
     color: white;
 }
 
+.timediv{
+    position: absolute;
+    margin-left: 550px;
+    margin-top: 250px;
+    
+}
+
+.time{
+    font-size: 50px;
+    background-color: rgb(18, 91, 116);
+    border-radius: 10px;
+    padding: 10px;
+}
+
 
 
 /*!********************************************************************************************************!*\
