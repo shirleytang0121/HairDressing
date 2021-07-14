@@ -9,6 +9,9 @@ export default function finishPage(){
     const rightbtns = document.querySelector('.right-buttons');
     rightbtns.remove()
 
+    const leftside = document.querySelector('.leftside');
+    leftside.remove();
+
     const mirror = document.querySelector('.mirror');
     mirror.style.marginLeft = '-200px';
 
