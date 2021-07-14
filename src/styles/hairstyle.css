@@ -51,6 +51,14 @@ img.bang-style{
     margin-top: 45px;  
 }
 
+#man-short-4{
+    position: absolute;
+    width: 295px;
+    height: auto;
+    margin-left: -340px;
+    margin-top: 45px;  
+}
+
 #man-short-last{
     position: absolute;
     width: 250px;
@@ -58,3 +66,4 @@ img.bang-style{
     margin-left: -316px;
     margin-top: 50px;
 }
+

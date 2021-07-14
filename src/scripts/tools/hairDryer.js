@@ -30,18 +30,15 @@ export default class HairDryer{
             this.hair_obj.id ="short";
          }else if (this.hair_obj.id === 'long-cut'||this.hair_obj.id === 'long-cut-end' ||this.hair_obj.id ==='curling-long-cut'||this.hair_obj.id ==='curling-long-cut-end'||this.hair_obj.id ==='straight-long-cut'||this.hair_obj.id ==='straight-long-cut-end'){
                alert('Please comb your hair first')
-         }else if(this.hair_obj.id === 'man-long-1' || this.hair_obj.id === 'man-long-3'){
+         }else if(this.hair_obj.id === 'man-long-1'){
             this.hair_obj.src="./src/image/manstyle/long/long-2.png";
             this.hair_obj.id ="man-long-2";
-         }else if(this.hair_obj.id === 'man-long-2' || this.hair_obj.id === 'man-long-3'){
+         }else if(this.hair_obj.id === 'man-long-2'){
             this.hair_obj.src="./src/image/manstyle/long/long-1.png";
             this.hair_obj.id ="man-long-1";
-         }else if(this.hair_obj.id === 'man-long-1' || this.hair_obj.id === 'man-long-2'){
-            this.hair_obj.src="./src/image/manstyle/long/long-3.png";
-            this.hair_obj.id ="man-long-3";
-         }else if(this.hair_obj.id === 'man-short-1' || this.hair_obj.id === 'man-short-4'){
-            this.hair_obj.src="./src/image/manstyle/long/long-5.png";
-            this.hair_obj.id ="man-long-5";
+         }else if(this.hair_obj.id === 'man-short-1'){
+            this.hair_obj.src="./src/image/manstyle/short/short-4.png";
+            this.hair_obj.id ="man-short-4";
          }
         else{
            alert('it is perfect');
