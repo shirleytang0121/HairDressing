@@ -1,3 +1,187 @@
+/*!*******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/gamepage.css ***!
+  \*******************************************************************************************************/
+.right-buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+img.bald {
+    position: relative;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 360px;
+    height: auto;
+}
+
+.mirror{
+    position: absolute;
+    width: 390px;
+    height: auto;
+    margin-left: -28px;
+}
+
+
+/*!********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/hairstyle.css ***!
+  \********************************************************************************************************/
+img.hair-style {
+    position: absolute;
+    
+}
+
+img.bang-style{
+    position: absolute;
+}
+
+.hair-style {
+    width: 370px;
+    height: auto;
+    margin-left: -380px;
+    margin-top: 48px;  
+}
+
+#initial-bangs{
+    width: 315px;
+    height: auto;
+    margin-left: -350px;
+    margin-top: 60px;  
+}
+
+#second-bangs{
+    width: 372px;
+    height: auto;
+    margin-left: -380px;
+    margin-top: 35px;  
+}
+
+#third-bangs{
+    width: 380px;
+    height: auto;
+    margin-left: -392px;
+    margin-top: 30px;  
+}
+
+.man-style{
+    position: absolute;
+    width: 230px;
+    height: auto;
+    margin-left: -308px;
+    margin-top: 90px;  
+}
+
+#man-short-1{
+    position: absolute;
+    width: 295px;
+    height: auto;
+    margin-left: -340px;
+    margin-top: 45px;  
+}
+
+#man-short-last{
+    position: absolute;
+    width: 250px;
+    height: auto;
+    margin-left: -316px;
+    margin-top: 50px;
+}
+/*!********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/intropage.css ***!
+  \********************************************************************************************************/
+.salon{
+    width: 600px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.genderbtn{
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: 300px;
+    font-size: 30px;
+    background-color: rgb(62, 62, 114);
+    color:white;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.genderbtn:hover{
+    background-color: rgb(132, 137, 192);
+}
+/*!*******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/mainpage.css ***!
+  \*******************************************************************************************************/
+.main-page{
+    display: flex;
+    justify-content: space-around;
+}
+
+body{
+    background-color: rgb(145, 175, 231);
+}
+/*!****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/reset.css ***!
+  \****************************************************************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*!****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/tools.css ***!
+  \****************************************************************************************************/
+.tools{
+    width: 60px;
+}
+
+.wheel{
+    margin-top: 20px;
+}
+
+#hair-clipper{
+    width: 20px;
+}
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/

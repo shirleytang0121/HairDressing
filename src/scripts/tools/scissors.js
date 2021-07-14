@@ -1,7 +1,11 @@
 export default class Scissors{
     constructor(){
         this.scissors_btn = document.querySelector(".scissors");
-        this.hair_obj = document.querySelector(".hair-style");
+        if (document.querySelector(".hair-style")=== null){
+            this.hair_obj= document.querySelector(".man-style");
+          }else{
+             this.hair_obj= document.querySelector(".hair-style");
+          }
         this.scissors_btn.addEventListener('click',this.handleScissors.bind(this));
     }
 
@@ -48,10 +52,27 @@ export default class Scissors{
                 this.hair_obj.src = "/src/image/hairstyle/straight/straight-long-cut-end.png";
                 this.hair_obj.id ="straight-long-cut-end"
                 break;
-                case 'blow':
-                    this.hair_obj.src = "/src/image/hairstyle/straight/straight-long-cut-end.png";
-                    this.hair_obj.id ="straight-long-cut-end"
-                    break;
+            case 'blow':
+                this.hair_obj.src = "/src/image/hairstyle/straight/straight-long-cut-end.png";
+                this.hair_obj.id ="straight-long-cut-end"
+                break;
+            case 'man-initial':
+                this.hair_obj.src = "/src/image/manstyle/long/long-1.png";
+                this.hair_obj.id = "man-long-1";
+                break;
+            case 'man-long-1':
+                this.hair_obj.src = "/src/image/manstyle/short/short-1.png";
+                this.hair_obj.id = "man-short-1";
+                break;
+            case 'man-long-2':
+                this.hair_obj.src = "/src/image/manstyle/short/short-1.png";
+                this.hair_obj.id = "man-short-1";
+                break;
+            case 'man-long-3':
+                this.hair_obj.src = "/src/image/manstyle/short/short-1.png";
+                this.hair_obj.id = "man-short-1";
+                break;
+           
             default:
                 alert('can not cut');
 

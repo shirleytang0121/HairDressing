@@ -2,6 +2,8 @@ import Character from '../character.js'
 import Scissors from '../tools/scissors'
 import HairDryer from '../tools/hairDryer.js'
 import HairDye from '../tools/hairDye.js'
+import HairClipper from '../tools/hairClipper.js'
+
 export default function renderNewGamePage(){
     const salon = document.querySelector('.salon');
     salon.remove();
@@ -48,6 +50,14 @@ export default function renderNewGamePage(){
     scissorsimg.classList.add('tools');
     scissorsbtn.appendChild(scissorsimg);
 
+    const clipperbtn = document.createElement('button');
+    clipperbtn.classList.add('clipper');
+    const clipperimg = document.createElement('img');
+    clipperimg.setAttribute('src','./src/image/tools/hair-clipper.png');
+    clipperimg.classList.add('tools');
+    clipperimg.setAttribute('id','hair-clipper');
+    clipperbtn.appendChild(clipperimg);
+
     const hairdryerbtn =document.createElement('button');
     hairdryerbtn.classList.add('hair-dryer');
     const hairdryerimg =document.createElement('img');
@@ -72,11 +82,13 @@ export default function renderNewGamePage(){
 
 
     rightbtns.appendChild(scissorsbtn);
+    rightbtns.appendChild(clipperbtn);
     rightbtns.appendChild(hairdryerbtn);
     rightbtns.appendChild(hairdyebtn);
     rightbtns.appendChild(colordiv)
 
-
+    const scissors = new Scissors();
     const hairdryer = new HairDryer();
+    const hairClipper = new HairClipper();
     
 }

@@ -30,7 +30,11 @@ export default class HairDryer{
             this.hair_obj.id ="short";
          }else if (this.hair_obj.id === 'long-cut'||this.hair_obj.id === 'long-cut-end' ||this.hair_obj.id ==='curling-long-cut'||this.hair_obj.id ==='curling-long-cut-end'||this.hair_obj.id ==='straight-long-cut'||this.hair_obj.id ==='straight-long-cut-end'){
             alert('Please comb your hair first')
-        }else{
+        }else if(this.hair_obj.id === 'man-long-1' || this.hair_obj.id === 'man-long-3'){
+         this.hair_obj.src="/src/image/manstyle/long/long-2.png";
+         this.hair_obj.id ="man-long-2";
+        }
+        else{
            alert('it is perfect');
         }
         
