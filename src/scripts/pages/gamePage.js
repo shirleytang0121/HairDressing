@@ -34,6 +34,7 @@ export default function renderGamePage(){
     const leftbtns = document.createElement('div');
     leftbtns.classList.add('left-buttons')
     const middiv = document.createElement('div');
+    middiv.classList.add('middiv');
     const rightbtns = document.createElement('div');
     rightbtns.classList.add('right-buttons')
     

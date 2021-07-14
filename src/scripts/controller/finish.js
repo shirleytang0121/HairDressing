@@ -1,6 +1,7 @@
 export default function finishPage(){
+   
     const mainCharacter = document.querySelector('.main-character');
-    mainCharacter.remove();
+    mainCharacter.style.display="none";
   
     const leftbtns = document.querySelector('.left-buttons');
     leftbtns.remove();
@@ -11,7 +12,35 @@ export default function finishPage(){
     const mirror = document.querySelector('.mirror');
     mirror.style.marginLeft = '-200px';
 
-   
+    
+    const hair_obj = document.querySelector('.hair-style')
+    let score = 0;
+    const low_score=["straight-long-cut","long-cut","long-cut-end","curling-long-cut","curling-long-cut-end","straight-long-cut-end","man-bald"];
+    const high_score=["straight-long","straight-short","blow","curling-long","curling-median","median","short","man-long-2","man-short-4","man-short-2"];
+
+    if (low_score.includes(hair_obj.id)){
+        score = Math.random()*21+20;
+
+    }else if(high_score.includes(hair_obj.id)){
+        score = Math.random()*21+60;
+    }else{
+        score = Math.random()*21+40;
+    }
+
+    if(hair_obj.style.filter !== ""){
+        score += Math.random()*21;
+    }
+    score = Math.floor(score);
+    console.log(score);
+    const middiv = document.querySelector('.middiv')
+    const scorediv = document.createElement('div');
+    scorediv.classList.add('show-score');
+    const myscore = document.createElement('div');
+    myscore.classList.add('score');
+    scorediv.innerHTML = "Your score is"
+    myscore.innerHTML =score;
+    middiv.appendChild(scorediv);
+    middiv.appendChild(myscore);
     
     
 }

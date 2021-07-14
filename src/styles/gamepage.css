@@ -29,3 +29,18 @@ img.bald {
     margin-left: -28px;
 }
 
+
+.show-score{
+ position: absolute;
+ font-size: 40px;
+ margin-top: 200px;
+ margin-right: 500px;
+ margin-left: -150px;
+}
+
+.score{
+    position: absolute;
+    font-size: 40px;
+    margin-top: 270px;
+    margin-left: -50px;
+}
