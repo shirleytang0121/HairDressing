@@ -22,16 +22,16 @@ export default function finishPage(){
     const high_score=["straight-long","straight-short","blow","curling-long","curling-median","median","short","man-long-2","man-short-4","man-short-2"];
 
     if (low_score.includes(hair_obj.id)){
-        score = Math.random()*21+20;
+        score = Math.random()*21+30;
 
     }else if(high_score.includes(hair_obj.id)){
-        score = Math.random()*21+60;
+        score = Math.random()*21+70;
     }else{
-        score = Math.random()*21+40;
+        score = Math.random()*21+50;
     }
 
     if(hair_obj.style.filter !== ""){
-        score += Math.random()*21;
+        score += Math.random()*25;
     }
     score = Math.floor(score);
     console.log(score);

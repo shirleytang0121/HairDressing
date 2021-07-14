@@ -20,11 +20,25 @@ export default function renderIntroPage(){
     crebtn.innerHTML='CREATE MODE';
     crebtn.classList.add('modebtn');
     crebtn.style.display = 'none';
-   
+    crebtn.addEventListener('click', renderGamePage);
     const compbtn = document.createElement('button');
     compbtn.innerHTML='COMPETITION MODE';
     compbtn.classList.add('mode');
     compbtn.style.display = 'none';
+    compbtn.addEventListener('click',renderCompetitionPage);
+
+
+    const crebtnM = document.createElement('button');
+    crebtnM.innerHTML='CREATE MODE';
+    crebtnM.classList.add('modebtn');
+    crebtnM.style.display = 'none';
+    crebtnM.addEventListener('click', renderNewGamePage);
+    const compbtnM = document.createElement('button');
+    compbtnM.innerHTML='COMPETITION MODE';
+    compbtnM.classList.add('mode');
+    compbtnM.style.display = 'none';
+    compbtnM.addEventListener('click',renderNewGamePage);
+
 
     
 
@@ -37,22 +51,16 @@ export default function renderIntroPage(){
         compbtn.style.display = 'block';
         rightdiv.appendChild(compbtn);
 
-        crebtn.addEventListener('click', renderGamePage).bind(this);
-        compbtn.addEventListener('click',renderCompetitionPage).bind(this);
-
     });
 
     const startbtnM = document.createElement('button');
     startbtnM.innerHTML='HE'
     startbtnM.classList.add('genderbtn')
     startbtnM.addEventListener('click',()=>{
-        crebtn.style.display = 'block';
-        leftdiv.appendChild(crebtn);
-        compbtn.style.display = 'block';
-        leftdiv.appendChild(compbtn);
-
-        crebtn.addEventListener('click', renderNewGamePage).bind(this);
-        compbtn.addEventListener('click',renderCompetitionPage).bind(this);
+        crebtnM.style.display = 'block';
+        leftdiv.appendChild(crebtnM);
+        compbtnM.style.display = 'block';
+        leftdiv.appendChild(compbtnM);
 
     });
 
