@@ -1,6 +1,7 @@
 import resetPage from "./reset";
 import { hexToCSSFilter } from 'hex-to-css-filter';
 
+
 export default class GenerateImg{
     
     constructor(){
@@ -43,7 +44,7 @@ export default class GenerateImg{
     }
 
 
-    handleGnerater(e){
+    handleGnerater(){
        
         // this.hair_obj = document.querySelector('.hair-style');
         // this.bangs_obj = document.querySelector('.bang-style');
@@ -57,6 +58,7 @@ export default class GenerateImg{
         // }
         this.randIndex = Math.floor(Math.random()*20);
         this.imgShow.src = this.imgSrcArr[this.randIndex];
+        resetPage()
       
     }
 
@@ -93,22 +95,22 @@ export default class GenerateImg{
                 color: green
             },
             {
-                hair_style: 'curling-median',
+                hair_style: 'median',
                 bangs_style: 'second-bangs', 
                 color: ''
             },
             {
-                hair_style: 'curling-median',
+                hair_style: 'median',
                 bangs_style: 'second-bangs', 
                 color: blue
             },
             {
-                hair_style: 'curling-median',
+                hair_style: 'median',
                 bangs_style: 'third-bangs', 
                 color: ''
             },
             {
-                hair_style: 'curling-median',
+                hair_style: 'median',
                 bangs_style: 'third-bangs', 
                 color: yellow  
             },
@@ -178,41 +180,31 @@ export default class GenerateImg{
     
         this.gameImg = imgObjArr[this.randIndex]
     
-    
-    
-        const hair_obj = document.querySelector('.hair-style');
-        const bangs_obj = document.querySelector('.bang-style');
-            console.log(hair_obj);
-            console.log(bangs_obj);
-            console.log(hair_obj.style.filter);
-        const userDesign = {
-                hair_style: hair_obj.id,
-                bangs_style: bangs_obj.id,
-                color: hair_obj.style.filter
-            }
-    
+        this.hair_obj = document.querySelector('.hair-style');
+        this.bangs_obj = document.querySelector('.bang-style');
         console.log('hair')
         console.log(this.gameImg.hair_style)
-        console.log(userDesign.hair_style)
-        console.log(this.imgShow.hair_style === userDesign.hair_style)
+        console.log(this.hair_obj.id)
+        console.log(this.imgShow.hair_style === this.hair_obj.id)
     
         console.log('bangs')
         console.log(this.gameImg.bangs_style)
-        console.log(userDesign.bangs_style)
-        console.log(this.gameImg.bangs_style===userDesign.bangs_style)
+        console.log(this.bangs_obj.id)
+        console.log(this.gameImg.bangs_style===this.bangs_obj.id)
     
         console.log('color')
         console.log(this.gameImg.color)
-        console.log(userDesign.color)
-        console.log(this.gameImg.color === userDesign.color)
+        console.log(this.hair_obj.style.filter)
+        console.log(this.gameImg.color === this.hair_obj.style.filter)
        
+       
+        if (this.gameImg.hair_style === this.hair_obj.id  && this.gameImg.bangs_style===this.bangs_obj.id && this.gameImg.color === this.hair_obj.style.filter ){
+            console.log('true');
+        }else{
+            console.log('false');
+        }
+
         this.handleGnerater()
-        // if (imgShow.hair_style === userDesign.hair_style  && imgShow.bangs_style===userDesign.bangs_style && imgShow.color === userDesign.color ){
-        //     console.log('true');
-        // }else{
-        //     console.log('false');
-        // }
-    
     
     }
 }
