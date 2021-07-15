@@ -9,7 +9,7 @@ export default class HairDryer{
             this.hair_obj_L= document.querySelector(".hair-style-L");
          }
          if(this.dryer_btn.length > 1){
-            this.dryer_btn[0].addEventListener('click',this.handleKeys.bind(this))
+            document.addEventListener('keydown',this.handleKeys.bind(this))
             this.dryer_btn[1].addEventListener('click',this.handleDryer.bind(this))
          }else{
             this.dryer_btn[0].addEventListener('click',this.handleDryer.bind(this))
@@ -57,8 +57,8 @@ export default class HairDryer{
 
 
     handleKeys(e){
-      e.preventDefault();
-    
+   e.preventDefault();
+    if (e.key === '4'){
       if( this.hair_obj_L.id === 'curling-long'){
           this.hair_obj_L.src="./src/image/hairstyle/long/long.png";
           this.hair_obj_L.id ="long";
@@ -90,7 +90,8 @@ export default class HairDryer{
           this.hair_obj_L.id ="man-short-1";
        }
       else{
-         alert('it is perfect');
+         alert('it is perfect. No need hair dryer');
       }
+   }
   }
 }
