@@ -67,7 +67,8 @@ export default function renderTwoPlayer(){
 
     const toolsbar = [leftbtns, rightbtns];
 
-    
+   midLeftdiv.childNodes[1].childNodes[1].setAttribute('id','initial-L')
+   midLeftdiv.childNodes[1].childNodes[2].setAttribute('id','initial-bangs-L')
 
     for(let i=0; i<toolsbar.length; i++){
         const scissorsbtn = document.createElement('button');

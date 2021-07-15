@@ -7,7 +7,7 @@ export default class Scissors{
           }else{
              this.hair_obj= document.querySelector(".hair-style");
           }
-        this.scissors_btn[0].addEventListener('click',this.handleScissors.bind(this)) 
+        this.scissors_btn[0].addEventListener('keydown',this.handleKey.bind(this)) 
         this.scissors_btn[1].addEventListener('click',this.handleScissors.bind(this));
     }
 
@@ -78,9 +78,15 @@ export default class Scissors{
             default:
                 alert('can not cut');
 
-        }
+         }
 
 
-        }
+    }
+
+    handleKey(e){
+        e.preventDefault();
+        console.log('hi');  
+        
+    }
     
 }
