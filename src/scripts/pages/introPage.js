@@ -52,7 +52,16 @@ export default function renderIntroPage(){
     const startbtnF = document.createElement('button');
     startbtnF.innerHTML='SHE'
     startbtnF.classList.add('genderbtn')
-    startbtnF.addEventListener('click',()=>{
+    startbtnF.addEventListener('mouseenter',()=>{
+        crebtn.style.display = 'block';
+        rightdiv.appendChild(crebtn);
+        compbtn.style.display = 'block';
+        rightdiv.appendChild(compbtn);
+        twobtn.style.display= 'block';
+        rightdiv.appendChild(twobtn);
+
+    });
+    startbtnF.addEventListener('mouseleave',()=>{
         crebtn.style.display = 'block';
         rightdiv.appendChild(crebtn);
         compbtn.style.display = 'block';
@@ -65,7 +74,7 @@ export default function renderIntroPage(){
     const startbtnM = document.createElement('button');
     startbtnM.innerHTML='HE'
     startbtnM.classList.add('genderbtn')
-    startbtnM.addEventListener('click',()=>{
+    startbtnM.addEventListener('mouseenter',()=>{
         crebtnM.style.display = 'block';
         leftdiv.appendChild(crebtnM);
         compbtnM.style.display = 'block';

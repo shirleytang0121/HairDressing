@@ -1,6 +1,6 @@
 import { hexToCSSFilter } from 'hex-to-css-filter';
 import isCorrect from "./isCorrect";
-
+import resetPage from './reset';
 export default class GeneraterForTwo{
     constructor(){
         this.randIndex = Math.floor(Math.random()*20);
@@ -45,7 +45,7 @@ export default class GeneraterForTwo{
     handleGnerater(){
         this.randIndex = Math.floor(Math.random()*20);
         this.imgShow.src = this.imgSrcArr[this.randIndex];
-        //resetPage()
+        resetPage()
     }
 
 
@@ -168,17 +168,21 @@ export default class GeneraterForTwo{
         this.bangs_obj = document.querySelector('.bang-style');
 
         this.hair_obj_L = document.querySelector('.hair-style-L');
-        this.bang_obj_L = document.querySelector('.bang-style-L');
+        this.bangs_obj_L = document.querySelector('.bang-style-L');
        
         if (this.gameImg.hair_style === this.hair_obj.id  && this.gameImg.bangs_style===this.bangs_obj.id && this.gameImg.color === this.hair_obj.style.filter ){
-            console.log('true');
+            console.log('right user true');
+            this.handleGnerater()
             // isCorrect(true)
+        }else if(this.gameImg.hair_style === this.hair_obj_L.id  && this.gameImg.bangs_style===this.bangs_obj_L.id && this.gameImg.color === this.hair_obj_L.style.filter){
+            console.log('left user true');
+            this.handleGnerater()
         }else{
             console.log('false');
             // isCorrect(false)
         }
 
-        this.handleGnerater()
+      
     
     }
 }

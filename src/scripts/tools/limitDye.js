@@ -64,11 +64,11 @@ export default class LimitDye{
             this.purplebtn[1].addEventListener('click',this.handlePurple.bind(this))
        }else{
             this.dye_btn[0].addEventListener('click',this.handleShow.bind(this))
-            this.redbtn.addEventListener('click',this.handleRed.bind(this))
-            this.bluebtn.addEventListener('click',this.handleBlue.bind(this))
-            this.greenbtn.addEventListener('click',this.handleGreen.bind(this))
-            this.yellowbtn.addEventListener('click',this.handleYellow.bind(this));
-            this.purplebtn.addEventListener('click',this.handlePurple.bind(this))
+            this.redbtn[0].addEventListener('click',this.handleRed.bind(this))
+            this.bluebtn[0].addEventListener('click',this.handleBlue.bind(this))
+            this.greenbtn[0].addEventListener('click',this.handleGreen.bind(this))
+            this.yellowbtn[0].addEventListener('click',this.handleYellow.bind(this));
+            this.purplebtn[0].addEventListener('click',this.handlePurple.bind(this))
        }
     }
 

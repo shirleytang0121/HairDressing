@@ -9,8 +9,8 @@ export default class Bangs{
         }
 
         if(this.bangs_btn.length > 1){
-          this.bangs_btn[0].addEventListener('click',this.handleKeys.bind(this))
-          this.bangs_btn[1].addEventListener('click',this.handleBangs.bind(this))
+          document.addEventListener('keydown',this.handleKeys.bind(this))//left
+          this.bangs_btn[1].addEventListener('click',this.handleBangs.bind(this))//right
         }else{
           this.bangs_btn[0].addEventListener('click',this.handleBangs.bind(this))
         }
@@ -54,7 +54,9 @@ export default class Bangs{
 
 
 handleKeys(e){
+  console.log("test key press");
   e.preventDefault();
+  if(e.key === '6'){
   switch(this.bangs_obj_L.id ){
     case 'initial-bangs':
         this.bangs_obj_L.src = './src/image/bangs/bangs-2.png';
@@ -86,5 +88,6 @@ handleKeys(e){
         break;
     
       }
+    }
   }
 }

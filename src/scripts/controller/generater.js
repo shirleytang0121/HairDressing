@@ -191,12 +191,14 @@ export default class GenerateImg{
         if (this.gameImg.hair_style === this.hair_obj.id  && this.gameImg.bangs_style===this.bangs_obj.id && this.gameImg.color === this.hair_obj.style.filter ){
             console.log('true');
             isCorrect(true)
+            this.handleGnerater()
         }else{
             console.log('false');
             isCorrect(false)
+            resetPage()
         }
 
-        this.handleGnerater()
+      
     
     }
 }
