@@ -4,8 +4,12 @@ export default class Comb{
        this.comb_btn = Array.from(document.getElementsByClassName("comb"));
        this.hair_obj = document.querySelector(".hair-style");
        this.hair_obj_L = document.querySelector(".hair-style-L");
-       this.comb_btn[0].addEventListener('click',this.handleKeys.bind(this))
-       this.comb_btn[1].addEventListener('click',this.handleComb.bind(this))
+       if(this.comb_btn.length > 1){
+        this.comb_btn[0].addEventListener('click',this.handleKeys.bind(this))
+        this.comb_btn[1].addEventListener('click',this.handleComb.bind(this))
+       }else{
+        this.comb_btn[0].addEventListener('click',this.handleComb.bind(this))
+       }
    }
 
    handleComb(e){

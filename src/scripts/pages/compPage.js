@@ -52,4 +52,8 @@ export default function renderCompetitionPage(){
     const genImg = new GenerateImg();
     const limitDye = new LimitDye();
     const clock = new Clock();
+
+
+    
+
 }

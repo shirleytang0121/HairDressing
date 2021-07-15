@@ -8,8 +8,12 @@ export default class Bangs{
            this.bangs_obj_L= document.querySelector(".bang-style-L");
         }
 
-        this.bangs_btn[0].addEventListener('click',this.handleKeys.bind(this))
-        this.bangs_btn[1].addEventListener('click',this.handleBangs.bind(this))
+        if(this.bangs_btn.length > 1){
+          this.bangs_btn[0].addEventListener('click',this.handleKeys.bind(this))
+          this.bangs_btn[1].addEventListener('click',this.handleBangs.bind(this))
+        }else{
+          this.bangs_btn[0].addEventListener('click',this.handleBangs.bind(this))
+        }
         console.log(this.bangs_btn)
     }
 

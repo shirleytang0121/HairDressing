@@ -99,7 +99,9 @@ img.bald {
 
 .restart{
     position: absolute;
-    margin-top: 30px;
+    margin-top: 370px;
+    padding: 5px;
+    font-size: 15px;
 }
 
 
@@ -248,6 +250,29 @@ img.bang-style{
 
 body{
     background-color: rgb(145, 175, 231);
+}
+
+.introdiv{
+    position: absolute;
+    /* margin-bottom: 100px; */
+    /* background-color: black; */
+}
+
+.introp{
+    margin-top: 200px;
+    color: white;
+    background-color: black;
+    font-size: 25px;
+    width: 200px;
+    height: auto;
+    padding: 50px;
+}
+
+.readybtn{
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    font-size: 15px;
 }
 /*!****************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/reset.css ***!

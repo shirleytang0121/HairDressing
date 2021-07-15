@@ -1,8 +1,18 @@
 export default class Straightener{
     constructor(){
-        this.straightener_btn = document.querySelector('.straightener')
+        this.straightener_btn = Array.from(document.getElementsByClassName('straightener'));
         this.hair_obj = document.querySelector(".hair-style");
-        this.straightener_btn.addEventListener('click',this.handleStraigtener.bind(this))
+        if(this.straightener_btn.length > 1){
+            this.straightener_btn[0].addEventListener('keypress',this.handleKeys.bind(this))
+            this.straightener_btn[1].addEventListener('click',this.handleStraigtener.bind(this))
+        }else{
+            this.straightener_btn[0].addEventListener('click',this.handleStraigtener.bind(this))
+        }
+    }
+
+    handleKeys(e){
+        console.log(e);
+        console.log('hi');
     }
     
     handleStraigtener=function(e){

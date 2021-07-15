@@ -9,9 +9,16 @@ export default class Scissors{
              this.hair_obj= document.querySelector(".hair-style");
              this.hair_obj_L=document.querySelector(".hair-style-L")
           }
-        this.scissors_btn[0].addEventListener('click',this.handleKey.bind(this)) 
-        this.scissors_btn[1].addEventListener('click',this.handleScissors.bind(this));
+          
+          if(this.scissors_btn.length > 1){
+            this.scissors_btn[0].addEventListener('click',this.handleKey.bind(this)) 
+            this.scissors_btn[1].addEventListener('click',this.handleScissors.bind(this));
+          }else{
+            this.scissors_btn[0].addEventListener('click',this.handleScissors.bind(this));
+          }
     }
+
+
 
     handleScissors(e){
         e.preventDefault();

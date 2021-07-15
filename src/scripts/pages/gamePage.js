@@ -148,4 +148,21 @@ export default function renderGamePage(){
     finishbtn.addEventListener('click',finishPage);
 
 
+    const introdiv = document.createElement('div')
+    introdiv.classList.add('introdiv');
+    const readybtn = document.createElement('button')
+    readybtn.classList.add('readybtn');
+    readybtn.innerHTML= 'READY';
+    const introp = document.createElement('p')
+    introp.classList.add('introp')
+    introp.innerHTML='Welcome to creative mode. In this mode, you can use the tools on right side to create your fancy hair style.'
+     readybtn.addEventListener('click',()=>{
+         introdiv.style.display = 'none';
+     })
+    mainPage.appendChild(introdiv)
+    introdiv.appendChild(introp);
+    introdiv.appendChild(readybtn);
+
+
+
 }
