@@ -69,13 +69,16 @@
 
 .show-score-1{
     position: absolute;
-    margin-left: 30px;
+    margin-left: -60px;
     font-size: 30px;
+    margin-top: 200px;
 }
+
 .show-score-2{
     position: absolute;
-    margin-left: 30px;
+    margin-left: -40px;
     font-size: 30px;
+    margin-top: 200px;
 }
 
 .countdown{

@@ -166,7 +166,7 @@ export default function renderTwoPlayer(){
 
     const submitbtn = document.createElement('button');
     submitbtn.classList.add('submit');
-    submitbtn.innerHTML = 'SUBMIT';
+    submitbtn.innerHTML = 'SUBMIT(S)';
     submitbtn.setAttribute('id','left-submit');
     midLeftdiv.appendChild(submitbtn);
 
@@ -178,7 +178,7 @@ export default function renderTwoPlayer(){
 
     const resetbtn = document.createElement('button');
     resetbtn.classList.add('reset');
-    resetbtn.innerHTML = 'RESET';
+    resetbtn.innerHTML = 'RESET(D)';
     resetbtn.setAttribute('id','left-reset')
     midLeftdiv.appendChild(resetbtn);
     document.addEventListener('keydown', (e)=>{
@@ -213,7 +213,7 @@ export default function renderTwoPlayer(){
     const backbtn1 = document.createElement("button");
     backbtn1.classList.add('back');
     backbtn1.setAttribute('id','left-back')
-    backbtn1.innerHTML = 'BACK'
+    backbtn1.innerHTML = 'BACK(Q)'
     midLeftdiv.appendChild(backbtn1);
 
     const backbtn2 = document.createElement("button");

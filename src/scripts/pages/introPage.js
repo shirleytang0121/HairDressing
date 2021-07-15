@@ -45,41 +45,55 @@ export default function renderIntroPage(){
     compbtnM.classList.add('mode');
     compbtnM.style.display = 'none';
     compbtnM.addEventListener('click',renderSecondCompPage);
-
-
+    
+   
+    
+  
     
 
     const startbtnF = document.createElement('button');
     startbtnF.innerHTML='SHE'
     startbtnF.classList.add('genderbtn')
-    startbtnF.addEventListener('mouseenter',()=>{
-        crebtn.style.display = 'block';
-        rightdiv.appendChild(crebtn);
-        compbtn.style.display = 'block';
-        rightdiv.appendChild(compbtn);
-        twobtn.style.display= 'block';
-        rightdiv.appendChild(twobtn);
+    startbtnF.addEventListener('click',()=>{
+        if(crebtn.style.display==='none'){
+            crebtn.style.display = 'block';
+            rightdiv.appendChild(crebtn);
+            compbtn.style.display = 'block';
+            rightdiv.appendChild(compbtn);
+            twobtn.style.display= 'block';
+            rightdiv.appendChild(twobtn);
+        }else{
+            crebtn.style.display = 'none';
+            compbtn.style.display = 'none';
+            twobtn.style.display= 'none';
+        }
+       
     });
 
     
     // startbtnF.addEventListener('mouseleave',()=>{
     //     crebtn.style.display = 'none';
-    //     // rightdiv.appendChild(crebtn);
     //     compbtn.style.display = 'none';
-    //     // rightdiv.appendChild(compbtn);
     //     twobtn.style.display= 'none';
-    //     // rightdiv.appendChild(twobtn);
     // })
 
+
+
+    
+   
     const startbtnM = document.createElement('button');
     startbtnM.innerHTML='HE'
     startbtnM.classList.add('genderbtn')
-    startbtnM.addEventListener('mouseenter',()=>{
+    startbtnM.addEventListener('click',()=>{
+        if(crebtnM.style.display === 'none'){
         crebtnM.style.display = 'block';
         leftdiv.appendChild(crebtnM);
         compbtnM.style.display = 'block';
-        leftdiv.appendChild(compbtnM);
-
+        leftdiv.appendChild(compbtnM); 
+        }else{
+            crebtnM.style.display = 'none'; 
+            compbtnM.style.display = 'none';
+        }
     });
 
     

@@ -20,10 +20,14 @@ export default function twouserFinish(){
     const submit2 = document.getElementById('right-submit') 
     const reset1 = document.getElementById('left-reset') 
     const reset2 = document.getElementById('right-reset')
+    const back1 = document.getElementById('left-back') 
+    const back2 = document.getElementById('right-back')
     submit1.remove();
     submit2.remove();
     reset1.remove();
     reset2.remove();
+    back1.remove();
+    back2.remove();
     
     const check = document.querySelector(".correctImg")
     check.remove();
