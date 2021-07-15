@@ -63,85 +63,86 @@ export default function renderTwoPlayer(){
     midRightdiv.appendChild(chardiv2);
 
     const character =new Character('F');
-
-    const scissorsbtn = document.createElement('button');
-    scissorsbtn.classList.add('scissors');
-    const scissorsimg = document.createElement('img');
-    scissorsimg.setAttribute('src','./src/image/tools/scissors.png');
-    scissorsimg.classList.add('tools');
-    scissorsbtn.appendChild(scissorsimg);
-
-    const curlingIronbtn = document.createElement('button');
-    curlingIronbtn.classList.add('curling-iron');
-    const curlingIronimg = document.createElement('img');
-    curlingIronimg.setAttribute('src','./src/image/tools/curling-iron.png');
-    curlingIronimg.classList.add('tools');
-    curlingIronbtn.appendChild(curlingIronimg);
-
-    const hairdryerbtn =document.createElement('button');
-    hairdryerbtn.classList.add('hair-dryer');
-    const hairdryerimg =document.createElement('img');
-    hairdryerimg.setAttribute('src','./src/image/tools/hair-dryer.png')
-    hairdryerimg.classList.add('tools');
-    hairdryerbtn.appendChild(hairdryerimg);
-
-    const straightenerbtn = document.createElement('button');
-    straightenerbtn.classList.add('straightener');
-    const straightenerimg = document.createElement('img');
-    straightenerimg.setAttribute('src','./src/image/tools/straightener.png');
-    straightenerimg.classList.add('tools');
-    straightenerbtn.appendChild(straightenerimg);
-
-    const hairdyebtn =document.createElement('button');
-    hairdyebtn.classList.add('hair-dye');
-    const hairdyeimg =document.createElement('img');
-    hairdyeimg.setAttribute('src','./src/image/tools/hair-dye.png')
-    hairdyeimg.classList.add('tools');
-    hairdyebtn.appendChild(hairdyeimg);
-
-    const combbtn = document.createElement('button');
-    combbtn.classList.add('comb');
-    const combimg = document.createElement('img')
-    combimg.setAttribute('src','./src/image/tools/comb.png');
-    combimg.classList.add('tools');
-    combbtn.appendChild(combimg);
-
-    const bangsbtn = document.createElement('button');
-    bangsbtn.classList.add('bangs');
-    const bangsimg = document.createElement('img')
-    bangsimg.setAttribute('src','./src/image/tools/spray.png');
-    bangsimg.classList.add('tools');
-    bangsbtn.appendChild(bangsimg);
-
-    const colorSelector = document.createElement('div');
-    colorSelector.classList.add('colorSelector');
-    rightbtns.appendChild(colorSelector);
-
-
     leftbtns.style.marginTop = '0px';
-    leftbtns.appendChild(scissorsbtn);
-    leftbtns.appendChild(curlingIronbtn);
-    leftbtns.appendChild(straightenerbtn);
-    leftbtns.appendChild(hairdryerbtn);
-    leftbtns.appendChild(combbtn);
-    leftbtns.appendChild(bangsbtn);
-    leftbtns.appendChild(hairdyebtn);
-    leftbtns.appendChild(colorSelector);
+
+    const toolsbar = [leftbtns, rightbtns];
+
+    
+
+    for(let i=0; i<toolsbar.length; i++){
+        const scissorsbtn = document.createElement('button');
+        scissorsbtn.classList.add('scissors');
+        const scissorsimg = document.createElement('img');
+        scissorsimg.setAttribute('src','./src/image/tools/scissors.png');
+        scissorsimg.classList.add('tools');
+        scissorsbtn.appendChild(scissorsimg);
+
+        const curlingIronbtn = document.createElement('button');
+        curlingIronbtn.classList.add('curling-iron');
+        const curlingIronimg = document.createElement('img');
+        curlingIronimg.setAttribute('src','./src/image/tools/curling-iron.png');
+        curlingIronimg.classList.add('tools');
+        curlingIronbtn.appendChild(curlingIronimg);
+
+        const hairdryerbtn =document.createElement('button');
+        hairdryerbtn.classList.add('hair-dryer');
+        const hairdryerimg =document.createElement('img');
+        hairdryerimg.setAttribute('src','./src/image/tools/hair-dryer.png')
+        hairdryerimg.classList.add('tools');
+        hairdryerbtn.appendChild(hairdryerimg);
+
+        const straightenerbtn = document.createElement('button');
+        straightenerbtn.classList.add('straightener');
+        const straightenerimg = document.createElement('img');
+        straightenerimg.setAttribute('src','./src/image/tools/straightener.png');
+        straightenerimg.classList.add('tools');
+        straightenerbtn.appendChild(straightenerimg);
+
+        const hairdyebtn =document.createElement('button');
+        hairdyebtn.classList.add('hair-dye');
+        const hairdyeimg =document.createElement('img');
+        hairdyeimg.setAttribute('src','./src/image/tools/hair-dye.png')
+        hairdyeimg.classList.add('tools');
+        hairdyebtn.appendChild(hairdyeimg);
+
+        const combbtn = document.createElement('button');
+        combbtn.classList.add('comb');
+        const combimg = document.createElement('img')
+        combimg.setAttribute('src','./src/image/tools/comb.png');
+        combimg.classList.add('tools');
+        combbtn.appendChild(combimg);
+
+        const bangsbtn = document.createElement('button');
+        bangsbtn.classList.add('bangs');
+        const bangsimg = document.createElement('img')
+        bangsimg.setAttribute('src','./src/image/tools/spray.png');
+        bangsimg.classList.add('tools');
+        bangsbtn.appendChild(bangsimg);
+
+        const colorSelector = document.createElement('div');
+        colorSelector.classList.add('colorSelector');
+       
+
+        
+        toolsbar[i].appendChild(scissorsbtn);
+        toolsbar[i].appendChild(curlingIronbtn);
+        toolsbar[i].appendChild(straightenerbtn);
+        toolsbar[i].appendChild(hairdryerbtn);
+        toolsbar[i].appendChild(combbtn);
+        toolsbar[i].appendChild(bangsbtn);
+        toolsbar[i].appendChild(hairdyebtn);
+        toolsbar[i].appendChild(colorSelector);
+        toolsbar[i].appendChild(colorSelector);
+
+    }
 
 
-    rightbtns.appendChild(scissorsbtn);
-    rightbtns.appendChild(curlingIronbtn);
-    rightbtns.appendChild(straightenerbtn);
-    rightbtns.appendChild(hairdryerbtn);
-    rightbtns.appendChild(combbtn);
-    rightbtns.appendChild(bangsbtn);
-    rightbtns.appendChild(hairdyebtn);
-    rightbtns.appendChild(colorSelector);
 
     
     const scissors = new Scissors();
     const curlingIron = new CurlingIron();
-    const hairdryer = new LimitDye();
+    const hairdryer = new HairDryer();
+    const hairdye = new LimitDye();
     const straightener = new Straightener();
     const comb =new Comb();
     const bangs=new Bangs();

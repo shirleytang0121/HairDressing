@@ -1,13 +1,14 @@
 export default class Scissors{
     constructor(){
-        this.scissors_btn = document.querySelector(".scissors");
+        //this.scissors_btn = document.querySelector(".scissors");
+        this.scissors_btn = Array.from(document.getElementsByClassName("scissors"));
         if (document.querySelector(".hair-style")=== null){
             this.hair_obj= document.querySelector(".man-style");
           }else{
              this.hair_obj= document.querySelector(".hair-style");
           }
-          
-        this.scissors_btn.addEventListener('click',this.handleScissors.bind(this));
+        this.scissors_btn[0].addEventListener('click',this.handleScissors.bind(this)) 
+        this.scissors_btn[1].addEventListener('click',this.handleScissors.bind(this));
     }
 
     handleScissors(e){
