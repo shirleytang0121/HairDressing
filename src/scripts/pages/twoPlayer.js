@@ -203,6 +203,26 @@ export default function renderTwoPlayer(){
         bangs.style.filter="";
     })
 
+    const backbtn1 = document.createElement("button");
+    backbtn1.classList.add('left-back');
+    backbtn1.style.marginTop='17px';
+    backbtn1.innerHTML = 'BACK'
+    midLeftdiv.appendChild(backbtn1);
+
+    const backbtn2 = document.createElement("button");
+    backbtn2.classList.add('right-back');
+    backbtn2.style.marginTop='17px';
+    backbtn2.innerHTML = 'BACK'
+    midRightdiv.appendChild(backbtn);
+
+    backbtn1.addEventListener('click',()=>{
+        history.go(0)
+    })
+
+    backbtn2.addEventListener('click',()=>{
+        history.go(0)
+    })
+
     const generatorForTwo = new GeneraterForTwo();
 
     const msgLeft = document.createElement('div')

@@ -143,6 +143,7 @@ export default class GeneraterForTwo{
         this.imgdiv = document.querySelector('.imgdiv');
         this.imgShow = document.createElement('img');
         this.imgShow.classList.add('gameImgForTwo');
+        this.imgShow.style.display = 'none';
         // this.imgShow.style.display = 'none';
         this.imgShow.src = this.imgSrcArr[this.randIndex];
         this.imgdiv.appendChild(this.imgShow);

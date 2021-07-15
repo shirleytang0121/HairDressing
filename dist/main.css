@@ -434,6 +434,17 @@ table {
     margin-left: 30px;
 }
 
+.countdown{
+    font-size: 40px;
+    background-color: rgb(52, 52, 124);
+    border-radius: 5px;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: -10px;
+}
+
 
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!

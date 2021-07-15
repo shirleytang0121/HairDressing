@@ -1,6 +1,7 @@
 export default class Countdown{
     constructor(){
         this.counter = 5
+        this.gameImg = document.querySelector('.gameImgForTwo');
         this.countdowndiv = document.querySelector('.countdowndiv');
         this.readybtn = document.querySelector('.readybtn');
         this.printTime()
@@ -25,6 +26,7 @@ export default class Countdown{
          if (this.counter === 0) {
             clearInterval(this.counter);
             this.countdowndiv.style.display = 'none';
+            this.gameImg.style.display = 'block';
          }   
     }
 
