@@ -293,7 +293,9 @@ table {
 }
 
 .wheel{
-    margin-top: 20px;
+    margin-top: 200px;
+    position: absolute;
+    margin-left: -300px;
 }
 
 #hair-clipper{

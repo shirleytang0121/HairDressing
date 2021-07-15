@@ -6,6 +6,7 @@ export default class Scissors{
           }else{
              this.hair_obj= document.querySelector(".hair-style");
           }
+          
         this.scissors_btn.addEventListener('click',this.handleScissors.bind(this));
     }
 

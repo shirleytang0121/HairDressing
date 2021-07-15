@@ -90,9 +90,6 @@ export default function renderGamePage(){
     hairdyeimg.setAttribute('src','./src/image/tools/hair-dye.png')
     hairdyeimg.classList.add('tools');
     hairdyebtn.appendChild(hairdyeimg);
-    // const dyediv = document.createElement('div');
-    // dyediv.classList.add('dyediv');
-    // dyediv.appendChild(hairdyebtn);
 
     const combbtn = document.createElement('button');
     combbtn.classList.add('comb');
