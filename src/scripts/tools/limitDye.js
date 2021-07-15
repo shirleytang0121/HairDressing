@@ -50,17 +50,17 @@ export default class LimitDye{
 
 
        if(this.dye_btn.length > 1){
-            this.dye_btn[0].addEventListener('click',this.handleShowPress.bind(this))
+            document.addEventListener('keydown',this.handleShowPress.bind(this))
             this.dye_btn[1].addEventListener('click',this.handleShow.bind(this))
-            this.redbtn[0].addEventListener('click',this.handleRedPress.bind(this))
+            document.addEventListener('keydown',this.handleRedPress.bind(this))
             this.redbtn[1].addEventListener('click',this.handleRed.bind(this))
-            this.bluebtn[0].addEventListener('click',this.handleBluePress.bind(this))
+            document.addEventListener('keydown',this.handleBluePress.bind(this))
             this.bluebtn[1].addEventListener('click',this.handleBlue.bind(this))
-            this.greenbtn[0].addEventListener('click',this.handleGreenPress.bind(this))
+            document.addEventListener('keydown',this.handleGreenPress.bind(this))
             this.greenbtn[1].addEventListener('click',this.handleGreen.bind(this))
-            this.yellowbtn[0].addEventListener('click',this.handleYellowPress.bind(this));
+            document.addEventListener('keydown',this.handleYellowPress.bind(this));
             this.yellowbtn[1].addEventListener('click',this.handleYellow.bind(this));
-            this.purplebtn[0].addEventListener('click',this.handlePurplePress.bind(this))
+            document.addEventListener('keydown',this.handlePurplePress.bind(this))
             this.purplebtn[1].addEventListener('click',this.handlePurple.bind(this))
        }else{
             this.dye_btn[0].addEventListener('click',this.handleShow.bind(this))
@@ -82,7 +82,9 @@ export default class LimitDye{
     }
 
     handleShowPress(e){
-        this.colordiv[0].style.display = 'flex';  
+        if(e.key === '7'){
+            this.colordiv[0].style.display = 'flex';  
+        }
         
     }
 
@@ -95,9 +97,11 @@ export default class LimitDye{
     }
 
     handleRedPress(e){
-        const cssFilter= hexToCSSFilter("#fc1a1a");
-        this.hair_obj_L.style.filter = cssFilter.filter.slice(0,-1);
-        this.bangs_obj_L.style.filter = cssFilter.filter.slice(0,-1);
+        if(e.key === 'r'){
+            const cssFilter= hexToCSSFilter("#fc1a1a");
+            this.hair_obj_L.style.filter = cssFilter.filter.slice(0,-1);
+            this.bangs_obj_L.style.filter = cssFilter.filter.slice(0,-1);
+        }
     }
 
     handleBlue(e){
@@ -106,9 +110,11 @@ export default class LimitDye{
         this.bangs_obj.style.filter = cssFilter.filter.slice(0,-1);
     }
     handleBluePress(e){
+        if(e.key === 'b'){
         const cssFilter= hexToCSSFilter("#401afc");
         this.hair_obj_L.style.filter = cssFilter.filter.slice(0,-1);
         this.bangs_obj_L.style.filter = cssFilter.filter.slice(0,-1);
+        }
     }
 
     handleGreen(e){
@@ -117,9 +123,11 @@ export default class LimitDye{
         this.bangs_obj.style.filter = cssFilter.filter.slice(0,-1);
     }
     handleGreenPress(e){
+        if(e.key === 'g'){
         const cssFilter= hexToCSSFilter("#1afc77");
         this.hair_obj_L.style.filter = cssFilter.filter.slice(0,-1);
         this.bangs_obj_L.style.filter = cssFilter.filter.slice(0,-1);
+        }
     }
 
     handleYellow(e){
@@ -128,9 +136,11 @@ export default class LimitDye{
         this.bangs_obj.style.filter = cssFilter.filter.slice(0,-1);
     }
     handleYellowPress(e){
+        if(e.key === 'y'){
         const cssFilter= hexToCSSFilter("#fcdc1a");
         this.hair_obj_L.style.filter = cssFilter.filter.slice(0,-1);
         this.bangs_obj_L.style.filter = cssFilter.filter.slice(0,-1);
+        }
     }
 
     handlePurple(e){
@@ -140,9 +150,11 @@ export default class LimitDye{
     }
 
     handlePurplePress(e){
+        if(e.key === 'p'){
         const cssFilter= hexToCSSFilter("#a516a5");
         this.hair_obj_L.style.filter = cssFilter.filter.slice(0,-1);
         this.bangs_obj_L.style.filter = cssFilter.filter.slice(0,-1);
+        }
     }
 
     

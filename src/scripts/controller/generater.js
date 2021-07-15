@@ -39,8 +39,8 @@ export default class GenerateImg{
             this.imgdiv.appendChild(this.imgShow);
 
             this.submitbtn = document.querySelector('.submit');
-            this.submitbtn.setAttribute('id','0');
-            
+            this.submitbtn.setAttribute('data-score','0');
+            console.log(this.submitbtn);
             this.submitbtn.addEventListener('click', this.checkIfSame.bind(this));
     }
 

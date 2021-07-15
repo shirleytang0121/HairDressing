@@ -37,7 +37,7 @@ export default class GeneraterForTwo{
         this.submitbtn1 = document.getElementById('left-submit');
         // this.submitbtn.setAttribute('id','0');
         this.submitbtn2 = document.getElementById('right-submit');  
-        this.submitbtn1.addEventListener('click', this.checkIfSame.bind(this));
+        document.addEventListener('keydown', this.checkIfSame.bind(this));
         this.submitbtn2.addEventListener('click', this.checkIfSame.bind(this));
     }
 
@@ -51,6 +51,8 @@ export default class GeneraterForTwo{
 
     checkIfSame(e){
         e.preventDefault();
+
+        console.log(e);
 
         const red = hexToCSSFilter("#fc1a1a").filter.slice(0,-1);
         const blue = hexToCSSFilter("#401afc").filter.slice(0,-1);
@@ -161,27 +163,26 @@ export default class GeneraterForTwo{
             }
     
         ]
-    
-        this.gameImg = imgObjArr[this.randIndex]
-    
-        this.hair_obj = document.querySelector('.hair-style');
-        this.bangs_obj = document.querySelector('.bang-style');
+     
+            this.gameImg = imgObjArr[this.randIndex]
+        
+            this.hair_obj = document.querySelector('.hair-style');
+            this.bangs_obj = document.querySelector('.bang-style');
 
-        this.hair_obj_L = document.querySelector('.hair-style-L');
-        this.bangs_obj_L = document.querySelector('.bang-style-L');
-       
-        if (this.gameImg.hair_style === this.hair_obj.id  && this.gameImg.bangs_style===this.bangs_obj.id && this.gameImg.color === this.hair_obj.style.filter ){
-            console.log('right user true');
-            this.handleGnerater()
-            // isCorrect(true)
-        }else if(this.gameImg.hair_style === this.hair_obj_L.id  && this.gameImg.bangs_style===this.bangs_obj_L.id && this.gameImg.color === this.hair_obj_L.style.filter){
-            console.log('left user true');
-            this.handleGnerater()
-        }else{
-            console.log('false');
-            // isCorrect(false)
-        }
-
+            this.hair_obj_L = document.querySelector('.hair-style-L');
+            this.bangs_obj_L = document.querySelector('.bang-style-L');
+        
+            if (this.gameImg.hair_style === this.hair_obj.id  && this.gameImg.bangs_style===this.bangs_obj.id && this.gameImg.color === this.hair_obj.style.filter ){
+                console.log('right user true');
+                this.handleGnerater()
+                // isCorrect(true)
+            }else if(this.gameImg.hair_style === this.hair_obj_L.id  && this.gameImg.bangs_style===this.bangs_obj_L.id && this.gameImg.color === this.hair_obj_L.style.filter){
+                console.log('left user true');
+                this.handleGnerater()
+            }else{
+                console.log('false');
+                // isCorrect(false)
+            }
       
     
     }

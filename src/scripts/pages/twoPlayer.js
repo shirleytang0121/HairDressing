@@ -173,12 +173,32 @@ export default function renderTwoPlayer(){
     resetbtn.innerHTML = 'RESET';
     resetbtn.setAttribute('id','left-reset')
     midLeftdiv.appendChild(resetbtn);
+    resetbtn.addEventListener('click', ()=>{
+        const hairL = document.querySelector('.hair-style-L');
+        const bangsL = document.querySelector('.bang-style-L');
+        hairL.setAttribute("id","initial");
+        hairL.src = "./src/image/hairstyle/initial/initial.png"
+        bangsL.setAttribute("id","initial-bangs");
+        bangsL.src = "./src/image/bangs/bangs-1.png";
+        hairL.style.filter="";
+        bangsL.style.filter="";
+    })
 
     const resetbtn2 = document.createElement('button');
     resetbtn2.classList.add('reset');
     resetbtn2.innerHTML = 'RESET';
     resetbtn2.setAttribute('id','right-reset');
     midRightdiv.appendChild(resetbtn2);
+    resetbtn2.addEventListener('click',()=>{
+        const hair = document.querySelector('.hair-style');
+        const bangs = document.querySelector('.bang-style');
+        hair.setAttribute("id","initial");
+        hair.src = "./src/image/hairstyle/initial/initial.png"
+        bangs.setAttribute("id","initial-bangs");
+        bangs.src = "./src/image/bangs/bangs-1.png";
+        hair.style.filter="";
+        bangs.style.filter="";
+    })
 
     const generatorForTwo = new GeneraterForTwo()
 

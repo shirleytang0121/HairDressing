@@ -27,7 +27,7 @@ export default function timeoutPage(){
     const myscore = document.createElement('div');
     myscore.classList.add('score');
     scorediv.innerHTML = "Your score is"
-    myscore.innerHTML =score.id;
+    myscore.innerHTML =score.dataset.score;
     middiv.appendChild(scorediv);
     middiv.appendChild(myscore);
   

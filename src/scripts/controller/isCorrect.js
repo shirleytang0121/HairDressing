@@ -6,12 +6,12 @@ export default function isCorrect(correct){
     message.appendChild(correctImg);
 
     const submitbtn = document.querySelector('.submit');
-    let score = parseInt(submitbtn.id)
+    let score = parseInt(submitbtn.dataset.score)
 
     if(correct){
         correctImg.src = './src/image/yes.png';
         score++;
-        submitbtn.setAttribute('id',score);
+        submitbtn.setAttribute('data-score',score);
         console.log(score);
     }else{
         correctImg.src = './src/image/no.png'
