@@ -3,5 +3,4 @@ export default function resetSecondPage(){
     hair.setAttribute("id","man-initial");
     hair.src = "./src/image/manstyle/initial.png"
     hair.style.filter="";
-    console.log(hair.id);
 }

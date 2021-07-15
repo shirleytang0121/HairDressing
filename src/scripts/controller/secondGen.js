@@ -6,7 +6,7 @@ import isCorrect from "./isCorrect";
 export default class SecondGenerateImg{
     
     constructor(){
-        this.randIndex = Math.floor(Math.random()*20);
+        this.randIndex = Math.floor(Math.random()*16);
         this.imgSrcArr = [
             "./src/image/competition-m/initial.png",
             "./src/image/competition-m/initial-red.png",
@@ -42,9 +42,8 @@ export default class SecondGenerateImg{
 
 
     handleGnerater(){
-        this.randIndex = Math.floor(Math.random()*20);
+        this.randIndex = Math.floor(Math.random()*16);
         this.imgShow.src = this.imgSrcArr[this.randIndex];
-        console.log(this.imgShow.src);
         resetSecondPage()
       
     }
@@ -62,103 +61,67 @@ export default class SecondGenerateImg{
         
         const imgObjArr = [
             {
-                hair_style: 'curling-long',
-                bangs_style: 'initial-bangs',
+                hair_style: 'man-inital',
                 color: ''
             },
             {
-                hair_style: 'curling-long',
-                bangs_style: 'initial-bangs', 
+                hair_style: 'man-initial',
                 color: red
             },
             {
-                hair_style: 'curling-long',
-                bangs_style: 'second-bangs', 
+                hair_style: 'man-long-1',
                 color: ''
             },
             {
-                hair_style: 'curling-long',
-                bangs_style: 'second-bangs', 
-                color: green
-            },
-            {
-                hair_style: 'median',
-                bangs_style: 'second-bangs', 
-                color: ''
-            },
-            {
-                hair_style: 'median',
-                bangs_style: 'second-bangs', 
+                hair_style: 'man-long-1',
                 color: blue
             },
             {
-                hair_style: 'median',
-                bangs_style: 'third-bangs', 
+                hair_style: 'man-long-2',
                 color: ''
             },
             {
-                hair_style: 'median',
-                bangs_style: 'third-bangs', 
-                color: yellow  
-            },
-            {
-                hair_style: 'long',
-                bangs_style: 'initial-bangs', 
-                color: ''
-            },
-            {
-                hair_style: 'long',
-                bangs_style: 'initial-bangs', 
-                color: purple
-            },
-            {
-                hair_style: 'long',
-                bangs_style: 'third-bangs', 
-                color: ''
-            },
-            {
-                hair_style: 'long',
-                bangs_style: 'third-bangs', 
-                color: red 
-            },
-            {
-                hair_style: 'blow',
-                bangs_style: 'initial-bangs', 
-                color: ''
-            },
-            {
-                hair_style: 'blow',
-                bangs_style: 'initial-bangs', 
-                color: blue  
-            },
-            {
-                hair_style: 'blow',
-                bangs_style: 'second-bangs', 
-                color: ''
-            },
-            {
-                hair_style: 'blow',
-                bangs_style: 'second-bangs', 
+                hair_style: 'man-long-2',
                 color: green
             },
             {
-                hair_style: 'straight-median',
-                bangs_style: 'initial-bangs',
+                hair_style: 'man-short-1',
                 color: ''
             },
             {
-                hair_style: 'straight-median',
-                bangs_style: 'initial-bangs',
-                color: yellow
+                hair_style: 'man-short-1', 
+                color: yellow  
             },
             {
-                hair_style: 'straight-median',
-                bangs_style: 'second-bangs',
+                hair_style: 'man-short-2',
+                color: ''
+            },
+            {
+                hair_style: 'man-short-2',
+                color: purple
+            },
+            {
+                hair_style: 'man-short-3',
+                color: ''
+            },
+            {
+                hair_style: 'man-short-3',
+                color: red 
+            },
+            {
+                hair_style: 'man-short-4',
+                color: ''
+            },
+            {
+                hair_style: 'man-short-4',
+                color: blue  
+            },
+            {
+                hair_style: 'man-short-end',
                 color: '' 
             },
             {
-                hair_style: 'straight-median',
-                bangs_style: 'second-bangs',
+                hair_style: 'man-short-end',
                 color: purple
             }
     
@@ -192,6 +155,7 @@ export default class SecondGenerateImg{
             isCorrect(false)
         }
 
+       
         this.handleGnerater()
     
     }

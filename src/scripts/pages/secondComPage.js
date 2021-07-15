@@ -1,7 +1,7 @@
 import renderNewGamePage from "./secondPage";
 import LimitDye from "../tools/limitDye";
 import Clock from "../controller/clock";
-import resetPage from "../controller/reset";
+import resetSecondPage from "../controller/secondReset";
 import SecondGenerateImg from "../controller/secondGen";
 
 export default function renderSecondCompPage(){
@@ -39,7 +39,7 @@ export default function renderSecondCompPage(){
     resetbtn.innerHTML = 'RESET';
     leftside.appendChild(resetbtn);
 
-    resetbtn.addEventListener('click',resetPage);
+    resetbtn.addEventListener('click',resetSecondPage);
     
     const rightdiv = document.querySelector('.right-buttons');
     const hairdye = document.querySelector('.wheel');
