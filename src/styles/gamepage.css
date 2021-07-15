@@ -13,6 +13,13 @@
 
 .finish{
     margin-top: 50px;
+    background-color: rgb(62, 62, 114);
+    color: white;
+}
+
+.reset{
+    background-color: rgb(62, 62, 114);
+    color: white;
 }
 
 img.bald {
@@ -62,6 +69,8 @@ img.bald {
 .submit{
   margin-top: 400px;
   width: 100px;
+  background-color: rgb(62, 62, 114);
+  color: white;
 }
 
 
@@ -76,7 +85,7 @@ img.bald {
     height: auto;
     border-radius: 10px;
     font-size: 40px;
-    background-color: darkorange;
+    background-color: rgb(62, 62, 114);
     color: white;
 }
 
@@ -99,6 +108,8 @@ img.bald {
     margin-top: 370px;
     padding: 5px;
     font-size: 15px;
+    background-color: rgb(62, 62, 114);
+    color: white;
 }
 
 

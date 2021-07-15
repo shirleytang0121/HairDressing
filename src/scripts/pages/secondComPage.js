@@ -17,6 +17,7 @@ export default function renderSecondCompPage(){
     const startbtn = document.createElement('button');
     startbtn.classList.add('start');
     startbtn.innerHTML = 'START'
+    startbtn.style.display = 'none';
     maindiv.appendChild(messagediv);
     messagediv.appendChild(startbtn);
 
@@ -52,5 +53,14 @@ export default function renderSecondCompPage(){
     const gameImg = new SecondGenerateImg();
     const limitDye = new LimitDye();
     const clock = new Clock();
+
+    
+    const introp = document.querySelector(".introp");
+    introp.innerHTML = 'Welcome to competition mode. In this mode, you need to create hair style according to the image show on the left with in 30 secs.'
+    const readybtn = document.querySelector('.readybtn')
+   
+    readybtn.addEventListener('click',()=>{
+        startbtn.style.display = 'block';
+    })
 
 }
