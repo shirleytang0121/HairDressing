@@ -24,7 +24,7 @@
     background-color: indianred;
     padding: 3px;
     color: white;
-    margin-left: 180px;
+    margin-left: 200px;
 }
 
 #right-reset{
@@ -34,5 +34,17 @@
     padding: 3px;
     color: white;
     margin-left: 180px;
+}
+
+.msgLeft{
+    position: absolute;
+    margin-left: -10px;
+    margin-top: -70px;
+}
+
+.msgRight{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -70px;
 }
 

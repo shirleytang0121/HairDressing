@@ -200,7 +200,15 @@ export default function renderTwoPlayer(){
         bangs.style.filter="";
     })
 
-    const generatorForTwo = new GeneraterForTwo()
+    const generatorForTwo = new GeneraterForTwo();
+
+    const msgLeft = document.createElement('div')
+    msgLeft.classList.add('msgLeft');
+    const msgRight = document.createElement('div')
+    msgRight.classList.add('msgRight');
+
+    midLeftdiv.appendChild(msgLeft);
+    midRightdiv.appendChild(msgRight);
 
 
 

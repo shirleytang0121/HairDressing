@@ -62,12 +62,12 @@ export default function renderIntroPage(){
 
     });
     startbtnF.addEventListener('mouseleave',()=>{
-        crebtn.style.display = 'block';
-        rightdiv.appendChild(crebtn);
-        compbtn.style.display = 'block';
-        rightdiv.appendChild(compbtn);
-        twobtn.style.display= 'block';
-        rightdiv.appendChild(twobtn);
+        crebtn.style.display = 'none';
+        // rightdiv.appendChild(crebtn);
+        compbtn.style.display = 'none';
+        // rightdiv.appendChild(compbtn);
+        twobtn.style.display= 'none';
+        // rightdiv.appendChild(twobtn);
 
     });
 

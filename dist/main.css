@@ -405,6 +405,18 @@ table {
     margin-left: 180px;
 }
 
+.msgLeft{
+    position: absolute;
+    margin-left: -10px;
+    margin-top: -70px;
+}
+
+.msgRight{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -70px;
+}
+
 
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
