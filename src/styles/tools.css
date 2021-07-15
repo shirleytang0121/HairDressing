@@ -21,5 +21,7 @@
 }
 
 .correctImg{
-    width: 120px;
+    margin-top: -10px;
+    width: 140px;
+    background-color: gray;
 }

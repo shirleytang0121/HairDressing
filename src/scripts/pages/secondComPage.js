@@ -2,6 +2,7 @@ import renderNewGamePage from "./secondPage";
 import LimitDye from "../tools/limitDye";
 import Clock from "../controller/clock";
 import resetPage from "../controller/reset";
+import SecondGenerateImg from "../controller/secondGen";
 
 export default function renderSecondCompPage(){
     renderNewGamePage();
@@ -48,6 +49,7 @@ export default function renderSecondCompPage(){
     colorSelector.classList.add('colorSelector');
     rightdiv.appendChild(colorSelector);
 
+    const gameImg = new SecondGenerateImg();
     const limitDye = new LimitDye();
     const clock = new Clock();
 
