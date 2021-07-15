@@ -19,7 +19,7 @@ export default function isCorrect(correct){
 
     setTimeout(()=>{
         correctImg.src = ''
-    },700)
+    },1200)
     
     
     

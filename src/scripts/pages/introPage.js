@@ -1,6 +1,7 @@
 import renderGamePage from "./gamePage.js"
 import renderNewGamePage from './secondPage'
 import renderCompetitionPage from "./compPage.js";
+import renderSecondCompPage from "./secondComPage.js";
 
 export default function renderIntroPage(){
     const gender = '';
@@ -37,7 +38,7 @@ export default function renderIntroPage(){
     compbtnM.innerHTML='COMPETITION MODE';
     compbtnM.classList.add('mode');
     compbtnM.style.display = 'none';
-    compbtnM.addEventListener('click',renderNewGamePage);
+    compbtnM.addEventListener('click',renderSecondCompPage);
 
 
     

@@ -30,6 +30,14 @@ export default function timeoutPage(){
     myscore.innerHTML =score.id;
     middiv.appendChild(scorediv);
     middiv.appendChild(myscore);
+  
+    const restartbtn = document.createElement('button')
+    middiv.appendChild(restartbtn);
+    restartbtn.innerHTML = 'RESTART'
+    restartbtn.classList.add('restart');
+    restartbtn.addEventListener('click', ()=>{
+        history.go(0)
+    })
     
     
 }
