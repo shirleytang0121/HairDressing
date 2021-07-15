@@ -1,5 +1,6 @@
 import resetPage from "./reset";
 import { hexToCSSFilter } from 'hex-to-css-filter';
+import isCorrect from "./isCorrect";
 
 
 export default class GenerateImg{
@@ -45,17 +46,6 @@ export default class GenerateImg{
 
 
     handleGnerater(){
-       
-        // this.hair_obj = document.querySelector('.hair-style');
-        // this.bangs_obj = document.querySelector('.bang-style');
-        // console.log(this.hair_obj);
-        // console.log(this.bangs_obj);
-        // console.log(this.hair_obj.style.filter);
-        // this.userDesign = {
-        //     hair_style: this.hair_obj.id,
-        //     bangs_style: this.bangs_obj.id,
-        //     color: this.hair_obj.style.filter
-        // }
         this.randIndex = Math.floor(Math.random()*20);
         this.imgShow.src = this.imgSrcArr[this.randIndex];
         resetPage()
@@ -200,8 +190,10 @@ export default class GenerateImg{
        
         if (this.gameImg.hair_style === this.hair_obj.id  && this.gameImg.bangs_style===this.bangs_obj.id && this.gameImg.color === this.hair_obj.style.filter ){
             console.log('true');
+            isCorrect(true)
         }else{
             console.log('false');
+            isCorrect(false)
         }
 
         this.handleGnerater()
