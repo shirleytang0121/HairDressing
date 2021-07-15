@@ -22,18 +22,23 @@ export default class LimitDye{
             this.redbtn = document.createElement('button');
             this.redbtn.classList.add('redbtn');
             this.redbtn.style.backgroundColor = 'red';
+            this.redbtn.innerHTML='R';
             this.bluebtn = document.createElement('button');
             this.bluebtn.classList.add('bluebtn');
             this.bluebtn.style.backgroundColor = 'blue';
+            this.bluebtn.innerHTML = 'B'
             this.greenbtn = document.createElement('button');
             this.greenbtn.classList.add('greenbtn');
             this.greenbtn.style.backgroundColor = 'green';
+            this.greenbtn.innerHTML = 'G'
             this.yellowbtn = document.createElement('button');
             this.yellowbtn.classList.add('yellowbtn');
             this.yellowbtn.style.backgroundColor = 'yellow';
+            this.yellowbtn.innerHTML = 'Y'
             this.purplebtn = document.createElement('button');
             this.purplebtn.classList.add('purplebtn');
             this.purplebtn.style.backgroundColor = 'purple';
+            this.purplebtn.innerHTML = 'P'
 
             this.colordiv[i].appendChild(this.redbtn);
             this.colordiv[i].appendChild(this.bluebtn);
@@ -75,15 +80,27 @@ export default class LimitDye{
     handleShow(e){
         e.preventDefault();
         if(this.colordiv.length > 1){
-            this.colordiv[1].style.display = 'flex';  
+            if(this.colordiv[1].style.display === 'none'){
+                this.colordiv[1].style.display = 'flex'; 
+            }else{
+                this.colordiv[1].style.display = 'none'; 
+            } 
         } else{
-            this.colordiv[0].style.display = 'flex';  
+            if(this.colordiv[0].style.display === 'none'){
+                this.colordiv[0].style.display = 'flex'; 
+            }else{
+                this.colordiv[0].style.display = 'none'; 
+            } 
         }
     }
 
     handleShowPress(e){
         if(e.key === '7'){
-            this.colordiv[0].style.display = 'flex';  
+            if(this.colordiv[0].style.display === 'none'){
+                this.colordiv[0].style.display = 'flex';
+            }else{
+                this.colordiv[0].style.display = 'none';
+            }  
         }
         
     }

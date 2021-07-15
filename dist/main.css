@@ -4,7 +4,7 @@
 .right-buttons{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     
 }
 
@@ -13,8 +13,9 @@
     flex-direction: column;
     /* margin-top: 200px;
     margin-left: -20px; */
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 }
+
 
 .finish{
     margin-top: 50px;
@@ -351,7 +352,16 @@ table {
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/tools.css ***!
   \****************************************************************************************************/
 .tools{
-    width: 60px;
+    width: 50px;
+}
+
+
+.right-buttons > button{
+    margin-top: 4px;
+}
+
+.left-buttons > button{
+    margin-top: 4px;
 }
 
 .wheel{
@@ -370,8 +380,8 @@ table {
 }
 
 .colorSelector > button{
-    width: 80px;
-    height: 30px;
+    width: 67px;
+    height: 26px;
 }
 
 .correctImg{

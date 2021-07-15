@@ -1,5 +1,14 @@
 .tools{
-    width: 60px;
+    width: 50px;
+}
+
+
+.right-buttons > button{
+    margin-top: 4px;
+}
+
+.left-buttons > button{
+    margin-top: 4px;
 }
 
 .wheel{
@@ -18,8 +27,8 @@
 }
 
 .colorSelector > button{
-    width: 80px;
-    height: 30px;
+    width: 67px;
+    height: 26px;
 }
 
 .correctImg{
