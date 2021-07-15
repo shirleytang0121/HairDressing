@@ -22,6 +22,12 @@
     color: white;
 }
 
+.back{
+    margin-top: 70px;
+    background-color: rgb(62, 62, 114);
+    color: white;
+}
+
 img.bald {
     position: relative;
     margin-left:auto;

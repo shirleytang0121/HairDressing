@@ -9,6 +9,7 @@ import LimitDye from '../tools/limitDye.js'
 import resetPage from '../controller/reset.js'
 import finishPage from '../controller/finish.js'
 import GeneraterForTwo from '../controller/generatorForTwoPlayer.js'
+import Countdown from '../controller/countdown.js'
 
 export default function renderTwoPlayer(){
     const salon = document.querySelector('.salon');
@@ -219,12 +220,19 @@ export default function renderTwoPlayer(){
     readybtn.innerHTML= 'READY';
     const introp = document.createElement('p')
     introp.classList.add('introp')
-    introp.innerHTML='Welcome to two player mode. In this mode, Left user use keybord to change hair style. Right user use mouse to change hair style. Who first gets 5 style done wins the game'
+    introp.innerHTML='Welcome to two player mode. In this mode, Left user use keyboard to change hair style. Right user use mouse to change hair style. Who first gets 5 style done wins the game'
      readybtn.addEventListener('click',()=>{
          introdiv.style.display = 'none';
      })
     mainPage.appendChild(introdiv)
     introdiv.appendChild(introp);
     introdiv.appendChild(readybtn);
+
+    const countdowndiv = document.createElement('div');
+    countdowndiv.classList.add('countdowndiv');
+    middiv.appendChild(countdowndiv);
+    countdowndiv.style.display='none';
+    const countdown = new Countdown();
+
 
 }

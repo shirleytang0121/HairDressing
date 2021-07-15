@@ -40,7 +40,16 @@ export default function renderCompetitionPage(){
     resetbtn.innerHTML = 'RESET';
     leftside.appendChild(resetbtn);
 
+    const backbtn = document.createElement("button");
+    backbtn.classList.add('back');
+    backbtn.style.marginTop='17px';
+    backbtn.innerHTML = 'BACK'
+    leftside.appendChild(backbtn);
+
     resetbtn.addEventListener('click',resetPage);
+    backbtn.addEventListener('click',()=>{
+        history.go(0)
+    })
     
     const rightdiv = document.querySelector('.right-buttons');
     const hairdye = document.querySelector('.wheel');
@@ -52,7 +61,7 @@ export default function renderCompetitionPage(){
 
     const genImg = new GenerateImg();
     const limitDye = new LimitDye();
-    const clock = new Clock();
+    const clock = new Clock(30);
 
 
     const introp = document.querySelector(".introp");

@@ -141,11 +141,20 @@ export default function renderGamePage(){
     finishbtn.classList.add('finish');
     finishbtn.innerHTML= 'FINISH';
 
+    const backbtn = document.createElement("button");
+    backbtn.classList.add('back');
+    backbtn.innerHTML = 'BACK'
+
+
     leftbtns.appendChild(resetbtn);
     leftbtns.appendChild(finishbtn);
+    leftbtns.appendChild(backbtn);
 
     resetbtn.addEventListener('click',resetPage);
     finishbtn.addEventListener('click',finishPage);
+    backbtn.addEventListener('click',()=>{
+        history.go(0)
+    })
 
 
     const introdiv = document.createElement('div')

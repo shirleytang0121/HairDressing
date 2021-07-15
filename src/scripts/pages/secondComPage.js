@@ -52,7 +52,7 @@ export default function renderSecondCompPage(){
 
     const gameImg = new SecondGenerateImg();
     const limitDye = new LimitDye();
-    const clock = new Clock();
+    const clock = new Clock(30);
 
     
     const introp = document.querySelector(".introp");
