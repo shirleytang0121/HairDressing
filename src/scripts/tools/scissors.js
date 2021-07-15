@@ -4,6 +4,7 @@ export default class Scissors{
         this.scissors_btn = Array.from(document.getElementsByClassName("scissors"));
         if (document.querySelector(".hair-style")=== null){
             this.hair_obj= document.querySelector(".man-style");
+            this.hair_obj_L=document.querySelector(".man-style-L")
           }else{
              this.hair_obj= document.querySelector(".hair-style");
              this.hair_obj_L=document.querySelector(".hair-style-L")
@@ -136,16 +137,16 @@ export default class Scissors{
                 this.hair_obj.id = "man-long-1";
                 break;
             case 'man-long-1':
-                this.hair_obj.src = "./src/image/manstyle/short/short-1.png";
-                this.hair_obj.id = "man-short-1";
+                this.hair_obj_L.src = "./src/image/manstyle/short/short-1.png";
+                this.hair_obj_L.id = "man-short-1";
                 break;
             case 'man-long-2':
-                this.hair_obj.src = "./src/image/manstyle/short/short-1.png";
-                this.hair_obj.id = "man-short-1";
+                this.hair_obj_L.src = "./src/image/manstyle/short/short-1.png";
+                this.hair_obj_L.id = "man-short-1";
                 break;
             case 'man-long-3':
-                this.hair_obj.src = "./src/image/manstyle/short/short-1.png";
-                this.hair_obj.id = "man-short-1";
+                this.hair_obj_L.src = "./src/image/manstyle/short/short-1.png";
+                this.hair_obj_L.id = "man-short-1";
                 break;
            
             default:

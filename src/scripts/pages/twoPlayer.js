@@ -8,6 +8,7 @@ import Bangs from '../tools/bangs.js'
 import LimitDye from '../tools/limitDye.js'
 import resetPage from '../controller/reset.js'
 import finishPage from '../controller/finish.js'
+import GeneraterForTwo from '../controller/generatorForTwoPlayer.js'
 
 export default function renderTwoPlayer(){
     const salon = document.querySelector('.salon');
@@ -123,7 +124,8 @@ export default function renderTwoPlayer(){
         const colorSelector = document.createElement('div');
         colorSelector.classList.add('colorSelector');
        
-
+        
+        
         
         toolsbar[i].appendChild(scissorsbtn);
         toolsbar[i].appendChild(curlingIronbtn);
@@ -148,6 +150,37 @@ export default function renderTwoPlayer(){
     const comb =new Comb();
     const bangs=new Bangs();
 
+
+    
+    const imgdiv = document.createElement('div')
+    imgdiv.classList.add('imgdiv');
+    middiv.appendChild(imgdiv);
+
+    const submitbtn = document.createElement('button');
+    submitbtn.classList.add('submit');
+    submitbtn.innerHTML = 'SUBMIT';
+    submitbtn.setAttribute('id','left-submit');
+    midLeftdiv.appendChild(submitbtn);
+
+    const submitbtn2 = document.createElement('button');
+    submitbtn2.classList.add('submit');
+    submitbtn2.innerHTML = 'SUBMIT';
+    submitbtn2.setAttribute('id','right-submit')
+    midRightdiv.appendChild(submitbtn2);
+
+    const resetbtn = document.createElement('button');
+    resetbtn.classList.add('reset');
+    resetbtn.innerHTML = 'RESET';
+    resetbtn.setAttribute('id','left-reset')
+    midLeftdiv.appendChild(resetbtn);
+
+    const resetbtn2 = document.createElement('button');
+    resetbtn2.classList.add('reset');
+    resetbtn2.innerHTML = 'RESET';
+    resetbtn2.setAttribute('id','right-reset');
+    midRightdiv.appendChild(resetbtn2);
+
+    const generatorForTwo = new GeneraterForTwo()
 
 
 

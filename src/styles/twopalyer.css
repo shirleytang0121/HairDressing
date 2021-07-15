@@ -1,0 +1,38 @@
+/* .gameImgForTwo{
+    position: absolute;
+} */
+
+.submit#left-submit{
+    position: absolute;
+    margin-top: 0px;
+    background-color: indianred;
+    padding: 3px;
+    color: white;
+}
+
+.submit#right-submit{
+    position: absolute;
+    margin-top: 0px;
+    background-color: indianred;
+    padding: 3px;
+    color: white;
+}
+
+#left-reset{
+    position: absolute;
+    margin-top: 0px;
+    background-color: indianred;
+    padding: 3px;
+    color: white;
+    margin-left: 180px;
+}
+
+#right-reset{
+    position: absolute;
+    margin-top: 0px;
+    background-color: indianred;
+    padding: 3px;
+    color: white;
+    margin-left: 180px;
+}
+

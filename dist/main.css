@@ -327,6 +327,48 @@ table {
     width: 140px;
     background-color: gray;
 }
+/*!********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/twopalyer.css ***!
+  \********************************************************************************************************/
+/* .gameImgForTwo{
+    position: absolute;
+} */
+
+.submit#left-submit{
+    position: absolute;
+    margin-top: 0px;
+    background-color: indianred;
+    padding: 3px;
+    color: white;
+}
+
+.submit#right-submit{
+    position: absolute;
+    margin-top: 0px;
+    background-color: indianred;
+    padding: 3px;
+    color: white;
+}
+
+#left-reset{
+    position: absolute;
+    margin-top: 0px;
+    background-color: indianred;
+    padding: 3px;
+    color: white;
+    margin-left: 180px;
+}
+
+#right-reset{
+    position: absolute;
+    margin-top: 0px;
+    background-color: indianred;
+    padding: 3px;
+    color: white;
+    margin-left: 180px;
+}
+
+
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
