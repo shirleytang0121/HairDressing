@@ -109,6 +109,11 @@ export default function renderNewGamePage(){
     const bangs= new Bangs();
     const hairdye = new  HairDye();
 
+
+    const placediv = document.createElement('div');
+    placediv.style.height = '100px';
+    leftbtns.appendChild(placediv);
+
     const resetbtn = document.createElement('button');
     resetbtn.classList.add('reset');
     resetbtn.innerHTML = 'RESET';
@@ -117,11 +122,19 @@ export default function renderNewGamePage(){
     finishbtn.classList.add('finish');
     finishbtn.innerHTML= 'FINISH';
 
+    const backbtn = document.createElement("button");
+    backbtn.classList.add('back');
+    backbtn.innerHTML = 'BACK'
+
     leftbtns.appendChild(resetbtn);
     leftbtns.appendChild(finishbtn);
+    leftbtns.appendChild(backbtn);
 
     resetbtn.addEventListener('click',resetSecondPage);
     finishbtn.addEventListener('click',finishPage);
+    backbtn.addEventListener('click',()=>{
+        history.go(0)
+    })
     
 
     
