@@ -1,5 +1,6 @@
 export default function timeoutPage(){
-   
+    const score = document.querySelector('.submit');
+
     const mainCharacter = document.querySelector('.main-character');
     mainCharacter.style.display="none";
   
@@ -16,7 +17,9 @@ export default function timeoutPage(){
     const mirror = document.querySelector('.mirror');
     mirror.style.marginLeft = '-200px';
     
-    let score = 0;
+    
+   
+    console.log(score);
    
     const middiv = document.querySelector('.middiv')
     const scorediv = document.createElement('div');
@@ -24,7 +27,7 @@ export default function timeoutPage(){
     const myscore = document.createElement('div');
     myscore.classList.add('score');
     scorediv.innerHTML = "Your score is"
-    myscore.innerHTML =score;
+    myscore.innerHTML =score.id;
     middiv.appendChild(scorediv);
     middiv.appendChild(myscore);
     

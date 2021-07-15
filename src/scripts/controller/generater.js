@@ -39,7 +39,7 @@ export default class GenerateImg{
             this.imgdiv.appendChild(this.imgShow);
 
             this.submitbtn = document.querySelector('.submit');
-            
+            this.submitbtn.setAttribute('id','0');
             
             this.submitbtn.addEventListener('click', this.checkIfSame.bind(this));
     }
@@ -172,20 +172,20 @@ export default class GenerateImg{
     
         this.hair_obj = document.querySelector('.hair-style');
         this.bangs_obj = document.querySelector('.bang-style');
-        console.log('hair')
-        console.log(this.gameImg.hair_style)
-        console.log(this.hair_obj.id)
-        console.log(this.imgShow.hair_style === this.hair_obj.id)
+        // console.log('hair')
+        // console.log(this.gameImg.hair_style)
+        // console.log(this.hair_obj.id)
+        // console.log(this.imgShow.hair_style === this.hair_obj.id)
     
-        console.log('bangs')
-        console.log(this.gameImg.bangs_style)
-        console.log(this.bangs_obj.id)
-        console.log(this.gameImg.bangs_style===this.bangs_obj.id)
+        // console.log('bangs')
+        // console.log(this.gameImg.bangs_style)
+        // console.log(this.bangs_obj.id)
+        // console.log(this.gameImg.bangs_style===this.bangs_obj.id)
     
-        console.log('color')
-        console.log(this.gameImg.color)
-        console.log(this.hair_obj.style.filter)
-        console.log(this.gameImg.color === this.hair_obj.style.filter)
+        // console.log('color')
+        // console.log(this.gameImg.color)
+        // console.log(this.hair_obj.style.filter)
+        // console.log(this.gameImg.color === this.hair_obj.style.filter)
        
        
         if (this.gameImg.hair_style === this.hair_obj.id  && this.gameImg.bangs_style===this.bangs_obj.id && this.gameImg.color === this.hair_obj.style.filter ){
