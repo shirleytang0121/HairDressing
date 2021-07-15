@@ -14,23 +14,25 @@ export default class LimitDye{
            this.hair_obj_L= document.querySelector(".hair-style-L");
            this.bangs_obj_L = document.querySelector(".bang-style-L");
         }
-        this.colordiv = Array.from(document.getElementsByClassName("colorSelector"));
+
+
+       this.colordiv = Array.from(document.getElementsByClassName("colorSelector"));
        for( let i=0; i< this.dye_btn.length;i++){
             this.colordiv[i].style.display = 'none';
             this.redbtn = document.createElement('button');
-            this.redbtn.classList.add('colorbtn');
+            this.redbtn.classList.add('redbtn');
             this.redbtn.style.backgroundColor = 'red';
             this.bluebtn = document.createElement('button');
-            this.bluebtn.classList.add('colorbtn');
+            this.bluebtn.classList.add('bluebtn');
             this.bluebtn.style.backgroundColor = 'blue';
             this.greenbtn = document.createElement('button');
-            this.greenbtn.classList.add('colorbtn');
+            this.greenbtn.classList.add('greenbtn');
             this.greenbtn.style.backgroundColor = 'green';
             this.yellowbtn = document.createElement('button');
-            this.yellowbtn.classList.add('colorbtn');
+            this.yellowbtn.classList.add('yellowbtn');
             this.yellowbtn.style.backgroundColor = 'yellow';
             this.purplebtn = document.createElement('button');
-            this.purplebtn.classList.add('colorbtn');
+            this.purplebtn.classList.add('purplebtn');
             this.purplebtn.style.backgroundColor = 'purple';
 
             this.colordiv[i].appendChild(this.redbtn);
@@ -40,14 +42,26 @@ export default class LimitDye{
             this.colordiv[i].appendChild(this.purplebtn);
        }
 
+       this.redbtn = Array.from(document.getElementsByClassName('redbtn'));
+       this.bluebtn = Array.from(document.getElementsByClassName('bluebtn'));
+       this.greenbtn = Array.from(document.getElementsByClassName('greenbtn'));
+       this.yellowbtn = Array.from(document.getElementsByClassName('yellowbtn'));
+       this.purplebtn = Array.from(document.getElementsByClassName('purplebtn'));
+
+
        if(this.dye_btn.length > 1){
-            this.dye_btn[0].addEventListener('click',this.handleShow.bind(this))
+            this.dye_btn[0].addEventListener('click',this.handleShowPress.bind(this))
             this.dye_btn[1].addEventListener('click',this.handleShow.bind(this))
-            this.redbtn.addEventListener('click',this.handleRed.bind(this))
-            this.bluebtn.addEventListener('click',this.handleBlue.bind(this))
-            this.greenbtn.addEventListener('click',this.handleGreen.bind(this))
-            this.yellowbtn.addEventListener('click',this.handleYellow.bind(this));
-            this.purplebtn.addEventListener('click',this.handlePurple.bind(this))
+            this.redbtn[0].addEventListener('click',this.handleRedPress.bind(this))
+            this.redbtn[1].addEventListener('click',this.handleRed.bind(this))
+            this.bluebtn[0].addEventListener('click',this.handleBluePress.bind(this))
+            this.bluebtn[1].addEventListener('click',this.handleBlue.bind(this))
+            this.greenbtn[0].addEventListener('click',this.handleGreenPress.bind(this))
+            this.greenbtn[1].addEventListener('click',this.handleGreen.bind(this))
+            this.yellowbtn[0].addEventListener('click',this.handleYellowPress.bind(this));
+            this.yellowbtn[1].addEventListener('click',this.handleYellow.bind(this));
+            this.purplebtn[0].addEventListener('click',this.handlePurplePress.bind(this))
+            this.purplebtn[1].addEventListener('click',this.handlePurple.bind(this))
        }else{
             this.dye_btn[0].addEventListener('click',this.handleShow.bind(this))
             this.redbtn.addEventListener('click',this.handleRed.bind(this))
@@ -67,10 +81,23 @@ export default class LimitDye{
         }
     }
 
+    handleShowPress(e){
+        this.colordiv[0].style.display = 'flex';  
+        
+    }
+
+
+
     handleRed(e){
         const cssFilter= hexToCSSFilter("#fc1a1a");
         this.hair_obj.style.filter = cssFilter.filter.slice(0,-1);
         this.bangs_obj.style.filter = cssFilter.filter.slice(0,-1);
+    }
+
+    handleRedPress(e){
+        const cssFilter= hexToCSSFilter("#fc1a1a");
+        this.hair_obj_L.style.filter = cssFilter.filter.slice(0,-1);
+        this.bangs_obj_L.style.filter = cssFilter.filter.slice(0,-1);
     }
 
     handleBlue(e){
@@ -78,11 +105,21 @@ export default class LimitDye{
         this.hair_obj.style.filter = cssFilter.filter.slice(0,-1);
         this.bangs_obj.style.filter = cssFilter.filter.slice(0,-1);
     }
+    handleBluePress(e){
+        const cssFilter= hexToCSSFilter("#401afc");
+        this.hair_obj_L.style.filter = cssFilter.filter.slice(0,-1);
+        this.bangs_obj_L.style.filter = cssFilter.filter.slice(0,-1);
+    }
 
     handleGreen(e){
         const cssFilter= hexToCSSFilter("#1afc77");
         this.hair_obj.style.filter = cssFilter.filter.slice(0,-1);
         this.bangs_obj.style.filter = cssFilter.filter.slice(0,-1);
+    }
+    handleGreenPress(e){
+        const cssFilter= hexToCSSFilter("#1afc77");
+        this.hair_obj_L.style.filter = cssFilter.filter.slice(0,-1);
+        this.bangs_obj_L.style.filter = cssFilter.filter.slice(0,-1);
     }
 
     handleYellow(e){
@@ -90,11 +127,22 @@ export default class LimitDye{
         this.hair_obj.style.filter = cssFilter.filter.slice(0,-1);
         this.bangs_obj.style.filter = cssFilter.filter.slice(0,-1);
     }
+    handleYellowPress(e){
+        const cssFilter= hexToCSSFilter("#fcdc1a");
+        this.hair_obj_L.style.filter = cssFilter.filter.slice(0,-1);
+        this.bangs_obj_L.style.filter = cssFilter.filter.slice(0,-1);
+    }
 
     handlePurple(e){
         const cssFilter= hexToCSSFilter("#a516a5");
         this.hair_obj.style.filter = cssFilter.filter.slice(0,-1);
         this.bangs_obj.style.filter = cssFilter.filter.slice(0,-1);
+    }
+
+    handlePurplePress(e){
+        const cssFilter= hexToCSSFilter("#a516a5");
+        this.hair_obj_L.style.filter = cssFilter.filter.slice(0,-1);
+        this.bangs_obj_L.style.filter = cssFilter.filter.slice(0,-1);
     }
 
     

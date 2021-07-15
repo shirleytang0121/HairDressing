@@ -353,10 +353,10 @@ table {
     display: flex;
     flex-direction: column;
 }
-.colorbtn{
-    width: 100px;
+
+.colorSelector > button{
+    width: 80px;
     height: 30px;
-    
 }
 
 .correctImg{
