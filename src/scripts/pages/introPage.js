@@ -2,6 +2,7 @@ import renderGamePage from "./gamePage.js"
 import renderNewGamePage from './secondPage'
 import renderCompetitionPage from "./compPage.js";
 import renderSecondCompPage from "./secondComPage.js";
+import renderTwoPlayer from "./twoPlayer.js";
 
 export default function renderIntroPage(){
     const gender = '';
@@ -27,6 +28,11 @@ export default function renderIntroPage(){
     compbtn.classList.add('mode');
     compbtn.style.display = 'none';
     compbtn.addEventListener('click',renderCompetitionPage);
+    const twobtn = document.createElement('button');
+    twobtn.innerHTML = 'TWO PLAYER MODE';
+    twobtn.classList.add('mode');
+    twobtn.style.display = 'none';
+    twobtn.addEventListener('click',renderTwoPlayer)
 
 
     const crebtnM = document.createElement('button');
@@ -51,6 +57,8 @@ export default function renderIntroPage(){
         rightdiv.appendChild(crebtn);
         compbtn.style.display = 'block';
         rightdiv.appendChild(compbtn);
+        twobtn.style.display= 'block';
+        rightdiv.appendChild(twobtn);
 
     });
 
