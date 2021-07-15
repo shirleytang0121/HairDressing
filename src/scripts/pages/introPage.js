@@ -102,6 +102,16 @@ export default function renderIntroPage(){
 
     leftdiv.appendChild(startbtnM);
     rightdiv.appendChild(startbtnF);
+
+    const giticon = document.createElement('img');
+    giticon.classList.add('giticon');
+    giticon.src ='./src/image/GitHub-logo.png';
+    leftdiv.appendChild(giticon)
+
+    const linkedinicon = document.createElement('img');
+    linkedinicon.classList.add('linkedinIcon');
+    linkedinicon.src = './src/image/Iinkedin.png';
+    leftdiv.appendChild(linkedinicon);
     
 
 

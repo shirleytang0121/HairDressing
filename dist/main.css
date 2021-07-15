@@ -307,6 +307,22 @@ body{
     border-radius: 5px;
     font-size: 15px;
 }
+
+.giticon{
+    margin-left: -300px;
+    position:absolute;
+    margin-top: 100px;
+    width: 65px;
+    height: auto;
+}
+
+.linkedinIcon{
+    position: absolute;
+    margin-left: -290px;
+    margin-top: 160px;
+    width: 50px;
+    height: auto;
+}
 /*!****************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/reset.css ***!
   \****************************************************************************************************/
