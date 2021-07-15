@@ -49,7 +49,6 @@ export default function renderCompetitionPage(){
     colorSelector.classList.add('colorSelector');
     rightdiv.appendChild(colorSelector);
 
-
     const genImg = new GenerateImg();
     const limitDye = new LimitDye();
     const clock = new Clock();
