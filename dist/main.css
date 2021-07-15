@@ -4,14 +4,16 @@
 .right-buttons{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     
 }
 
 .left-buttons{
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
-    margin-left: -20px;
+    /* margin-top: 200px;
+    margin-left: -20px; */
+    justify-content: space-evenly;
 }
 
 .finish{
@@ -21,6 +23,7 @@
 }
 
 .reset{
+    margin-top: 50px;
     background-color: rgb(62, 62, 114);
     color: white;
 }
