@@ -107,20 +107,29 @@ img.bald {
 /*!********************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/hairstyle.css ***!
   \********************************************************************************************************/
-img.hair-style {
-    position: absolute;
-    
-}
 
 img.bang-style{
     position: absolute;
 }
 
 .hair-style {
+    position: absolute;
     width: 370px;
     height: auto;
     margin-left: -380px;
     margin-top: 48px;  
+}
+
+.hair-style-L{
+    position: absolute;
+    width: 370px;
+    height: auto;
+    margin-left: -380px;
+    margin-top: 48px;  
+}
+
+.bang-style-L{
+    position: absolute;
 }
 
 #initial-bangs{
@@ -130,12 +139,6 @@ img.bang-style{
     margin-top: 60px;  
 }
 
-#initial-bangs-L{
-    width: 315px;
-    height: auto;
-    margin-left: -350px;
-    margin-top: 60px;  
-}
 
 #second-bangs{
     width: 372px;
