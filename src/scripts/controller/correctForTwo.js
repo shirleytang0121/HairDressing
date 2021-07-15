@@ -19,7 +19,7 @@ export default function isCorrectForTwo(correct,user){
         score1++;
         submitbtn1.setAttribute('data-score',score1);
         console.log(score1);
-        if ( score1 === 1){
+        if ( score1 === 5){
             twouserFinish()
             console.log('gameover')
         }
@@ -30,7 +30,7 @@ export default function isCorrectForTwo(correct,user){
         score2++;
         submitbtn2.setAttribute('data-score',score2);
         console.log(score2);
-        if ( score2 === 1){
+        if ( score2 === 5){
             twouserFinish()
             console.log('gameover')
          }
