@@ -132,6 +132,10 @@ export default function renderGamePage(){
 
     console.log("this is game page")
 
+    const placediv = document.createElement('div');
+    placediv.style.height = '100px';
+
+    leftbtns.appendChild(placediv);
 
     const resetbtn = document.createElement('button');
     resetbtn.classList.add('reset');
