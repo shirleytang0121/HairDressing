@@ -44,7 +44,7 @@ export default class GenerateImg{
 
 
     handleGnerater(e){
-        e.preventDefault();
+       
         // this.hair_obj = document.querySelector('.hair-style');
         // this.bangs_obj = document.querySelector('.bang-style');
         // console.log(this.hair_obj);
@@ -62,7 +62,9 @@ export default class GenerateImg{
 
 
 
-    checkIfSame(){
+    checkIfSame(e){
+        e.preventDefault();
+
         const red = hexToCSSFilter("#fc1a1a").filter.slice(0,-1);
         const blue = hexToCSSFilter("#401afc").filter.slice(0,-1);
         const green = hexToCSSFilter("#1afc77").filter.slice(0,-1);
@@ -174,7 +176,7 @@ export default class GenerateImg{
             
         ]
     
-        let imgShow = imgObjArr[this.randIndex]
+        this.gameImg = imgObjArr[this.randIndex]
     
     
     
@@ -190,20 +192,21 @@ export default class GenerateImg{
             }
     
         console.log('hair')
-        console.log(imgShow.hair_style)
+        console.log(this.gameImg.hair_style)
         console.log(userDesign.hair_style)
-        console.log(imgShow.hair_style === userDesign.hair_style)
+        console.log(this.imgShow.hair_style === userDesign.hair_style)
     
         console.log('bangs')
-        console.log(imgShow.bangs_style)
+        console.log(this.gameImg.bangs_style)
         console.log(userDesign.bangs_style)
-        console.log(imgShow.bangs_style===userDesign.bangs_style)
+        console.log(this.gameImg.bangs_style===userDesign.bangs_style)
     
         console.log('color')
-        console.log(imgShow.color)
+        console.log(this.gameImg.color)
         console.log(userDesign.color)
-        console.log(imgShow.color === userDesign.color)
+        console.log(this.gameImg.color === userDesign.color)
        
+        this.handleGnerater()
         // if (imgShow.hair_style === userDesign.hair_style  && imgShow.bangs_style===userDesign.bangs_style && imgShow.color === userDesign.color ){
         //     console.log('true');
         // }else{
