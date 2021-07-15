@@ -78,6 +78,7 @@ export default function renderTwoPlayer(){
         const scissorsimg = document.createElement('img');
         scissorsimg.setAttribute('src','./src/image/tools/scissors.png');
         scissorsimg.classList.add('tools');
+        scissorsbtn.innerHTML = '1';
         scissorsbtn.appendChild(scissorsimg);
 
         const curlingIronbtn = document.createElement('button');
@@ -85,6 +86,7 @@ export default function renderTwoPlayer(){
         const curlingIronimg = document.createElement('img');
         curlingIronimg.setAttribute('src','./src/image/tools/curling-iron.png');
         curlingIronimg.classList.add('tools');
+        curlingIronbtn.innerHTML = '2';
         curlingIronbtn.appendChild(curlingIronimg);
 
         const hairdryerbtn =document.createElement('button');
@@ -92,6 +94,7 @@ export default function renderTwoPlayer(){
         const hairdryerimg =document.createElement('img');
         hairdryerimg.setAttribute('src','./src/image/tools/hair-dryer.png')
         hairdryerimg.classList.add('tools');
+        hairdryerbtn.innerHTML = '4';
         hairdryerbtn.appendChild(hairdryerimg);
 
         const straightenerbtn = document.createElement('button');
@@ -99,6 +102,7 @@ export default function renderTwoPlayer(){
         const straightenerimg = document.createElement('img');
         straightenerimg.setAttribute('src','./src/image/tools/straightener.png');
         straightenerimg.classList.add('tools');
+        straightenerbtn.innerHTML = '3';
         straightenerbtn.appendChild(straightenerimg);
 
         const hairdyebtn =document.createElement('button');
@@ -106,6 +110,7 @@ export default function renderTwoPlayer(){
         const hairdyeimg =document.createElement('img');
         hairdyeimg.setAttribute('src','./src/image/tools/hair-dye.png')
         hairdyeimg.classList.add('tools');
+        hairdyebtn.innerHTML = '7'
         hairdyebtn.appendChild(hairdyeimg);
 
         const combbtn = document.createElement('button');
@@ -113,6 +118,7 @@ export default function renderTwoPlayer(){
         const combimg = document.createElement('img')
         combimg.setAttribute('src','./src/image/tools/comb.png');
         combimg.classList.add('tools');
+        combbtn.innerHTML='5';
         combbtn.appendChild(combimg);
 
         const bangsbtn = document.createElement('button');
@@ -120,6 +126,7 @@ export default function renderTwoPlayer(){
         const bangsimg = document.createElement('img')
         bangsimg.setAttribute('src','./src/image/tools/spray.png');
         bangsimg.classList.add('tools');
+        bangsbtn.innerHTML = '6';
         bangsbtn.appendChild(bangsimg);
 
         const colorSelector = document.createElement('div');
@@ -204,19 +211,21 @@ export default function renderTwoPlayer(){
     })
 
     const backbtn1 = document.createElement("button");
-    backbtn1.classList.add('left-back');
-    backbtn1.style.marginTop='17px';
+    backbtn1.classList.add('back');
+    backbtn1.setAttribute('id','left-back')
     backbtn1.innerHTML = 'BACK'
     midLeftdiv.appendChild(backbtn1);
 
     const backbtn2 = document.createElement("button");
-    backbtn2.classList.add('right-back');
-    backbtn2.style.marginTop='17px';
+    backbtn2.classList.add('back');
+    backbtn2.setAttribute('id','right-back')
     backbtn2.innerHTML = 'BACK'
-    midRightdiv.appendChild(backbtn);
+    midRightdiv.appendChild(backbtn2);
 
-    backbtn1.addEventListener('click',()=>{
+    document.addEventListener('keydown',(e)=>{
+        if(e.key === 'q'){
         history.go(0)
+        }
     })
 
     backbtn2.addEventListener('click',()=>{

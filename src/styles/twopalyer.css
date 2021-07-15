@@ -8,6 +8,7 @@
     background-color: indianred;
     padding: 3px;
     color: white;
+    margin-left: -5px;
 }
 
 .submit#right-submit{
@@ -24,7 +25,7 @@
     background-color: indianred;
     padding: 3px;
     color: white;
-    margin-left: 200px;
+    margin-left: 130px;
 }
 
 #right-reset{
@@ -33,7 +34,25 @@
     background-color: indianred;
     padding: 3px;
     color: white;
-    margin-left: 180px;
+    margin-left: 140px;
+}
+
+#left-back{
+    position: absolute;
+    margin-top: 0px;
+    background-color: indianred;
+    padding: 3px;
+    color: white;
+    margin-left: 215px;
+}
+
+#right-back{
+    position: absolute;
+    margin-top: 0px;
+    background-color: indianred;
+    padding: 3px;
+    color: white;
+    margin-left: 250px;
 }
 
 .msgLeft{
@@ -48,9 +67,15 @@
     margin-top: -70px;
 }
 
+.show-score-1{
+    position: absolute;
+    margin-left: 30px;
+    font-size: 30px;
+}
 .show-score-2{
     position: absolute;
     margin-left: 30px;
+    font-size: 30px;
 }
 
 .countdown{
@@ -61,6 +86,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 40px;
-   margin-top: 100px;
+    padding-right: 40px;
+     margin-top: 230px;
 }
 
