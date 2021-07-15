@@ -65,7 +65,7 @@ export default function renderCompetitionPage(){
 
 
     const introp = document.querySelector(".introp");
-    introp.innerHTML = 'Welcome to competition mode. In this mode, you need to create hair style according to the image show on the left with in 30 secs.'
+    introp.innerHTML = 'Welcome to competition mode. In this mode, you need to create hair styles according to the images show on the left.'
     const readybtn = document.querySelector('.readybtn')
    
     readybtn.addEventListener('click',()=>{

@@ -135,6 +135,7 @@ export default function renderGamePage(){
 
     const resetbtn = document.createElement('button');
     resetbtn.classList.add('reset');
+    resetbtn.setAttribute('id', 'createReset')
     resetbtn.innerHTML = 'RESET';
 
     const finishbtn = document.createElement('button');

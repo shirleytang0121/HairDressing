@@ -249,7 +249,7 @@ export default function renderTwoPlayer(){
     readybtn.innerHTML= 'READY';
     const introp = document.createElement('p')
     introp.classList.add('introp')
-    introp.innerHTML='Welcome to two player mode. In this mode, Left user use keyboard to change hair style. Right user use mouse to change hair style. Who first gets 5 style done wins the game'
+    introp.innerHTML='Welcome to two player mode. In this mode, Left user uses keyboard to change the hair styles. Right user uses mouse to change hair style. Who first gets 5 styles done wins the game'
      readybtn.addEventListener('click',()=>{
          introdiv.style.display = 'none';
      })
