@@ -20,7 +20,7 @@ export default function renderIntroPage(){
     
     const crebtn = document.createElement('button');
     crebtn.innerHTML='CREATE MODE';
-    crebtn.classList.add('modebtn');
+    crebtn.classList.add('mode');
     crebtn.style.display = 'none';
     crebtn.addEventListener('click', renderGamePage);
     const compbtn = document.createElement('button');
@@ -37,7 +37,7 @@ export default function renderIntroPage(){
 
     const crebtnM = document.createElement('button');
     crebtnM.innerHTML='CREATE MODE';
-    crebtnM.classList.add('modebtn');
+    crebtnM.classList.add('mode');
     crebtnM.style.display = 'none';
     crebtnM.addEventListener('click', renderNewGamePage);
     const compbtnM = document.createElement('button');
@@ -59,17 +59,17 @@ export default function renderIntroPage(){
         rightdiv.appendChild(compbtn);
         twobtn.style.display= 'block';
         rightdiv.appendChild(twobtn);
-
     });
-    startbtnF.addEventListener('mouseleave',()=>{
-        crebtn.style.display = 'none';
-        // rightdiv.appendChild(crebtn);
-        compbtn.style.display = 'none';
-        // rightdiv.appendChild(compbtn);
-        twobtn.style.display= 'none';
-        // rightdiv.appendChild(twobtn);
 
-    });
+    
+    // startbtnF.addEventListener('mouseleave',()=>{
+    //     crebtn.style.display = 'none';
+    //     // rightdiv.appendChild(crebtn);
+    //     compbtn.style.display = 'none';
+    //     // rightdiv.appendChild(compbtn);
+    //     twobtn.style.display= 'none';
+    //     // rightdiv.appendChild(twobtn);
+    // })
 
     const startbtnM = document.createElement('button');
     startbtnM.innerHTML='HE'

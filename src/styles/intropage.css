@@ -20,3 +20,9 @@
 .genderbtn:hover{
     background-color: rgb(132, 137, 192);
 }
+
+.mode{
+   
+   margin-left: 100px;
+   padding: 5px;
+}

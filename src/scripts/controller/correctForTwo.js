@@ -1,3 +1,4 @@
+import twouserFinish from "./finishTwoPlayer";
 export default function isCorrectForTwo(correct,user){
     const msgLeft = document.querySelector('.msgLeft');
     const msgRight = document.querySelector('.msgRight');
@@ -18,6 +19,10 @@ export default function isCorrectForTwo(correct,user){
         score1++;
         submitbtn1.setAttribute('data-score',score1);
         console.log(score1);
+        if ( score1 === 1){
+            twouserFinish()
+            console.log('gameover')
+        }
     }else if(!correct && user === 'userL') {
         correctImg1.src = './src/image/no.png'
     }else if(correct && user === 'userR'){
@@ -25,6 +30,10 @@ export default function isCorrectForTwo(correct,user){
         score2++;
         submitbtn2.setAttribute('data-score',score2);
         console.log(score2);
+        if ( score2 === 1){
+            twouserFinish()
+            console.log('gameover')
+         }
     }else if(!correct && user === 'userR'){
         correctImg2.src = './src/image/no.png'
     }
@@ -33,6 +42,8 @@ export default function isCorrectForTwo(correct,user){
         correctImg1.src = '';
         correctImg2.src = '';
     },1200)
+
+    
     
     
     

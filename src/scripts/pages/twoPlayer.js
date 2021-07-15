@@ -173,7 +173,8 @@ export default function renderTwoPlayer(){
     resetbtn.innerHTML = 'RESET';
     resetbtn.setAttribute('id','left-reset')
     midLeftdiv.appendChild(resetbtn);
-    resetbtn.addEventListener('click', ()=>{
+    document.addEventListener('keydown', (e)=>{
+        if(e.key == 'd'){
         const hairL = document.querySelector('.hair-style-L');
         const bangsL = document.querySelector('.bang-style-L');
         hairL.setAttribute("id","initial");
@@ -182,6 +183,7 @@ export default function renderTwoPlayer(){
         bangsL.src = "./src/image/bangs/bangs-1.png";
         hairL.style.filter="";
         bangsL.style.filter="";
+        }
     })
 
     const resetbtn2 = document.createElement('button');
@@ -210,6 +212,19 @@ export default function renderTwoPlayer(){
     midLeftdiv.appendChild(msgLeft);
     midRightdiv.appendChild(msgRight);
 
-
+    const introdiv = document.createElement('div')
+    introdiv.classList.add('introdiv');
+    const readybtn = document.createElement('button')
+    readybtn.classList.add('readybtn');
+    readybtn.innerHTML= 'READY';
+    const introp = document.createElement('p')
+    introp.classList.add('introp')
+    introp.innerHTML='Welcome to two player mode. In this mode, Left user use keybord to change hair style. Right user use mouse to change hair style. Who first gets 5 style done wins the game'
+     readybtn.addEventListener('click',()=>{
+         introdiv.style.display = 'none';
+     })
+    mainPage.appendChild(introdiv)
+    introdiv.appendChild(introp);
+    introdiv.appendChild(readybtn);
 
 }
