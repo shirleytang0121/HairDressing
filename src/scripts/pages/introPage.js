@@ -103,15 +103,26 @@ export default function renderIntroPage(){
     leftdiv.appendChild(startbtnM);
     rightdiv.appendChild(startbtnF);
 
+    const gitlink = document.createElement('a');
+   
+    gitlink.href=('https://github.com/shirleytang0121/HairDressing')
     const giticon = document.createElement('img');
     giticon.classList.add('giticon');
     giticon.src ='./src/image/GitHub-logo.png';
-    leftdiv.appendChild(giticon)
+    gitlink.appendChild(giticon);
+    leftdiv.appendChild(gitlink)
 
+    const linkedlink = document.createElement('a');
+   
+    linkedlink.href=('https://www.linkedin.com/in/yuemin-tang-213a40179/')
     const linkedinicon = document.createElement('img');
     linkedinicon.classList.add('linkedinIcon');
     linkedinicon.src = './src/image/Iinkedin.png';
-    leftdiv.appendChild(linkedinicon);
+    linkedlink.appendChild(linkedinicon);
+    leftdiv.appendChild(linkedlink);
+
+
+    
     
 
 
