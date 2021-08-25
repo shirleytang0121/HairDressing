@@ -103,6 +103,35 @@ export default function renderIntroPage(){
     leftdiv.appendChild(startbtnM);
     rightdiv.appendChild(startbtnF);
 
+
+    const aboutBtn = document.createElement('button');
+    aboutBtn.classList.add('aboutBtn')
+    aboutBtn.innerHTML='ABOUT';
+    leftdiv.appendChild(aboutBtn);
+    
+
+    const introdiv = document.createElement('div')
+    introdiv.classList.add('introdiv');
+    const readybtn = document.createElement('button')
+    readybtn.classList.add('readybtn');
+    readybtn.innerHTML= 'READY';
+    const introp = document.createElement('p')
+    introp.classList.add('about')
+    introp.innerHTML='Welcome to Hair Dressing. C'
+
+    introdiv.style.display = 'none';
+    aboutBtn.addEventListener('click',()=>{
+        introdiv.style.display = 'block';
+    })
+
+     readybtn.addEventListener('click',()=>{
+         introdiv.style.display = 'none';
+     })
+    mainPage.appendChild(introdiv)
+    introdiv.appendChild(introp);
+    introdiv.appendChild(readybtn);
+
+
     const gitlink = document.createElement('a');
    
     gitlink.href=('https://github.com/shirleytang0121/HairDressing')

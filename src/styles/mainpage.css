@@ -47,3 +47,17 @@ body{
     width: 40px;
     height: auto;
 }
+
+.aboutBtn{
+    position: absolute;
+    margin-left: -290px;
+    margin-top: 45px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.aboutBtn:hover{
+    border-bottom: 4px solid white;
+}
