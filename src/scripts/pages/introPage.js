@@ -117,7 +117,7 @@ export default function renderIntroPage(){
     readybtn.innerHTML= 'READY';
     const introp = document.createElement('p')
     introp.classList.add('about')
-    introp.innerHTML='Welcome to Hair Dressing. C'
+    introp.innerHTML='Welcome to Hair Dressing. Click on different gender and you can choose different mode to play'
 
     introdiv.style.display = 'none';
     aboutBtn.addEventListener('click',()=>{
