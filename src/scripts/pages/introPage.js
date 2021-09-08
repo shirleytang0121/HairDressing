@@ -121,8 +121,8 @@ export default function renderIntroPage(){
     const introdiv = document.createElement('div')
     introdiv.classList.add('introdiv');
     const readybtn = document.createElement('button')
-    readybtn.classList.add('readybtn');
-    readybtn.innerHTML= 'READY';
+    readybtn.classList.add('homereadybtn');
+    readybtn.innerHTML= 'OK';
     const introp = document.createElement('p')
     introp.classList.add('about')
     introp.innerHTML='Welcome to Hair Dressing. Click on different gender and you can choose different mode to play'
