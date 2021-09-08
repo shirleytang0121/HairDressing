@@ -1,4 +1,7 @@
-import Character from '../character.js'
+import Character from '../character.js';
+import Scissors from '../tools/scissors';
+import HairDryer from '../tools/hairDryer.js';
+import LimitDye from '../tools/limitDye.js'
 
 export default function renderTwoPlayer(){
     const salon = document.querySelector('.salon');
@@ -55,5 +58,50 @@ export default function renderTwoPlayer(){
 
     const character =new Character('M');
     leftbtns.style.marginTop = '0px';
+
+
+    const toolsbar = [leftbtns, rightbtns];
+   
+
+    for(let i=0; i<toolsbar.length; i++){
+        const scissorsbtn = document.createElement('button');
+        scissorsbtn.classList.add('scissors');
+        const scissorsimg = document.createElement('img');
+        scissorsimg.setAttribute('src','./src/image/tools/scissors.png');
+        scissorsimg.classList.add('tools');
+        scissorsbtn.innerHTML = '1';
+        scissorsbtn.appendChild(scissorsimg);
+
+        const hairdryerbtn =document.createElement('button');
+        hairdryerbtn.classList.add('hair-dryer');
+        const hairdryerimg =document.createElement('img');
+        hairdryerimg.setAttribute('src','./src/image/tools/hair-dryer.png')
+        hairdryerimg.classList.add('tools');
+        hairdryerbtn.innerHTML = '4';
+        hairdryerbtn.appendChild(hairdryerimg);
+
+        const hairdyebtn =document.createElement('button');
+        hairdyebtn.classList.add('hair-dye');
+        const hairdyeimg =document.createElement('img');
+        hairdyeimg.setAttribute('src','./src/image/tools/hair-dye.png')
+        hairdyeimg.classList.add('tools');
+        hairdyebtn.innerHTML = '7'
+        hairdyebtn.appendChild(hairdyeimg);
+
+    
+
+        const colorSelector = document.createElement('div');
+        colorSelector.classList.add('colorSelector');
+       
+        
+        
+        
+        toolsbar[i].appendChild(scissorsbtn);
+        toolsbar[i].appendChild(hairdryerbtn);
+        toolsbar[i].appendChild(hairdyebtn);
+        toolsbar[i].appendChild(colorSelector);
+        toolsbar[i].appendChild(colorSelector);
+
+    }
 
 }
