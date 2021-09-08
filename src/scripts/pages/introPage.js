@@ -3,6 +3,7 @@ import renderNewGamePage from './secondPage'
 import renderCompetitionPage from "./compPage.js";
 import renderSecondCompPage from "./secondComPage.js";
 import renderTwoPlayer from "./twoPlayer.js";
+import renderSecondTwoPlayer from "./secondTwoPlayerPage.js";
 
 export default function renderIntroPage(){
     const gender = '';
@@ -45,7 +46,11 @@ export default function renderIntroPage(){
     compbtnM.classList.add('mode');
     compbtnM.style.display = 'none';
     compbtnM.addEventListener('click',renderSecondCompPage);
-    
+    const twobtnM = document.createElement('button');
+    twobtnM.innerHTML = 'TWO PLAYER MODE';
+    twobtnM.classList.add('mode');
+    twobtnM.style.display = 'none';
+    twobtnM.addEventListener('click',renderSecondTwoPlayer)
    
     
   
@@ -90,9 +95,12 @@ export default function renderIntroPage(){
         leftdiv.appendChild(crebtnM);
         compbtnM.style.display = 'block';
         leftdiv.appendChild(compbtnM); 
+        twobtnM.style.display= 'block';
+        leftdiv.appendChild(twobtnM);
         }else{
             crebtnM.style.display = 'none'; 
             compbtnM.style.display = 'none';
+            twobtnM.style.display = 'none';
         }
     });
 
@@ -120,6 +128,7 @@ export default function renderIntroPage(){
     introp.innerHTML='Welcome to Hair Dressing. Click on different gender and you can choose different mode to play'
 
     introdiv.style.display = 'none';
+
     aboutBtn.addEventListener('click',()=>{
         introdiv.style.display = 'block';
     })
@@ -149,10 +158,6 @@ export default function renderIntroPage(){
     linkedinicon.src = './src/image/Iinkedin.png';
     linkedlink.appendChild(linkedinicon);
     leftdiv.appendChild(linkedlink);
-
-
-    
-    
 
 
 }

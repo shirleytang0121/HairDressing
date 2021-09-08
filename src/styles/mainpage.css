@@ -61,3 +61,14 @@ body{
 .aboutBtn:hover{
     border-bottom: 4px solid white;
 }
+
+.about{
+    margin-top: 200px;
+    color: white;
+    background-color: rgb(58, 55, 55);
+    font-size: 25px;
+    width: 300px;
+    height: auto;
+    padding: 50px;
+    line-height: 1.3;
+}
