@@ -40,7 +40,16 @@ export default function renderSecondCompPage(){
     resetbtn.innerHTML = 'RESET';
     leftside.appendChild(resetbtn);
 
+    const backbtn = document.createElement("button");
+    backbtn.classList.add('back');
+    backbtn.style.marginTop='17px';
+    backbtn.innerHTML = 'BACK'
+    leftside.appendChild(backbtn);
+
     resetbtn.addEventListener('click',resetSecondPage);
+    backbtn.addEventListener('click',()=>{
+        history.go(0)
+    })
     
     const rightdiv = document.querySelector('.right-buttons');
     const hairdye = document.querySelector('.wheel');
