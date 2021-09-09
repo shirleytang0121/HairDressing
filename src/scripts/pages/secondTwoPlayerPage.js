@@ -4,6 +4,8 @@ import HairDryer from '../tools/hairDryer.js';
 import LimitDye from '../tools/limitDye.js';
 import Bangs from '../tools/bangs.js';
 import Clipper from '../tools/hairClipper';
+import Countdown from '../controller/countdown.js';
+import GeneraterForTwo from '../controller/secondGenForTwo.js';
 
 export default function renderTwoPlayer(){
     const salon = document.querySelector('.salon');
@@ -131,5 +133,102 @@ export default function renderTwoPlayer(){
     const hairdye = new LimitDye();
     const bangs=new Bangs();
     const clipper = new Clipper();
+
+
+    const imgdiv = document.createElement('div')
+    imgdiv.classList.add('imgdiv');
+    middiv.appendChild(imgdiv);
+
+    const submitbtn = document.createElement('button');
+    submitbtn.classList.add('submit');
+    submitbtn.innerHTML = 'SUBMIT(S)';
+    submitbtn.setAttribute('id','left-submit');
+    midLeftdiv.appendChild(submitbtn);
+
+    const submitbtn2 = document.createElement('button');
+    submitbtn2.classList.add('submit');
+    submitbtn2.innerHTML = 'SUBMIT';
+    submitbtn2.setAttribute('id','right-submit')
+    midRightdiv.appendChild(submitbtn2);
+
+    const resetbtn = document.createElement('button');
+    resetbtn.classList.add('reset');
+    resetbtn.innerHTML = 'RESET(D)';
+    resetbtn.setAttribute('id','left-reset')
+    midLeftdiv.appendChild(resetbtn);
+    document.addEventListener('keydown', (e)=>{
+        if(e.key == 'd'){
+        const hairL = document.querySelector('.man-style-L');
+        hairL.setAttribute("id","man-initial");
+        hairL.src = "./src/image/manstyle/initial.png"
+        hairL.style.filter="";
+        }
+    })
+
+    const resetbtn2 = document.createElement('button');
+    resetbtn2.classList.add('reset');
+    resetbtn2.innerHTML = 'RESET';
+    resetbtn2.setAttribute('id','right-reset');
+    midRightdiv.appendChild(resetbtn2);
+    resetbtn2.addEventListener('click',()=>{
+        const hair = document.querySelector('.hair-style');
+        hair.setAttribute("id","man-initial");
+        hair.src = "./src/image/manstyle/initial.png"
+        hair.style.filter="";
+    })
+
+    const backbtn1 = document.createElement("button");
+    backbtn1.classList.add('back');
+    backbtn1.setAttribute('id','left-back')
+    backbtn1.innerHTML = 'BACK(Q)'
+    midLeftdiv.appendChild(backbtn1);
+
+    const backbtn2 = document.createElement("button");
+    backbtn2.classList.add('back');
+    backbtn2.setAttribute('id','right-back')
+    backbtn2.innerHTML = 'BACK'
+    midRightdiv.appendChild(backbtn2);
+
+    document.addEventListener('keydown',(e)=>{
+        if(e.key === 'q'){
+        history.go(0)
+        }
+    })
+
+    backbtn2.addEventListener('click',()=>{
+        history.go(0)
+    })
+
+    const generatorForTwo = new GeneraterForTwo();
+
+    const msgLeft = document.createElement('div')
+    msgLeft.classList.add('msgLeft');
+    const msgRight = document.createElement('div')
+    msgRight.classList.add('msgRight');
+
+    midLeftdiv.appendChild(msgLeft);
+    midRightdiv.appendChild(msgRight);
+
+    const introdiv = document.createElement('div')
+    introdiv.classList.add('introdiv');
+    const readybtn = document.createElement('button')
+    readybtn.classList.add('readybtn');
+    readybtn.innerHTML= 'READY';
+    const introp = document.createElement('p')
+    introp.classList.add('introp')
+    introp.innerHTML='Welcome to two player mode. In this mode, Left user uses keyboard to change the hair styles. Right user uses mouse to change hair style. Who first gets 5 styles done wins the game'
+     readybtn.addEventListener('click',()=>{
+         introdiv.style.display = 'none';
+     })
+    mainPage.appendChild(introdiv)
+    introdiv.appendChild(introp);
+    introdiv.appendChild(readybtn);
+
+    const countdowndiv = document.createElement('div');
+    countdowndiv.classList.add('countdowndiv');
+    middiv.appendChild(countdowndiv);
+    countdowndiv.style.display='none';
+    const countdown = new Countdown();
+
 
 }
