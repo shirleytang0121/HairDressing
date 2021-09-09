@@ -2,7 +2,8 @@ import Character from '../character.js';
 import Scissors from '../tools/scissors';
 import HairDryer from '../tools/hairDryer.js';
 import LimitDye from '../tools/limitDye.js';
-import Bangs from '../tools/bangs.js'
+import Bangs from '../tools/bangs.js';
+import Clipper from '../tools/hairClipper';
 
 export default function renderTwoPlayer(){
     const salon = document.querySelector('.salon');
@@ -129,5 +130,6 @@ export default function renderTwoPlayer(){
     const hairdryer = new HairDryer();
     const hairdye = new LimitDye();
     const bangs=new Bangs();
+    const clipper = new Clipper();
 
 }
