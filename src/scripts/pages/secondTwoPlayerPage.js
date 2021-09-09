@@ -1,7 +1,8 @@
 import Character from '../character.js';
 import Scissors from '../tools/scissors';
 import HairDryer from '../tools/hairDryer.js';
-import LimitDye from '../tools/limitDye.js'
+import LimitDye from '../tools/limitDye.js';
+import Bangs from '../tools/bangs.js'
 
 export default function renderTwoPlayer(){
     const salon = document.querySelector('.salon');
@@ -61,7 +62,8 @@ export default function renderTwoPlayer(){
 
 
     const toolsbar = [leftbtns, rightbtns];
-   
+
+    midLeftdiv.childNodes[1].childNodes[1].setAttribute('class','man-style-L')
 
     for(let i=0; i<toolsbar.length; i++){
         const scissorsbtn = document.createElement('button');
@@ -78,6 +80,7 @@ export default function renderTwoPlayer(){
         clipperimg.setAttribute('src','./src/image/tools/hair-clipper.png');
         clipperimg.classList.add('tools');
         clipperimg.setAttribute('id','hair-clipper');
+        clipperbtn.innerHTML='2'
         clipperbtn.appendChild(clipperimg);
 
         const hairdryerbtn =document.createElement('button');
@@ -105,12 +108,17 @@ export default function renderTwoPlayer(){
         
         
         toolsbar[i].appendChild(scissorsbtn);
+        toolsbar[i].appendChild(clipperbtn);
         toolsbar[i].appendChild(hairdryerbtn);
         toolsbar[i].appendChild(hairdyebtn);
-        toolsbar[i].appendChild(clipperbtn);
         toolsbar[i].appendChild(colorSelector);
         toolsbar[i].appendChild(colorSelector);
 
     }
+
+    const scissors = new Scissors();
+    const hairdryer = new HairDryer();
+    const hairdye = new LimitDye();
+    const bangs=new Bangs();
 
 }

@@ -3,6 +3,7 @@ export default class Bangs{
         this.bangs_btn =Array.from(document.getElementsByClassName("bangs"));
         if (document.querySelector(".hair-style")=== null){
           this.bangs_obj= document.querySelector(".man-style");
+          this.bangs_obj= document.querySelector(".man-style-L");
         }else{
            this.bangs_obj= document.querySelector(".bang-style");
            this.bangs_obj_L= document.querySelector(".bang-style-L");
@@ -11,7 +12,7 @@ export default class Bangs{
         if(this.bangs_btn.length > 1){
           document.addEventListener('keydown',this.handleBangsKey.bind(this))//left
           this.bangs_btn[1].addEventListener('click',this.handleBangs.bind(this))//right
-        }else{
+        }else if(this.bangs_btn.length === 1 ){
           this.bangs_btn[0].addEventListener('click',this.handleBangs.bind(this))
         }
         console.log(this.bangs_btn)

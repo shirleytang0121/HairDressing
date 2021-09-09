@@ -141,8 +141,8 @@ export default class Scissors{
                     this.hair_obj_L.id ="straight-long-cut-end"
                     break;
                 case 'man-initial':
-                    this.hair_obj.src = "./src/image/manstyle/long/long-1.png";
-                    this.hair_obj.id = "man-long-1";
+                    this.hair_obj_L.src = "./src/image/manstyle/long/long-1.png";
+                    this.hair_obj_L.id = "man-long-1";
                     break;
                 case 'man-long-1':
                     this.hair_obj_L.src = "./src/image/manstyle/short/short-1.png";
