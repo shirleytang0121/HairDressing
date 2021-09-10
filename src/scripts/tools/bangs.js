@@ -57,7 +57,7 @@ export default class Bangs{
 handleBangsKey(e){
   console.log("test key press");
   e.preventDefault();
-  if(e.key === '6'){
+  if((e.key === '6' && document.querySelector(".hair-style")!== null) || (e.key === '4' && document.querySelector(".hair-style")=== null)){
     switch(this.bangs_obj_L.id ){
       case 'initial-bangs':
           this.bangs_obj_L.src = './src/image/bangs/bangs-2.png';

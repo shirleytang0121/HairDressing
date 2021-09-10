@@ -95,7 +95,7 @@ export default class LimitDye{
     }
 
     handleShowPress(e){
-        if(e.key === '7'){
+        if((e.key === '7' && document.querySelector(".hair-style")!== null) || (e.key === '5' && document.querySelector(".hair-style")=== null)){
             if(this.colordiv[0].style.display === 'none'){
                 this.colordiv[0].style.display = 'flex';
             }else{

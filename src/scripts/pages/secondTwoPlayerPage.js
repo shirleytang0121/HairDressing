@@ -91,7 +91,7 @@ export default function renderTwoPlayer(){
         const hairdryerimg =document.createElement('img');
         hairdryerimg.setAttribute('src','./src/image/tools/hair-dryer.png')
         hairdryerimg.classList.add('tools');
-        hairdryerbtn.innerHTML = '4';
+        hairdryerbtn.innerHTML = '3';
         hairdryerbtn.appendChild(hairdryerimg);
 
         const bangsbtn = document.createElement('button');
@@ -99,7 +99,7 @@ export default function renderTwoPlayer(){
         const bangsimg = document.createElement('img')
         bangsimg.setAttribute('src','./src/image/tools/spray.png');
         bangsimg.classList.add('tools');
-        bangsbtn.innerHTML = '6';
+        bangsbtn.innerHTML = '4';
         bangsbtn.appendChild(bangsimg);
 
         const hairdyebtn =document.createElement('button');
@@ -107,7 +107,7 @@ export default function renderTwoPlayer(){
         const hairdyeimg =document.createElement('img');
         hairdyeimg.setAttribute('src','./src/image/tools/hair-dye.png')
         hairdyeimg.classList.add('tools');
-        hairdyebtn.innerHTML = '7'
+        hairdyebtn.innerHTML = '5'
         hairdyebtn.appendChild(hairdyeimg);
 
     

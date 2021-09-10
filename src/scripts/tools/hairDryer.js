@@ -58,7 +58,7 @@ export default class HairDryer{
 
     handleKeys(e){
    e.preventDefault();
-    if (e.key === '4' ){
+    if ((e.key === '4' && document.querySelector(".hair-style")!== null) || (e.key === '3' && document.querySelector(".hair-style")=== null)){
       if( this.hair_obj_L.id === 'curling-long'){
           this.hair_obj_L.src="./src/image/hairstyle/long/long.png";
           this.hair_obj_L.id ="long";
