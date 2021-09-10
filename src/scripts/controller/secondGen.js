@@ -35,7 +35,7 @@ export default class SecondGenerateImg{
             this.imgdiv.appendChild(this.imgShow);
 
             this.submitbtn = document.querySelector('.submit');
-            this.submitbtn.setAttribute('id','0');
+            this.submitbtn.setAttribute('data-score','0');
             
             this.submitbtn.addEventListener('click', this.checkIfSame.bind(this));
     }

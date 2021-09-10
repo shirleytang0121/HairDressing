@@ -52,7 +52,7 @@ body{
     position: absolute;
     margin-left: -290px;
     margin-top: 45px;
-    font-size: 30px;
+    font-size: 25px;
     background: none;
     border: none;
     color: white;
@@ -80,3 +80,4 @@ body{
     border-radius: 5px;
     font-size: 15px;
 }
+

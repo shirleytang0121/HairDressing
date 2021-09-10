@@ -171,7 +171,7 @@ export default function renderTwoPlayer(){
     resetbtn2.setAttribute('id','right-reset');
     midRightdiv.appendChild(resetbtn2);
     resetbtn2.addEventListener('click',()=>{
-        const hair = document.querySelector('.hair-style');
+        const hair = document.querySelector('.man-style');
         hair.setAttribute("id","man-initial");
         hair.src = "./src/image/manstyle/initial.png"
         hair.style.filter="";

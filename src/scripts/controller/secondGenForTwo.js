@@ -1,6 +1,6 @@
 import { hexToCSSFilter } from 'hex-to-css-filter';
 import isCorrectForTwo from './correctForTwo';
-import resetPage from './secondReset';
+import secondResetPage from './secondReset';
 
 export default class SecondGenForTwo{
     constructor(){
@@ -122,7 +122,7 @@ export default class SecondGenForTwo{
     handleGnerater(){
         this.randIndex = Math.floor(Math.random()*16);
         this.imgShow.src = this.imgSrcArr[this.randIndex];
-        resetPage()
+        secondResetPage()
     }
 
 

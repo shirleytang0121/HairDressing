@@ -144,6 +144,7 @@ export default function renderIntroPage(){
     const gitlink = document.createElement('a');
    
     gitlink.href=('https://github.com/shirleytang0121/HairDressing')
+    gitlink.target="_blank"
     const giticon = document.createElement('img');
     giticon.classList.add('giticon');
     giticon.src ='./src/image/GitHub-logo.png';
@@ -153,6 +154,7 @@ export default function renderIntroPage(){
     const linkedlink = document.createElement('a');
    
     linkedlink.href=('https://www.linkedin.com/in/yuemin-tang-213a40179/')
+    linkedlink.target="_blank"
     const linkedinicon = document.createElement('img');
     linkedinicon.classList.add('linkedinIcon');
     linkedinicon.src = './src/image/Iinkedin.png';
