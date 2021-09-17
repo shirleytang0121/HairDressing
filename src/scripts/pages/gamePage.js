@@ -84,6 +84,19 @@ export default function renderGamePage(){
     curlingIronimg.classList.add('tools');
     curlingIronbtn.appendChild(curlingIronimg);
 
+    const curlingIronInfo = document.createElement('p');
+    curlingIronInfo.classList.add('toolInfo');
+    curlingIronInfo.innerHTML = 'Use curling iron to make hair curling'
+    curlingIronInfo.style.display = 'none';
+
+    curlingIronbtn.addEventListener('mouseover',()=>{
+        curlingIronInfo.style.display='block';
+    })
+
+    curlingIronbtn.addEventListener('mouseout',()=>{
+        curlingIronInfo.style.display='none';
+    })
+
     const hairdryerbtn =document.createElement('button');
     hairdryerbtn.classList.add('hair-dryer');
     const hairdryerimg =document.createElement('img');
@@ -130,6 +143,8 @@ export default function renderGamePage(){
     rightbtns.appendChild(scissorInfo);
 
     rightbtns.appendChild(curlingIronbtn);
+    rightbtns.appendChild(curlingIronInfo);
+
     rightbtns.appendChild(straightenerbtn);
     rightbtns.appendChild(hairdryerbtn);
     rightbtns.appendChild(combbtn);
