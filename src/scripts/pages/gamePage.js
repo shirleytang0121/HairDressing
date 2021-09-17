@@ -63,6 +63,20 @@ export default function renderGamePage(){
     scissorsimg.classList.add('tools');
     scissorsbtn.appendChild(scissorsimg);
 
+    const scissorInfo = document.createElement('p');
+    scissorInfo.classList.add('toolInfo');
+    scissorInfo.innerHTML = 'Use scisscors to make the hair shorter'
+    scissorInfo.style.display = 'none'
+
+    scissorsbtn.addEventListener("mouseover",()=>{
+        scissorInfo.style.display="block";
+    })
+   
+    scissorsbtn.addEventListener("mouseout",()=>{
+        scissorInfo.style.display="none";
+    })
+   
+
     const curlingIronbtn = document.createElement('button');
     curlingIronbtn.classList.add('curling-iron');
     const curlingIronimg = document.createElement('img');
@@ -113,6 +127,8 @@ export default function renderGamePage(){
 
 
     rightbtns.appendChild(scissorsbtn);
+    rightbtns.appendChild(scissorInfo);
+
     rightbtns.appendChild(curlingIronbtn);
     rightbtns.appendChild(straightenerbtn);
     rightbtns.appendChild(hairdryerbtn);
