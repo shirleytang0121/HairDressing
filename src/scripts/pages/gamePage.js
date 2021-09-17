@@ -104,6 +104,19 @@ export default function renderGamePage(){
     hairdryerimg.classList.add('tools');
     hairdryerbtn.appendChild(hairdryerimg);
 
+    const hairdryerInfo =document.createElement('p');
+    hairdryerInfo.classList.add('toolInfo');
+    hairdryerInfo.innerHTML='Use hair dryer to make hair more bluky';
+    hairdryerInfo.style.display='block';
+
+    hairdryerbtn.addEventListener("mouseover",()=>{
+        hairdryerInfo.style.display='block';
+    })
+
+    hairdryerbtn.addEventListener("mouseout",()=>{
+        hairdryerInfo.style.display='none';
+    })
+
     const straightenerbtn = document.createElement('button');
     straightenerbtn.classList.add('straightener');
     const straightenerimg = document.createElement('img');
@@ -146,6 +159,8 @@ export default function renderGamePage(){
     rightbtns.appendChild(curlingIronInfo);
 
     rightbtns.appendChild(straightenerbtn);
+    rightbtns.appendChild(hairdryerInfo);
+    
     rightbtns.appendChild(hairdryerbtn);
     rightbtns.appendChild(combbtn);
     rightbtns.appendChild(bangsbtn);
