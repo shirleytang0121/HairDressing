@@ -124,6 +124,19 @@ export default function renderGamePage(){
     straightenerimg.classList.add('tools');
     straightenerbtn.appendChild(straightenerimg);
 
+    const straightenerInfo = document.createElement('p');
+    straightenerInfo.classList.add('toolInfo');
+    straightenerInfo.innerHTML = 'Use straightener to make curling hair straight'
+    straightenerInfo.style.display='none';
+
+    straightenerbtn.addEventListener("mouseover",()=>{
+        straightenerInfo.style.display='block';
+    })
+
+    straightenerbtn.addEventListener("mouseout",()=>{
+        straightenerInfo.style.display='none';
+    })
+
     const hairdyebtn =document.createElement('button');
     hairdyebtn.classList.add('hair-dye');
     const hairdyeimg =document.createElement('img');
@@ -159,9 +172,12 @@ export default function renderGamePage(){
     rightbtns.appendChild(curlingIronInfo);
 
     rightbtns.appendChild(straightenerbtn);
-    rightbtns.appendChild(hairdryerInfo);
+    rightbtns.appendChild(straightenerInfo);
     
     rightbtns.appendChild(hairdryerbtn);
+    rightbtns.appendChild(hairdryerInfo);
+   
+
     rightbtns.appendChild(combbtn);
     rightbtns.appendChild(bangsbtn);
     rightbtns.appendChild(hairdyebtn);
