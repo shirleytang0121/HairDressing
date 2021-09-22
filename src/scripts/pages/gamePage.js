@@ -144,6 +144,19 @@ export default function renderGamePage(){
     hairdyeimg.classList.add('tools');
     hairdyebtn.appendChild(hairdyeimg);
 
+    const hairdyeInfo = document.createElement('p');
+    hairdyeInfo.classList.add('toolInfo');
+    hairdyeInfo.innerHTML = 'Use to change hair to different color'
+    hairdyeInfo.style.display='none';
+
+    hairdyebtn.addEventListener("mouseover",()=>{
+        hairdyeInfo.style.display='block';
+    })
+
+    hairdyebtn.addEventListener("mouseout",()=>{
+        hairdyeInfo.style.display='none';
+    })
+
     const combbtn = document.createElement('button');
     combbtn.classList.add('comb');
     const combimg = document.createElement('img')
@@ -151,12 +164,25 @@ export default function renderGamePage(){
     combimg.classList.add('tools');
     combbtn.appendChild(combimg);
 
+
     const bangsbtn = document.createElement('button');
     bangsbtn.classList.add('bangs');
     const bangsimg = document.createElement('img')
     bangsimg.setAttribute('src','./src/image/tools/spray.png');
     bangsimg.classList.add('tools');
     bangsbtn.appendChild(bangsimg);
+    const bangInfo = document.createElement('p');
+    bangInfo.classList.add('toolInfo');
+    bangInfo.innerHTML = 'Use to change different type of bangs'
+    bangInfo.style.display='none';
+
+    bangsbtn.addEventListener("mouseover",()=>{
+        bangInfo.style.display='block';
+    })
+
+    bangsbtn.addEventListener("mouseout",()=>{
+        bangInfo.style.display='none';
+    })
 
     const colordiv = document.createElement('div');
     colordiv.classList.add('wheel');
