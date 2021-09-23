@@ -206,7 +206,9 @@ export default function renderGamePage(){
 
     rightbtns.appendChild(combbtn);
     rightbtns.appendChild(bangsbtn);
+    rightbtns.appendChild(bangInfo)
     rightbtns.appendChild(hairdyebtn);
+    rightbtns.appendChild(hairdyeInfo)
     rightbtns.appendChild(colordiv)
 
 
