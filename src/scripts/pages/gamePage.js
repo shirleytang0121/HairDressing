@@ -164,6 +164,19 @@ export default function renderGamePage(){
     combimg.classList.add('tools');
     combbtn.appendChild(combimg);
 
+    const combInfo = document.createElement('p');
+    combInfo.classList.add('toolInfo');
+    combInfo.innerHTML = 'Use comb after cut the hair'
+    combInfo.style.display='none';
+
+    combbtn.addEventListener("mouseover",()=>{
+        combInfo.style.display='block';
+    })
+
+    combbtn.addEventListener("mouseout",()=>{
+        combInfo.style.display='none';
+    })
+
 
     const bangsbtn = document.createElement('button');
     bangsbtn.classList.add('bangs');
@@ -171,6 +184,7 @@ export default function renderGamePage(){
     bangsimg.setAttribute('src','./src/image/tools/spray.png');
     bangsimg.classList.add('tools');
     bangsbtn.appendChild(bangsimg);
+
     const bangInfo = document.createElement('p');
     bangInfo.classList.add('toolInfo');
     bangInfo.innerHTML = 'Use to change different type of bangs'
@@ -205,10 +219,14 @@ export default function renderGamePage(){
    
 
     rightbtns.appendChild(combbtn);
+    rightbtns.appendChild(combInfo);
+    
     rightbtns.appendChild(bangsbtn);
     rightbtns.appendChild(bangInfo)
+
     rightbtns.appendChild(hairdyebtn);
-    rightbtns.appendChild(hairdyeInfo)
+    rightbtns.appendChild(hairdyeInfo);
+
     rightbtns.appendChild(colordiv)
 
 
