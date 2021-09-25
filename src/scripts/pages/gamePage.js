@@ -107,7 +107,7 @@ export default function renderGamePage(){
     const hairdryerInfo =document.createElement('p');
     hairdryerInfo.classList.add('toolInfo');
     hairdryerInfo.innerHTML='Use hair dryer to make hair more bluky';
-    hairdryerInfo.style.display='block';
+    hairdryerInfo.style.display='none';
 
     hairdryerbtn.addEventListener("mouseover",()=>{
         hairdryerInfo.style.display='block';

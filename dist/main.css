@@ -39,16 +39,16 @@ img.bald {
     position: relative;
     margin-left:auto;
     margin-right: auto;
-    margin-top: 100px;
-    width: 360px;
+    margin-top: 21%;
+    width: 72%;
     height: auto;
 }
 
 .mirror{
     position: absolute;
-    width: 390px;
+    width: 32%;
     height: auto;
-    margin-left: -28px;
+    margin-left: -3%;
 }
 
 

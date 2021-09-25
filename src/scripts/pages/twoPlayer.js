@@ -15,10 +15,10 @@ export default function renderTwoPlayer(){
     const salon = document.querySelector('.salon');
     salon.remove();
 
-    const startbtnM = document.querySelector('.genderbtn')
+    const startbtnM = document.querySelector('.genderbtnF')
     startbtnM.remove();
 
-    const startbtnF = document.querySelector('.genderbtn')
+    const startbtnF = document.querySelector('.genderbtnM')
     startbtnF.remove();
 
     const leftdiv = document.querySelector('.leftdiv')
@@ -81,6 +81,20 @@ export default function renderTwoPlayer(){
         scissorsbtn.innerHTML = '1';
         scissorsbtn.appendChild(scissorsimg);
 
+        const scissorInfo = document.createElement('p');
+        scissorInfo.classList.add('toolInfo');
+        scissorInfo.innerHTML = 'Use scisscors to make the hair shorter'
+        scissorInfo.style.display = 'none'
+    
+        scissorsbtn.addEventListener("mouseover",()=>{
+            scissorInfo.style.display="block";
+        })
+       
+        scissorsbtn.addEventListener("mouseout",()=>{
+            scissorInfo.style.display="none";
+        })
+       
+
         const curlingIronbtn = document.createElement('button');
         curlingIronbtn.classList.add('curling-iron');
         const curlingIronimg = document.createElement('img');
@@ -88,6 +102,20 @@ export default function renderTwoPlayer(){
         curlingIronimg.classList.add('tools');
         curlingIronbtn.innerHTML = '2';
         curlingIronbtn.appendChild(curlingIronimg);
+
+        const curlingIronInfo = document.createElement('p');
+        curlingIronInfo.classList.add('toolInfo');
+        curlingIronInfo.innerHTML = 'Use curling iron to make hair curling'
+        curlingIronInfo.style.display = 'none';
+    
+        curlingIronbtn.addEventListener('mouseover',()=>{
+            curlingIronInfo.style.display='block';
+        })
+    
+        curlingIronbtn.addEventListener('mouseout',()=>{
+            curlingIronInfo.style.display='none';
+        })
+
 
         const hairdryerbtn =document.createElement('button');
         hairdryerbtn.classList.add('hair-dryer');
@@ -97,6 +125,19 @@ export default function renderTwoPlayer(){
         hairdryerbtn.innerHTML = '4';
         hairdryerbtn.appendChild(hairdryerimg);
 
+        const hairdryerInfo =document.createElement('p');
+        hairdryerInfo.classList.add('toolInfo');
+        hairdryerInfo.innerHTML='Use hair dryer to make hair more bluky';
+        hairdryerInfo.style.display='none';
+    
+        hairdryerbtn.addEventListener("mouseover",()=>{
+            hairdryerInfo.style.display='block';
+        })
+    
+        hairdryerbtn.addEventListener("mouseout",()=>{
+            hairdryerInfo.style.display='none';
+        })
+
         const straightenerbtn = document.createElement('button');
         straightenerbtn.classList.add('straightener');
         const straightenerimg = document.createElement('img');
@@ -104,6 +145,19 @@ export default function renderTwoPlayer(){
         straightenerimg.classList.add('tools');
         straightenerbtn.innerHTML = '3';
         straightenerbtn.appendChild(straightenerimg);
+
+        const straightenerInfo = document.createElement('p');
+        straightenerInfo.classList.add('toolInfo');
+        straightenerInfo.innerHTML = 'Use straightener to make curling hair straight'
+        straightenerInfo.style.display='none';
+    
+        straightenerbtn.addEventListener("mouseover",()=>{
+            straightenerInfo.style.display='block';
+        })
+    
+        straightenerbtn.addEventListener("mouseout",()=>{
+            straightenerInfo.style.display='none';
+        })
 
         const hairdyebtn =document.createElement('button');
         hairdyebtn.classList.add('hair-dye');
@@ -113,6 +167,23 @@ export default function renderTwoPlayer(){
         hairdyebtn.innerHTML = '7'
         hairdyebtn.appendChild(hairdyeimg);
 
+        const hairdyeInfo = document.createElement('p');
+        hairdyeInfo.classList.add('toolInfo');
+        hairdyeInfo.innerHTML = 'Use to change hair to different color'
+        hairdyeInfo.style.display='none';
+    
+        hairdyebtn.addEventListener("mouseover",()=>{
+            hairdyeInfo.style.display='block';
+        })
+    
+        hairdyebtn.addEventListener("mouseout",()=>{
+            hairdyeInfo.style.display='none';
+        })
+    
+
+     
+    
+
         const combbtn = document.createElement('button');
         combbtn.classList.add('comb');
         const combimg = document.createElement('img')
@@ -120,6 +191,20 @@ export default function renderTwoPlayer(){
         combimg.classList.add('tools');
         combbtn.innerHTML='5';
         combbtn.appendChild(combimg);
+
+        const combInfo = document.createElement('p');
+        combInfo.classList.add('toolInfo');
+        combInfo.innerHTML = 'Use comb after cut the hair'
+        combInfo.style.display='none';
+    
+        combbtn.addEventListener("mouseover",()=>{
+            combInfo.style.display='block';
+        })
+    
+        combbtn.addEventListener("mouseout",()=>{
+            combInfo.style.display='none';
+        })
+    
 
         const bangsbtn = document.createElement('button');
         bangsbtn.classList.add('bangs');
@@ -129,6 +214,19 @@ export default function renderTwoPlayer(){
         bangsbtn.innerHTML = '6';
         bangsbtn.appendChild(bangsimg);
 
+        const bangInfo = document.createElement('p');
+        bangInfo.classList.add('toolInfo');
+        bangInfo.innerHTML = 'Use to change different type of bangs'
+        bangInfo.style.display='none';
+    
+        bangsbtn.addEventListener("mouseover",()=>{
+            bangInfo.style.display='block';
+        })
+    
+        bangsbtn.addEventListener("mouseout",()=>{
+            bangInfo.style.display='none';
+        })
+
         const colorSelector = document.createElement('div');
         colorSelector.classList.add('colorSelector');
        
@@ -136,12 +234,26 @@ export default function renderTwoPlayer(){
         
         
         toolsbar[i].appendChild(scissorsbtn);
+        toolsbar[i].appendChild(scissorInfo);
+
         toolsbar[i].appendChild(curlingIronbtn);
+        toolsbar[i].appendChild(curlingIronInfo);
+
         toolsbar[i].appendChild(straightenerbtn);
+        toolsbar[i].appendChild(straightenerInfo);
+
         toolsbar[i].appendChild(hairdryerbtn);
+        toolsbar[i].appendChild(hairdryerInfo);
+
         toolsbar[i].appendChild(combbtn);
+        toolsbar[i].appendChild(combInfo);
+
         toolsbar[i].appendChild(bangsbtn);
+        toolsbar[i].appendChild(bangInfo);
+
         toolsbar[i].appendChild(hairdyebtn);
+        toolsbar[i].appendChild(hairdyeInfo);
+
         toolsbar[i].appendChild(colorSelector);
         toolsbar[i].appendChild(colorSelector);
 
