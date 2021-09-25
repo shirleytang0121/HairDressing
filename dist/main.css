@@ -252,33 +252,87 @@ img.bang-style{
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/intropage.css ***!
   \********************************************************************************************************/
 .salon{
-    width: 600px;
+    width: 40%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 4%;
 }
 
-.genderbtn{
-    margin-left: 110px;
-    margin-right: 110px;
-    margin-top: 300px;
+.genderbtnF{
+    margin-left: -200%;
+    margin-right: 20%;
+    margin-top: 340%;
     font-size: 30px;
     background-color: rgb(62, 62, 114);
     color:white;
     border-radius: 15px;
-    padding: 15px;
+    padding: 20%;
 }
+.genderbtnM{
+    margin-left: 110%;
+    margin-right: 20%;
+    margin-top: 450%;
+    font-size: 30px;
+    background-color: rgb(62, 62, 114);
+    color:white;
+    border-radius: 15px;
+    padding: 20%;
+}
+
+/* .genderbtnF{
+    margin-left: -130%;
+    margin-right: 20%;
+    margin-top: 340%;
+    font-size: 30px;
+    background-color: rgb(62, 62, 114);
+    color:white;
+    border-radius: 15px;
+    padding: 20%;
+}
+.genderbtnM{
+    margin-left: 110%;
+    margin-right: 20%;
+    margin-top: 450%;
+    font-size: 30px;
+    background-color: rgb(62, 62, 114);
+    color:white;
+    border-radius: 15px;
+    padding: 20%;
+} */
 
 .genderbtn:hover{
     background-color: rgb(132, 137, 192);
 }
 
-.mode{
-    margin-top: 5px;
+.mode1{
+    position: absolute;
+    margin-top: 1%;
+    margin-left: -10%;
+    margin-right: 10%;
     border-radius: 5px;
     background-color: rgb(62, 62, 114);
-   margin-left: 100px;
+   padding: auto;
+   color: white;
+}
+.mode2{
+    position: absolute;
+    margin-top: 3%;
+    margin-left: -10%;
+    margin-right: 10%;
+    border-radius: 5px;
+    background-color: rgb(62, 62, 114);
+   padding: auto;
+   color: white;
+}
+
+.mode3{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: -10%;
+    margin-right: 20%;
+    border-radius: 5px;
+    background-color: rgb(62, 62, 114);
    padding: auto;
    color: white;
 }
@@ -421,7 +475,7 @@ table {
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/tools.css ***!
   \****************************************************************************************************/
 .tools{
-    width: 50px;
+    width: 60px;
 }
 
 
@@ -460,8 +514,10 @@ table {
 }
 
 .toolInfo{
+    margin-top: 2%;
     width: 70px;
-    background-color: rgb(116, 114, 114);
+    padding: 2px;
+    background-color: rgb(163, 163, 163);
 }
 
 

@@ -1,5 +1,5 @@
 .tools{
-    width: 50px;
+    width: 60px;
 }
 
 
@@ -40,6 +40,7 @@
 .toolInfo{
     margin-top: 2%;
     width: 70px;
-    background-color: rgb(116, 114, 114);
+    padding: 2px;
+    background-color: rgb(163, 163, 163);
 }
 

@@ -16,10 +16,10 @@ export default function renderGamePage(){
     const salon = document.querySelector('.salon');
     salon.remove();
 
-    const startbtnM = document.querySelector('.genderbtn')
+    const startbtnM = document.querySelector('.genderbtnF')
     startbtnM.remove();
 
-    const startbtnF = document.querySelector('.genderbtn')
+    const startbtnF = document.querySelector('.genderbtnM')
     startbtnF.remove();
 
     const leftdiv = document.querySelector('.leftdiv')
@@ -220,7 +220,7 @@ export default function renderGamePage(){
 
     rightbtns.appendChild(combbtn);
     rightbtns.appendChild(combInfo);
-    
+
     rightbtns.appendChild(bangsbtn);
     rightbtns.appendChild(bangInfo)
 

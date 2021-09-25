@@ -21,34 +21,34 @@ export default function renderIntroPage(){
     
     const crebtn = document.createElement('button');
     crebtn.innerHTML='CREATE MODE';
-    crebtn.classList.add('mode');
+    crebtn.classList.add('mode1');
     crebtn.style.display = 'none';
     crebtn.addEventListener('click', renderGamePage);
     const compbtn = document.createElement('button');
     compbtn.innerHTML='COMPETITION MODE';
-    compbtn.classList.add('mode');
+    compbtn.classList.add('mode2');
     compbtn.style.display = 'none';
     compbtn.addEventListener('click',renderCompetitionPage);
     const twobtn = document.createElement('button');
     twobtn.innerHTML = 'TWO PLAYER MODE';
-    twobtn.classList.add('mode');
+    twobtn.classList.add('mode3');
     twobtn.style.display = 'none';
     twobtn.addEventListener('click',renderTwoPlayer)
 
 
     const crebtnM = document.createElement('button');
     crebtnM.innerHTML='CREATE MODE';
-    crebtnM.classList.add('mode');
+    crebtnM.classList.add('mode1');
     crebtnM.style.display = 'none';
     crebtnM.addEventListener('click', renderNewGamePage);
     const compbtnM = document.createElement('button');
     compbtnM.innerHTML='COMPETITION MODE';
-    compbtnM.classList.add('mode');
+    compbtnM.classList.add('mode2');
     compbtnM.style.display = 'none';
     compbtnM.addEventListener('click',renderSecondCompPage);
     const twobtnM = document.createElement('button');
     twobtnM.innerHTML = 'TWO PLAYER MODE';
-    twobtnM.classList.add('mode');
+    twobtnM.classList.add('mode3');
     twobtnM.style.display = 'none';
     twobtnM.addEventListener('click',renderSecondTwoPlayer)
    
@@ -58,7 +58,7 @@ export default function renderIntroPage(){
 
     const startbtnF = document.createElement('button');
     startbtnF.innerHTML='SHE'
-    startbtnF.classList.add('genderbtn')
+    startbtnF.classList.add('genderbtnF')
     startbtnF.addEventListener('click',()=>{
         if(crebtn.style.display==='none'){
             crebtn.style.display = 'block';
@@ -88,7 +88,7 @@ export default function renderIntroPage(){
    
     const startbtnM = document.createElement('button');
     startbtnM.innerHTML='HE'
-    startbtnM.classList.add('genderbtn')
+    startbtnM.classList.add('genderbtnM')
     startbtnM.addEventListener('click',()=>{
         if(crebtnM.style.display === 'none'){
         crebtnM.style.display = 'block';
