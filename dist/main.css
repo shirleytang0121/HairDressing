@@ -36,11 +36,11 @@
 }
 
 img.bald {
-    position: relative;
-    margin-left:auto;
+    position: absolute;
+    margin-left: -15%;
     margin-right: auto;
-    margin-top: 21%;
-    width: 72%;
+    margin-top: 10%;
+    width: 32%;
     height: auto;
 }
 
@@ -48,7 +48,7 @@ img.bald {
     position: absolute;
     width: 32%;
     height: auto;
-    margin-left: -3%;
+    margin-left: -15%;
 }
 
 
@@ -141,18 +141,18 @@ img.bang-style{
 
 .hair-style {
     position: absolute;
-    width: 370px;
+    width: 30%;
     height: auto;
-    margin-left: -380px;
-    margin-top: 48px;  
+    margin-left: -15%;
+    margin-top: 7%;  
 }
 
 .hair-style-L{
     position: absolute;
-    width: 370px;
+    width: 30%;
     height: auto;
-    margin-left: -380px;
-    margin-top: 48px;  
+    margin-left: -15%;
+    margin-top: 7%;  
 }
 
 .bang-style-L{
@@ -160,25 +160,25 @@ img.bang-style{
 }
 
 #initial-bangs{
-    width: 315px;
+    width: 25%;
     height: auto;
-    margin-left: -350px;
-    margin-top: 60px;  
+    margin-left:-12.5%;
+    margin-top: 8%;  
 }
 
 
 #second-bangs{
-    width: 372px;
+    width: 27%;
     height: auto;
-    margin-left: -380px;
-    margin-top: 35px;  
+    margin-left:-13.5%;
+    margin-top: 7%;   
 }
 
 #third-bangs{
-    width: 380px;
+    width: 28%;
     height: auto;
-    margin-left: -392px;
-    margin-top: 30px;  
+    margin-left:-14.5%;
+    margin-top: 6%;  
 }
 
 .man-style{
@@ -263,7 +263,7 @@ img.bang-style{
     margin-left: -200%;
     margin-right: 20%;
     margin-top: 340%;
-    font-size: 30px;
+    font-size: 200%;
     background-color: rgb(62, 62, 114);
     color:white;
     border-radius: 15px;
@@ -273,7 +273,7 @@ img.bang-style{
     margin-left: 110%;
     margin-right: 20%;
     margin-top: 450%;
-    font-size: 30px;
+    font-size: 200%;
     background-color: rgb(62, 62, 114);
     color:white;
     border-radius: 15px;

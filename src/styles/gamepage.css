@@ -33,11 +33,11 @@
 }
 
 img.bald {
-    position: relative;
-    margin-left:auto;
+    position: absolute;
+    margin-left: -15%;
     margin-right: auto;
-    margin-top: 21%;
-    width: 72%;
+    margin-top: 10%;
+    width: 32%;
     height: auto;
 }
 
@@ -45,7 +45,7 @@ img.bald {
     position: absolute;
     width: 32%;
     height: auto;
-    margin-left: -3%;
+    margin-left: -15%;
 }
 
 
