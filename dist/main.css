@@ -18,21 +18,27 @@
 
 
 .finish{
-    margin-top: 50px;
+    margin-top: 30%;
     background-color: rgb(62, 62, 114);
     color: white;
+    font-size: 100%;
+   
 }
 
 .reset{
-    margin-top: 50px;
+    margin-top: 45%;
     background-color: rgb(62, 62, 114);
     color: white;
+    font-size: 100%;
+    
 }
 
 .back{
-    margin-top: 70px;
+    margin-top: 70%;
     background-color: rgb(62, 62, 114);
     color: white;
+    font-size: 100%;
+    
 }
 
 img.bald {
@@ -75,7 +81,7 @@ img.bald {
 }
 
 .gameImg{
-    margin-top: 150px;
+    margin-top: 10%;
     position: absolute;
 }
 
@@ -507,17 +513,18 @@ table {
 
 
 .right-buttons > button{
-    margin-top: 5px;
+    margin-top: 10%;
 }
 
 .left-buttons > button{
-    margin-top: 5px;
+    margin-top: 10%;
 }
 
 .wheel{
-    margin-top: 200px;
+    margin-top: 30%;
     position: absolute;
-    margin-left: -300px;
+    margin-left: -5%;
+    size: 20%;
 }
 
 #hair-clipper{
