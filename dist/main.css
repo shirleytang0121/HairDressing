@@ -305,32 +305,59 @@ img.bang-style{
     background-color: rgb(132, 137, 192);
 }
 
-.mode1{
+.rightdiv .mode1{
     position: absolute;
     margin-top: 1%;
     margin-left: -10%;
-    margin-right: 10%;
     border-radius: 5px;
     background-color: rgb(62, 62, 114);
    padding: auto;
    color: white;
 }
-.mode2{
+.rightdiv .mode2{
     position: absolute;
     margin-top: 3%;
     margin-left: -10%;
-    margin-right: 10%;
     border-radius: 5px;
     background-color: rgb(62, 62, 114);
    padding: auto;
    color: white;
 }
 
-.mode3{
+.rightdiv .mode3{
     position: absolute;
     margin-top: 5%;
     margin-left: -10%;
-    margin-right: 20%;
+    border-radius: 5px;
+    background-color: rgb(62, 62, 114);
+   padding: auto;
+   color: white;
+}
+
+.leftdiv .mode1{
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 3%;
+    border-radius: 5px;
+    background-color: rgb(62, 62, 114);
+   padding: auto;
+   color: white;
+}
+
+.leftdiv .mode2{
+    position: absolute;
+    margin-top: 3%;  
+   margin-left: 3%;
+    border-radius: 5px;
+    background-color: rgb(62, 62, 114);
+   padding: auto;
+   color: white;
+}
+
+.leftdiv .mode3{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 3%;
     border-radius: 5px;
     background-color: rgb(62, 62, 114);
    padding: auto;
