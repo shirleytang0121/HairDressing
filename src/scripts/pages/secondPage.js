@@ -79,20 +79,26 @@ export default function renderNewGamePage(){
     clipperimg.setAttribute('id','hair-clipper');
     clipperbtn.appendChild(clipperimg);
 
+    const clipperInfo =document.createElement('p');
+    clipperInfo.classList.add('toolInfo');
+    clipperInfo.innerHTML='Use clipper to make short hair even shorter';
+    clipperInfo.style.display='none';
+
+    clipperbtn.addEventListener("mouseover",()=>{
+        clipperInfo.style.display='block';
+    })
+
+    hairdryerbtn.addEventListener("mouseout",()=>{
+        clipperInfo.style.display='none';
+    })
+
+
     const hairdryerbtn =document.createElement('button');
     hairdryerbtn.classList.add('hair-dryer');
     const hairdryerimg =document.createElement('img');
     hairdryerimg.setAttribute('src','./src/image/tools/hair-dryer.png')
     hairdryerimg.classList.add('tools');
     hairdryerbtn.appendChild(hairdryerimg);
-
-
-    const hairdyebtn =document.createElement('button');
-    hairdyebtn.classList.add('hair-dye');
-    const hairdyeimg =document.createElement('img');
-    hairdyeimg.setAttribute('src','./src/image/tools/hair-dye.png')
-    hairdyeimg.classList.add('tools');
-    hairdyebtn.appendChild(hairdyeimg);
 
     const hairdryerInfo =document.createElement('p');
     hairdryerInfo.classList.add('toolInfo');
@@ -107,6 +113,29 @@ export default function renderNewGamePage(){
         hairdryerInfo.style.display='none';
     })
 
+
+
+    const hairdyebtn =document.createElement('button');
+    hairdyebtn.classList.add('hair-dye');
+    const hairdyeimg =document.createElement('img');
+    hairdyeimg.setAttribute('src','./src/image/tools/hair-dye.png')
+    hairdyeimg.classList.add('tools');
+    hairdyebtn.appendChild(hairdyeimg);
+
+    const hairdyeInfo = document.createElement('p');
+    hairdyeInfo.classList.add('toolInfo');
+    hairdyeInfo.innerHTML = 'Use to change hair to different color'
+    hairdyeInfo.style.display='none';
+
+    hairdyebtn.addEventListener("mouseover",()=>{
+        hairdyeInfo.style.display='block';
+    })
+
+    hairdyebtn.addEventListener("mouseout",()=>{
+        hairdyeInfo.style.display='none';
+    })
+
+    
     // const dyediv = document.createElement('div');
     // dyediv.classList.add('dyediv');
     // dyediv.appendChild(hairdyebtn);
@@ -123,16 +152,35 @@ export default function renderNewGamePage(){
     bangsimg.classList.add('tools');
     bangsbtn.appendChild(bangsimg);
 
+    const bangInfo = document.createElement('p');
+    bangInfo.classList.add('toolInfo');
+    bangInfo.innerHTML = 'Use to change different type of bangs'
+    bangInfo.style.display='none';
+
+    bangsbtn.addEventListener("mouseover",()=>{
+        bangInfo.style.display='block';
+    })
+
+    bangsbtn.addEventListener("mouseout",()=>{
+        bangInfo.style.display='none';
+    })
+
+
 
     rightbtns.appendChild(scissorsbtn);
     rightbtns.appendChild(scissorInfo);
 
     rightbtns.appendChild(clipperbtn);
+    rightbtns.appendChild(clipperInfo);
+
     rightbtns.appendChild(hairdryerbtn);
     rightbtns.appendChild(hairdryerInfo);
-    
+
     rightbtns.appendChild(bangsbtn);
+    rightbtns.appendChild(bangInfo);
+
     rightbtns.appendChild(hairdyebtn);
+    rightbtns.appendChild(hairdyeInfo);
     rightbtns.appendChild(colordiv)
 
     const scissors = new Scissors();
