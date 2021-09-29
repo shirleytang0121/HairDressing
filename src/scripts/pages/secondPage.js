@@ -86,12 +86,27 @@ export default function renderNewGamePage(){
     hairdryerimg.classList.add('tools');
     hairdryerbtn.appendChild(hairdryerimg);
 
+
     const hairdyebtn =document.createElement('button');
     hairdyebtn.classList.add('hair-dye');
     const hairdyeimg =document.createElement('img');
     hairdyeimg.setAttribute('src','./src/image/tools/hair-dye.png')
     hairdyeimg.classList.add('tools');
     hairdyebtn.appendChild(hairdyeimg);
+
+    const hairdryerInfo =document.createElement('p');
+    hairdryerInfo.classList.add('toolInfo');
+    hairdryerInfo.innerHTML='Use hair dryer to make hair more bluky';
+    hairdryerInfo.style.display='none';
+
+    hairdryerbtn.addEventListener("mouseover",()=>{
+        hairdryerInfo.style.display='block';
+    })
+
+    hairdryerbtn.addEventListener("mouseout",()=>{
+        hairdryerInfo.style.display='none';
+    })
+
     // const dyediv = document.createElement('div');
     // dyediv.classList.add('dyediv');
     // dyediv.appendChild(hairdyebtn);
@@ -110,8 +125,12 @@ export default function renderNewGamePage(){
 
 
     rightbtns.appendChild(scissorsbtn);
+    rightbtns.appendChild(scissorInfo);
+
     rightbtns.appendChild(clipperbtn);
     rightbtns.appendChild(hairdryerbtn);
+    rightbtns.appendChild(hairdryerInfo);
+    
     rightbtns.appendChild(bangsbtn);
     rightbtns.appendChild(hairdyebtn);
     rightbtns.appendChild(colordiv)
