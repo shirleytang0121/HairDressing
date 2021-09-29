@@ -58,6 +58,19 @@ export default function renderNewGamePage(){
     scissorsimg.classList.add('tools');
     scissorsbtn.appendChild(scissorsimg);
 
+    const scissorInfo = document.createElement('p');
+    scissorInfo.classList.add('toolInfo');
+    scissorInfo.innerHTML = 'Use scisscors to make the hair shorter'
+    scissorInfo.style.display = 'none'
+
+    scissorsbtn.addEventListener("mouseover",()=>{
+        scissorInfo.style.display="block";
+    })
+   
+    scissorsbtn.addEventListener("mouseout",()=>{
+        scissorInfo.style.display="none";
+    })
+
     const clipperbtn = document.createElement('button');
     clipperbtn.classList.add('clipper');
     const clipperimg = document.createElement('img');
