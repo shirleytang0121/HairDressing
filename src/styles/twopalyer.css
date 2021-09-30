@@ -1,6 +1,7 @@
-/* .gameImgForTwo{
-    position: absolute;
-} */
+.gameImgForTwo{
+    width: 80%;
+    margin-left: 20%;
+}
 
 .submit#left-submit{
     position: absolute;
@@ -82,14 +83,14 @@
 }
 
 .countdown{
-    font-size: 40px;
+    font-size: 100%;
     background-color: rgb(52, 52, 124);
     border-radius: 5px;
     color: white;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
-     margin-top: 230px;
+    padding-top: 200%;
+    padding-bottom: 200%;
+    padding-left: 200%;
+    padding-right: 300%;
+    margin-top: 900%;
 }
 

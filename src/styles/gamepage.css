@@ -82,10 +82,11 @@ img.bald {
 .gameImg{
     margin-top: 10%;
     position: absolute;
+    width: 10%;
 }
 
 .submit{
-  margin-top: 400px;
+  margin-top: 400%;
   width: 100px;
   background-color: rgb(62, 62, 114);
   color: white;
@@ -109,8 +110,8 @@ img.bald {
 
 .timediv{
     position: absolute;
-    margin-left: 550px;
-    margin-top: 250px;
+    margin-left: 50%;
+    margin-top: 20%;
     
 }
 
