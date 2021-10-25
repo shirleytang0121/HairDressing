@@ -199,68 +199,76 @@ img.bang-style{
 
 .man-style{
     position: absolute;
-    width: 230px;
+    width: 20%;
     height: auto;
-    margin-left: -308px;
-    margin-top: 90px;  
+    margin-left: -10%;
+    margin-top: 9.5%;  
 }
 
 .man-style-L{
     position: absolute;
-    width: 230px;
+    width: 20%;
     height: auto;
-    margin-left: -308px;
-    margin-top: 90px;  
+    margin-left: -10%;
+    margin-top: 9.5%;  
 }
 
+
+#man-long-1{
+    position: absolute;
+    width: 20%;
+    height: auto;
+    margin-left: -10.5%;
+    margin-top: 8%;
+}
 #man-long-2{
     position: absolute;
-    width: 235px;
+    width: 20%;
     height: auto;
-    margin-left: -312px;
-    margin-top: 75px;
+    margin-left: -10%;
+    margin-top: 8%;
 }
 
 #man-short-1{
     position: absolute;
-    width: 295px;
+    width: 25%;
     height: auto;
-    margin-left: -340px;
-    margin-top: 45px;  
+    margin-left: -13%;
+    margin-top: 6%;  
 }
 
 #man-short-2{
     position: absolute;
-    width: 300px;
+    width: 27%;
     height: auto;
-    margin-left: -345px;
-    margin-top: 45px;  
+    margin-left: -14%;
+    margin-top: 6%;  
 }
 
 #man-short-3{
     position: absolute;
-    width: 295px;
+    width: 27%;
     height: auto;
-    margin-left: -340px;
-    margin-top: 45px;  
+    margin-left: -13.5%;
+    margin-top: 5%;  
 }
 
 
 
 #man-short-4{
     position: absolute;
-    width: 295px;
+    width: 26%;
     height: auto;
-    margin-left: -340px;
-    margin-top: 45px;  
+    margin-left: -13%;
+    margin-top:4%;  
 }
 
 #man-short-end{
     position: absolute;
-    width: 250px;
+    width: 23%;
     height: auto;
-    margin-left: -316px;
-    margin-top: 50px;
+    margin-left: -11.5%;
+    margin-top: 5%;
 }
 
 

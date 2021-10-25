@@ -11,10 +11,13 @@ export default function renderTwoPlayer(){
     const salon = document.querySelector('.salon');
     salon.remove();
 
-    const startbtnM = document.querySelector('.genderbtn')
+    const logo =document.querySelector(".logo");
+    logo.remove();
+
+    const startbtnM = document.querySelector('.genderbtnF')
     startbtnM.remove();
 
-    const startbtnF = document.querySelector('.genderbtn')
+    const startbtnF = document.querySelector('.genderbtnM')
     startbtnF.remove();
 
     const leftdiv = document.querySelector('.leftdiv')

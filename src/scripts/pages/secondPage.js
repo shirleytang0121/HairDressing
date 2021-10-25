@@ -88,7 +88,7 @@ export default function renderNewGamePage(){
         clipperInfo.style.display='block';
     })
 
-    hairdryerbtn.addEventListener("mouseout",()=>{
+    clipperbtn.addEventListener("mouseout",()=>{
         clipperInfo.style.display='none';
     })
 
