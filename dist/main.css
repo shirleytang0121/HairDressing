@@ -643,14 +643,14 @@ table {
 
 .msgLeft{
     position: absolute;
-    margin-left: -10px;
-    margin-top: -70px;
+    margin-left: -2%;
+    margin-top: -30%;
 }
 
 .msgRight{
     position: absolute;
-    margin-left: 30px;
-    margin-top: -70px;
+    margin-left: -2%;
+    margin-top: -30%;
 }
 
 .show-score-1{
