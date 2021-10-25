@@ -58,8 +58,8 @@ export default function renderGamePage(){
     middiv.appendChild(chardiv);
 
     const newlogo = document.createElement('img');
-    newlogo.setAttribute('src','./src/image/Logo.png')
-    newlogo.classList.add('logo');
+    newlogo.setAttribute('src','./src/image/Logo-2.png')
+    newlogo.classList.add('logo2');
     mainPage.appendChild(newlogo);
     
     const character =new Character('F');

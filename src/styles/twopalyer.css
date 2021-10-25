@@ -5,55 +5,56 @@
 
 .submit#left-submit{
     position: absolute;
-    margin-top: 0px;
+    margin-top: 40%;
     background-color: indianred;
     padding: 3px;
     color: white;
-    margin-left: -5px;
+    margin-left: -10%;
 }
 
 .submit#right-submit{
     position: absolute;
-    margin-top: 0px;
+    margin-top: 40%;
     background-color: indianred;
     padding: 3px;
     color: white;
+    margin-left: -10%;
 }
 
 #left-reset{
     position: absolute;
-    margin-top: 0px;
+    margin-top: 40%;
     background-color: indianred;
     padding: 3px;
     color: white;
-    margin-left: 130px;
+    margin-left: -1%;
 }
 
 #right-reset{
     position: absolute;
-    margin-top: 0px;
+    margin-top: 40%;
     background-color: indianred;
     padding: 3px;
     color: white;
-    margin-left: 140px;
+    margin-left: -1%;
 }
 
 #left-back{
     position: absolute;
-    margin-top: 0px;
+    margin-top: 40%;
     background-color: indianred;
     padding: 3px;
     color: white;
-    margin-left: 215px;
+    margin-left: 7%;
 }
 
 #right-back{
     position: absolute;
-    margin-top: 0px;
+    margin-top: 40%;
     background-color: indianred;
     padding: 3px;
     color: white;
-    margin-left: 250px;
+    margin-left: 7%;
 }
 
 .msgLeft{

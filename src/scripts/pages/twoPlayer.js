@@ -15,6 +15,9 @@ export default function renderTwoPlayer(){
     const salon = document.querySelector('.salon');
     salon.remove();
 
+    const logo =document.querySelector(".logo");
+    logo.remove();
+
     const startbtnM = document.querySelector('.genderbtnF')
     startbtnM.remove();
 
