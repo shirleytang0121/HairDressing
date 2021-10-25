@@ -57,11 +57,20 @@ export default function renderTwoPlayer(){
     chardiv1.classList.add('main-character');
     const chardiv2 = document.createElement('div')
     chardiv2.classList.add('main-character');
+
+    const newlogo1 = document.createElement('img');
+    newlogo1.setAttribute('src','./src/image/Logo-2.png')
+    newlogo1.classList.add('logo2');
+    const newlogo2 = document.createElement('img');
+    newlogo2.setAttribute('src','./src/image/Logo-2.png')
+    newlogo2.classList.add('logo2');
  
     midLeftdiv.appendChild(mirror1);
     midLeftdiv.appendChild(chardiv1);
+    midLeftdiv.appendChild(newlogo1);
     midRightdiv.appendChild(mirror2);
     midRightdiv.appendChild(chardiv2);
+    midRightdiv.appendChild(newlogo2);
 
     const character =new Character('M');
     leftbtns.style.marginTop = '0px';

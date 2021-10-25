@@ -12,6 +12,9 @@ export default function renderNewGamePage(){
     const salon = document.querySelector('.salon');
     salon.remove();
 
+    const logo =document.querySelector(".logo");
+    logo.remove();
+
     const startbtnM = document.querySelector('.genderbtnF')
     startbtnM.remove();
 
@@ -48,6 +51,11 @@ export default function renderNewGamePage(){
 
     middiv.appendChild(mirror);
     middiv.appendChild(chardiv);
+    
+    const newlogo = document.createElement('img');
+    newlogo.setAttribute('src','./src/image/Logo-2.png')
+    newlogo.classList.add('logo2');
+    mainPage.appendChild(newlogo);
     
     const character =new Character('M');
   

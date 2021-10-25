@@ -95,3 +95,17 @@
     margin-top: 900%;
 }
 
+.midLeftdiv .logo2{
+    position: absolute;
+    width: 20%;
+    margin-top: -11%;
+    margin-left: -10%;
+}
+
+.midRightdiv .logo2{
+    position: absolute;
+    width: 20%;
+    margin-top: -11%;
+    margin-left: -10%;
+}
+
