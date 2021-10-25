@@ -13,6 +13,13 @@ export default function renderIntroPage(){
     salon.setAttribute('src','./src/image/hair-salon.png');
     salon.classList.add('salon');
 
+    const logo = document.createElement('img');
+    logo.setAttribute('src','./src/image/Logo.png')
+    logo.classList.add('logo');
+    
+    
+
+
     const leftdiv = document.createElement('div');
     leftdiv.classList.add('leftdiv');
     const rightdiv = document.createElement('div');
@@ -104,7 +111,8 @@ export default function renderIntroPage(){
         }
     });
 
-    
+
+    mainPage.appendChild(logo);
     mainPage.appendChild(salon);
     mainPage.appendChild(rightdiv);
 
