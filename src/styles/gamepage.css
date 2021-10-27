@@ -60,16 +60,15 @@ img.bald {
 .show-score{
  position: absolute;
  font-size: 40px;
- margin-top: 200px;
- margin-right: 500px;
- margin-left: -150px;
+ margin-top: 16%;
+ margin-left: -12%;
 }
 
 .score{
     position: absolute;
     font-size: 40px;
-    margin-top: 270px;
-    margin-left: -50px;
+    margin-top: 21%;
+    margin-left: -1%;
 }
 
 
